@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AuthenInputTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kRl-fd-fyi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dC9-Xw-tdW">
+                                <rect key="frame" x="15" y="58.5" width="345" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="RPw-50-APY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="真实姓名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOa-lB-SD2">
+                                <rect key="frame" x="15" y="35" width="68" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="pZ7-Ys-G56"/>
+                                    <constraint firstAttribute="width" constant="68" id="sCm-bE-5D5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZG-x9-658">
+                                <rect key="frame" x="95" y="30" width="265" height="29.5"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dC9-Xw-tdW" firstAttribute="leading" secondItem="kRl-fd-fyi" secondAttribute="leading" constant="15" id="6q7-IK-g6q"/>
+                            <constraint firstAttribute="bottom" secondItem="nZG-x9-658" secondAttribute="bottom" id="BPZ-mb-Tmk"/>
+                            <constraint firstAttribute="trailing" secondItem="nZG-x9-658" secondAttribute="trailing" constant="15" id="CqO-2f-mDh"/>
+                            <constraint firstItem="qOa-lB-SD2" firstAttribute="top" secondItem="kRl-fd-fyi" secondAttribute="top" constant="35" id="LjA-dv-0Kj"/>
+                            <constraint firstAttribute="bottom" secondItem="dC9-Xw-tdW" secondAttribute="bottom" id="erI-a7-ml7"/>
+                            <constraint firstItem="nZG-x9-658" firstAttribute="leading" secondItem="qOa-lB-SD2" secondAttribute="trailing" constant="12" id="fFq-PI-xWy"/>
+                            <constraint firstAttribute="trailing" secondItem="dC9-Xw-tdW" secondAttribute="trailing" constant="15" id="g1y-tT-q3U"/>
+                            <constraint firstItem="qOa-lB-SD2" firstAttribute="leading" secondItem="kRl-fd-fyi" secondAttribute="leading" constant="15" id="orq-Co-588"/>
+                            <constraint firstItem="nZG-x9-658" firstAttribute="top" secondItem="kRl-fd-fyi" secondAttribute="top" constant="30" id="qGc-fb-0a3"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="kRl-fd-fyi" secondAttribute="bottom" id="bh4-VX-0gz"/>
+                    <constraint firstAttribute="trailing" secondItem="kRl-fd-fyi" secondAttribute="trailing" id="g3j-vc-GkX"/>
+                    <constraint firstItem="kRl-fd-fyi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uea-ER-b9d"/>
+                    <constraint firstItem="kRl-fd-fyi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yh7-e3-DCI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentsView" destination="dC9-Xw-tdW" id="cKB-39-Q8z"/>
+                <outlet property="inputTextField" destination="nZG-x9-658" id="WR4-2m-dG1"/>
+                <outlet property="nameLabel" destination="qOa-lB-SD2" id="yXq-UN-iBZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
