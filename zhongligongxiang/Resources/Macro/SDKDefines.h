@@ -9,5 +9,8 @@
 #ifndef SDKDefines_h
 #define SDKDefines_h
 
+//高德
+
+#define GAODE_APIKEY     @"11885cbf108cc7c21ef8ac3c23d8cf8d"
 
 #endif /* SDKDefines_h */

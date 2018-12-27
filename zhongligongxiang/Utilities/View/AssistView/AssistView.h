@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AssistView : UIView
 
+@property (nonatomic,copy) NSString * contentText;
+
 -(instancetype)initWithFrame:(CGRect)frame;
 
 //show

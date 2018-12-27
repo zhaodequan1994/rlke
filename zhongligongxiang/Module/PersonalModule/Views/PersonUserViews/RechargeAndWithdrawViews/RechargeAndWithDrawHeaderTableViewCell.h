@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-//Model
-#import "RechargeAndDrawTypeModel.h"
+
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -28,7 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) UIViewController * fatheController;
 
--(void)addContntModel:(RechargeAndDrawTypeModel *)rechargeModel;
+@property (nonatomic,assign) BOOL isRechagre;
+
+-(void)addContntModel:(BOOL)isRechagre;
 
 @end
 

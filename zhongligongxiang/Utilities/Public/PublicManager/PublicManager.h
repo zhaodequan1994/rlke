@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#import "UserManager.h"
+#import "UserObjectManager.h"
+#import "LocationManager.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @class PublicManager;
@@ -17,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark  - Manager
 
+@property (nonatomic,strong) UserManager * userManager;
+@property (nonatomic,strong) UserObjectManager * userObjectManager;
+@property (nonatomic,strong) LocationManager * locationManager;
 
 #pragma mark - Init
 

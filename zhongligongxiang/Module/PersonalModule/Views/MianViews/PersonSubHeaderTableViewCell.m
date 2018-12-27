@@ -10,7 +10,7 @@
 
 //Controllers
 #import "MyBalanceViewController.h"
-
+#import "RechargeBalanceViewController.h"
 
 @implementation PersonSubHeaderTableViewCell
 
@@ -42,6 +42,8 @@
     [self.moneyBtn setTitleColor:RGB(255, 84, 85) forState:UIControlStateNormal];
     [self.moneyBtn addTarget:self action:@selector(moneyBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.withDrawalBtn setTitleColor:RGB(255, 84, 85) forState:UIControlStateNormal];
+    [self.withDrawalBtn addTarget:self action:@selector(withDrawalBtnClick) forControlEvents:UIControlEventTouchUpInside];
+
 
     self.headerView.backgroundColor = RGB(255, 84, 85);
     
@@ -58,6 +60,18 @@
     [self.fatherController.navigationController pushViewController:mvc animated:YES];
     
     self.fatherController.hidesBottomBarWhenPushed = NO;
+
+}
+
+-(void)withDrawalBtnClick{
+    
+    self.fatherController.hidesBottomBarWhenPushed = YES;
+    
+    RechargeBalanceViewController * rbvc = [[RechargeBalanceViewController alloc] init];
+    
+    rbvc.isRecharge = NO;
+    
+    [self.fatherController.navigationController pushViewController:rbvc animated:YES];
 
 }
 

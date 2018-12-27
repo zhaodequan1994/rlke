@@ -8,14 +8,67 @@
 
 #import "HomePageViewController.h"
 
+//Views
+#import "CursorView.h"
+
+//Controllers
+#import "ShareInfoViewController.h"
+#import "SharePeopleViewController.h"
+#import "ShareAvtivityViewController.h"
+
 //Controllers
 #import "LoginViewController.h"
 
 @interface HomePageViewController ()
 
+@property (nonatomic, strong) MenuPageScrollView *navSliderBar;
+@property (nonatomic, strong) NSArray *pagesArray;
+@property (nonatomic, strong) NSMutableArray *controllersArray;
+
 @end
 
 @implementation HomePageViewController
+
+- (MenuPageScrollView *)navSliderBar {
+    if (!_navSliderBar) {
+        _navSliderBar = [[MenuPageScrollView alloc]initWithParentController:self MenusPages:self.controllersArray];
+        _navSliderBar.menuPageControllers = self.controllersArray;
+        [self.view addSubview:_navSliderBar];
+        [_navSliderBar mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(self.view);
+            make.width.equalTo(self.view);
+            make.height.mas_equalTo(40);
+            make.top.equalTo(self.view).offset(20);
+        }];
+        MASAttachKeys(_navSliderBar);
+    }
+    return _navSliderBar;
+}
+
+- (NSArray *)pagesArray {
+    if (!_pagesArray) {
+        _pagesArray = [NSArray arrayWithObjects:@"主页",@"推荐",@"资讯", nil];
+    }
+    return _pagesArray;
+}
+
+- (NSMutableArray *)controllersArray{
+    
+    if (!_controllersArray) {
+        
+        SharePeopleViewController * sharePeopleViewController = [[SharePeopleViewController alloc] init];
+        ShareAvtivityViewController * sharesAvtivityViewController = [[ShareAvtivityViewController alloc] init];
+        ShareInfoViewController * shareInfoViewController = [[ShareInfoViewController alloc] init];
+        
+        _controllersArray = [[NSMutableArray alloc] init];
+        [_controllersArray addObject:sharePeopleViewController];
+        [_controllersArray addObject:sharesAvtivityViewController];
+        [_controllersArray addObject:shareInfoViewController];
+        
+    }
+    return _controllersArray;
+}
+
 
 -(void)viewWillAppear:(BOOL)animated{
     
@@ -39,12 +92,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setUpNavSliderBar];
     [self initializeBaseNavigationAppearance];
     [self initializeAppearance];
     [self initializeDataSource];
     
 }
 
+-(void)setUpNavSliderBar {
+    
+    self.navSliderBar.pageMenus = self.pagesArray;
+    
+    [self.navSliderBar updateSelectedPage];
+    
+    
+}
 -(void)initializeBaseNavigationAppearance{
     
     

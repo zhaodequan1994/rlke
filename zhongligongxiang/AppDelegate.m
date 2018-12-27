@@ -21,6 +21,8 @@
     // Override point for customization after application launch.
     
     [self setupAppMainViewController];
+    
+    [self registerThirdConfign];
 
     return YES;
 }
@@ -60,6 +62,12 @@
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[ZDQTabBarController alloc] init];
 
+}
+
+-(void)registerThirdConfign{
+    
+    [[PublicManager shareInstance].locationManager registerGaode];
+    
 }
 
 @end

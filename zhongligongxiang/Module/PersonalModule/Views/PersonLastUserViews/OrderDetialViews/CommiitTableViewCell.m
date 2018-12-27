@@ -8,6 +8,9 @@
 
 #import "CommiitTableViewCell.h"
 
+//View
+#import "StarRatingBar.h"
+
 @implementation CommiitTableViewCell
 
 - (void)awakeFromNib {
@@ -32,6 +35,11 @@
     
     self.placeLabel.textColor = RGB(179, 179, 179);
     
+    StarRatingBar *starRateView = [[StarRatingBar alloc] initWithFrame:CGRectMake(20 , self.starView.frame.size.height/3, self.starView.frame.size.width - 40, self.starView.frame.size.height/3) finish:^(CGFloat currentScore) {
+        
+        
+    }];
+    [self.starView addSubview:starRateView];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

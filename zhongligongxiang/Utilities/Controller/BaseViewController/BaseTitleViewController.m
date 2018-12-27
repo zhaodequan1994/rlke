@@ -10,8 +10,6 @@
 
 @interface BaseTitleViewController ()
 
-@property (nonatomic, strong)UIImageView *navigationLineImageView;
-
 @end
 
 @implementation BaseTitleViewController
@@ -41,40 +39,18 @@
     
     return _rightBtn;
 }
-- (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
-    //内省
-    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
-        
-        return (UIImageView *)view;
-    }
-    
-    for (UIView *subview in view.subviews) {
-        
-        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
-        
-        if (imageView) {
-            return imageView;
-        }
-    }
-    return nil;
-}
-
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
     
     self.tabBarController.tabBar.hidden = YES;
     
-    self.navigationLineImageView.hidden = YES;
-
     [self initNavigationBarIteam];
 }
 -(void)viewWillDisappear:(BOOL)animated{
     
     [super viewWillDisappear:animated];
     
-    self.navigationLineImageView.hidden = NO;
-
 }
 
 - (void)viewDidLoad {
@@ -84,23 +60,12 @@
     
     [self initializeMainDataSource];
     
-    [self initNavigationBar];//导航栏底部黑线处理
 }
 
 -(void)initializeMainAppearance{
     
    
 }
-
--(void)initNavigationBar{
-    
-    _navigationLineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
-    
-    // 系统默认YES 可能你得到的颜色与实际的不匹配  因为默认为YES是有透明度的
-    self.navigationController.navigationBar.translucent = NO;
-    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-}
-
 -(void)initializeMainDataSource{
     
 }

@@ -24,6 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 //super contentView
 
 @property (nonatomic,assign) NSInteger superHeight;
+@property (strong, nonatomic) UserModel * userModel;
+@property (assign, nonatomic) BOOL isLogin;
+
 
 
 // 开始加载

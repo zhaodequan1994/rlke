@@ -53,7 +53,9 @@
     
     if (!_assistNumberLabel) {
         _assistNumberLabel = [[UILabel alloc] initWithFrame:CGRectMake(10, self.userNameLabel.frame.origin.y + self.userNameLabel.frame.size.height + 9, self.backView.frame.size.width - 20, 15)];
-        [_assistNumberLabel SetLabelText:@"共获得128个赞" textColor:RGB(51, 51, 51) textFont:14 textAlignment:NSTextAlignmentCenter];
+        _assistNumberLabel.textColor = RGB(51, 51, 51);     _assistNumberLabel.font = [UIFont systemFontOfSize:14];
+        _assistNumberLabel.textAlignment = NSTextAlignmentCenter;
+        
     }
     return _assistNumberLabel;
 }
@@ -93,7 +95,7 @@
     [self.backView addSubview:self.assistNumberLabel];
     [self.backView addSubview:self.sureBtn];
     
-
+    self.assistNumberLabel.text = self.contentText;
 }
 
 #pragma mark  --------- event  click  -------

@@ -9,14 +9,12 @@
 #import "BaseTitleViewController.h"
 
 //Model
-#import "RechargeAndDrawTypeModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RechargeBalanceViewController : BaseTitleViewController
 
-@property (nonatomic,strong) RechargeAndDrawTypeModel
-* rechargeModel;
+@property (nonatomic,assign) BOOL isRecharge;
 
 @end
 

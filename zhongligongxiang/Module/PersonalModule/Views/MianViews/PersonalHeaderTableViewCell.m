@@ -10,6 +10,7 @@
 
 //Controllers
 #import "AuthenViewController.h"
+#import "UserInfoViewController.h"
 
 @implementation PersonalHeaderTableViewCell
 
@@ -28,6 +29,7 @@
     
     [self.applyBtn addTarget:self action:@selector(applyBtnClick) forControlEvents:UIControlEventTouchUpInside];
 
+    [self.userInfoBtn addTarget:self action:@selector(userInfoBtnClick) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark  ---------  event  click  --------
@@ -42,6 +44,18 @@
     
     self.fatherController.hidesBottomBarWhenPushed = NO;
     
+}
+
+-(void)userInfoBtnClick{
+    
+    self.fatherController.hidesBottomBarWhenPushed = YES;
+    
+    UserInfoViewController * ufvc  = [[UserInfoViewController alloc] init];
+    
+    [self.fatherController.navigationController pushViewController:ufvc animated:YES];
+    
+    self.fatherController.hidesBottomBarWhenPushed = NO;
+
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -12,25 +12,12 @@
 #import "RechargeBalanceViewController.h"
 
 //Model
-#import "RechargeAndDrawTypeModel.h"
 
 @interface BalanceHeaderTableViewCell ()
-
-@property (nonatomic,strong) RechargeAndDrawTypeModel
-* model;
 
 @end
 
 @implementation BalanceHeaderTableViewCell
-
--(RechargeAndDrawTypeModel *)model{
-    
-    if (!_model) {
-        _model = [[RechargeAndDrawTypeModel
-                   alloc] init];
-    }
-    return _model;
-}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -68,13 +55,7 @@
     
     RechargeBalanceViewController * rbvc = [[RechargeBalanceViewController alloc] init];
     
-    self.model.title = @"充值余额";
-    self.model.moneyTitleType = @"充值金额";
-    self.model.tipsText = @"温馨提示: 您充值的金额可用于支付发布的求助订单，也可随时提现使用！";
-    self.model.moneyListType = @"充值记录";
-    self.model.isCharge = YES;
-
-    rbvc.rechargeModel = self.model;
+    rbvc.isRecharge = YES;
 
     [self.fatherController.navigationController pushViewController:rbvc animated:YES];
     
@@ -85,12 +66,7 @@
     
     RechargeBalanceViewController * rbvc = [[RechargeBalanceViewController alloc] init];
     
-    self.model.title = @"立即提现";
-    self.model.moneyTitleType = @"提现金额";
-    self.model.tipsText = @"";
-    self.model.moneyListType = @"充值记录";
-    self.model.isCharge = NO;
-    rbvc.rechargeModel = self.model;
+    rbvc.isRecharge = NO;
 
     [self.fatherController.navigationController pushViewController:rbvc animated:YES];
 }

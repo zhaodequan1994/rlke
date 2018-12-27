@@ -9,5 +9,7 @@
 #ifndef OtherDefines_h
 #define OtherDefines_h
 
+#define CALL_PHONE  @"123213123"
+
 
 #endif /* OtherDefines_h */

@@ -10,9 +10,17 @@
 
 @implementation BalanceConsumeTitleTableViewCell
 
--(void)addTitleString:(NSString *)title{
+-(void)addTitleString:(BOOL)isCharge{
     
-    self.titleLabel.text = title;
+    if (isCharge) {
+        
+        self.titleLabel.text = @"充值记录";
+
+    }else{
+        
+        self.titleLabel.text = @"消费记录";
+
+    }
 }
 
 - (void)awakeFromNib {

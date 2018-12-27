@@ -28,6 +28,9 @@
     self.contentsView1.layer.masksToBounds = YES;
     self.contentsView1.layer.cornerRadius = 5.0f;
     
+    self.userImageView.layer.masksToBounds = YES;
+    self.userImageView.layer.cornerRadius = self.userImageView.frame.size.height/2;
+    
     self.userNameLabel.textColor = RGB(51, 51, 51);
     self.timeLabel.textColor = RGB(102, 102, 102);
     self.userNameLabel.textColor = RGB(255, 84, 85);

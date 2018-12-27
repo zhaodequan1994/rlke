@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="IssureTrendInputTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="173.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oa7-nx-BMl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="173.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vz4-mX-Iar">
+                                <rect key="frame" x="0.0" y="172.5" width="375" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dEd-YQ-F5s"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ijl-cZ-0QH">
+                                <rect key="frame" x="15" y="10" width="345" height="153.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="写有趣的话题会让更多人看到哦..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpc-oL-EZL">
+                                <rect key="frame" x="15" y="15" width="345" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="xDr-dR-Vz2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ijl-cZ-0QH" secondAttribute="trailing" constant="15" id="48m-58-CEC"/>
+                            <constraint firstAttribute="trailing" secondItem="Vz4-mX-Iar" secondAttribute="trailing" id="DJt-fB-bhC"/>
+                            <constraint firstItem="jpc-oL-EZL" firstAttribute="top" secondItem="Oa7-nx-BMl" secondAttribute="top" constant="15" id="ElD-9F-zwz"/>
+                            <constraint firstItem="Vz4-mX-Iar" firstAttribute="leading" secondItem="Oa7-nx-BMl" secondAttribute="leading" id="LJ8-MY-hA7"/>
+                            <constraint firstItem="ijl-cZ-0QH" firstAttribute="leading" secondItem="Oa7-nx-BMl" secondAttribute="leading" constant="15" id="Tse-pf-Wjz"/>
+                            <constraint firstAttribute="bottom" secondItem="Vz4-mX-Iar" secondAttribute="bottom" id="dT9-W6-G1E"/>
+                            <constraint firstAttribute="trailing" secondItem="jpc-oL-EZL" secondAttribute="trailing" constant="15" id="dTx-zN-dek"/>
+                            <constraint firstItem="Vz4-mX-Iar" firstAttribute="top" secondItem="ijl-cZ-0QH" secondAttribute="bottom" constant="9" id="jJ6-1Z-7RZ"/>
+                            <constraint firstItem="ijl-cZ-0QH" firstAttribute="top" secondItem="Oa7-nx-BMl" secondAttribute="top" constant="10" id="o9e-Py-BTX"/>
+                            <constraint firstItem="jpc-oL-EZL" firstAttribute="leading" secondItem="Oa7-nx-BMl" secondAttribute="leading" constant="15" id="x35-Hn-66J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Oa7-nx-BMl" secondAttribute="bottom" id="7Lq-c6-eaK"/>
+                    <constraint firstItem="Oa7-nx-BMl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="did-Po-8NH"/>
+                    <constraint firstItem="Oa7-nx-BMl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="l6j-OO-6Sj"/>
+                    <constraint firstAttribute="trailing" secondItem="Oa7-nx-BMl" secondAttribute="trailing" id="sAG-kS-FCg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentsView" destination="Oa7-nx-BMl" id="5Zo-Tu-ja7"/>
+                <outlet property="detialTextField" destination="ijl-cZ-0QH" id="VXg-Lr-21r"/>
+                <outlet property="lineView" destination="Vz4-mX-Iar" id="ybJ-Gy-xd3"/>
+                <outlet property="placeHolderLabel" destination="jpc-oL-EZL" id="EbR-Cw-qS2"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -90,23 +90,7 @@
 
 -(void)netWorkrequest{
     
-    WEAKSELF
-    NSDictionary * parameter = @{@"phone":@"13668249565",@"password":@"123456"};
-    
-    [PublicMethod networkRequestWithPath:@"http://120.79.165.130:3369/login-t/user-login" Parameters:parameter sender:nil begin:^{
-        
-    } success:^(id  _Nonnull object) {
-        
-        NSLog(@"---11---%@",object);
-        
-    } error:^(id  _Nonnull object) {
-        
-        NSLog(@"---22---%@",object);
-        
-    } failure:^(id  _Nonnull object) {
-        
-        NSLog(@"---33---%@",object);
-    }];
+   
 }
 
 #pragma mark  **********  tableView  delegate  ********
@@ -167,6 +151,12 @@
 
         return cell;
     }
+    
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
 }
 

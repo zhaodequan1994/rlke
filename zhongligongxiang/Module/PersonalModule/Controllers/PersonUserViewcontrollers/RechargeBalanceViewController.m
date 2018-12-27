@@ -62,8 +62,14 @@
 
 -(void)initializeBaseNavigationAppearance{
     
-    self.title = self.rechargeModel.title;
-
+    if (self.isRecharge) {
+        
+        self.title = @"充值余额";
+        
+    }else{
+        
+        self.title = @"立即提现";
+    }
 }
 
 -(void)initializeAppearance{
@@ -88,7 +94,7 @@
     
     if (indexPath.row == 0) {
         
-        if (self.rechargeModel.tipsText.length > 0) {
+        if (self.isRecharge) {
             
             return 395;
 
@@ -112,9 +118,11 @@
         
         RechargeAndWithDrawHeaderTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"RechargeAndWithDrawHeaderTableViewCell" forIndexPath:indexPath];
         
+        cell.isRechagre = self.isRecharge;
+        
         cell.fatheController = self;
         
-        [cell addContntModel:self.rechargeModel];
+        [cell addContntModel:self.isRecharge];
         
         return cell;
         
@@ -122,12 +130,13 @@
         
         BalanceConsumeTitleTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"BalanceConsumeTitleTableViewCell" forIndexPath:indexPath];
         
-        [cell addTitleString:self.rechargeModel.title];
+        [cell addTitleString:self.isRecharge];
 
         return cell;
     }
     
     BalanceListTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"BalanceListTableViewCell" forIndexPath:indexPath];
+
     
     return cell;
 }

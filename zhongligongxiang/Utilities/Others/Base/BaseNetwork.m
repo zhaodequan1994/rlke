@@ -72,8 +72,6 @@ static BaseNetwork *baseNetwork = nil;
     
     [[BaseNetwork shareInstance].requestSerializer setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     
-    [[BaseNetwork shareInstance].requestSerializer setValue:@"ios" forHTTPHeaderField:@"channel"];
-    
 
 }
 
@@ -102,7 +100,7 @@ static BaseNetwork *baseNetwork = nil;
 
 + (void)setupNetworkRequestWithPath:(NSString *)path parameters:(NSDictionary *)parameters sender:(UIView *)sender begin:(void (^)())begin success:(void (^)(id object))success error:(void (^)(id object))error failure:(void (^)(id object))failure{
     
-    NSString * URL = path;
+    NSString * URL = [NSString stringWithFormat:@"%@%@",BASE_URL,path];
     
     sender.userInteractionEnabled = NO;
     

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="IssuePayTypeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="57N-hf-aDL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2T-xz-Lfc">
+                                <rect key="frame" x="15" y="53.5" width="345" height="1"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="GRc-AN-CHe"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择支付方式" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6c-RZ-iCG">
+                                <rect key="frame" x="17" y="20" width="320" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="vc0-AS-7Cb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Personal_rightarrow" translatesAutoresizingMaskIntoConstraints="NO" id="27O-lg-ijj">
+                                <rect key="frame" x="345" y="22.5" width="6" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="6cZ-cp-PL9"/>
+                                    <constraint firstAttribute="height" constant="10" id="JvD-kn-drT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="27O-lg-ijj" firstAttribute="centerY" secondItem="57N-hf-aDL" secondAttribute="centerY" id="1yG-QA-19Z"/>
+                            <constraint firstItem="S6c-RZ-iCG" firstAttribute="top" secondItem="57N-hf-aDL" secondAttribute="top" constant="20" id="4Xi-a1-CyI"/>
+                            <constraint firstItem="S6c-RZ-iCG" firstAttribute="leading" secondItem="57N-hf-aDL" secondAttribute="leading" constant="17" id="9T3-cb-H3Z"/>
+                            <constraint firstItem="27O-lg-ijj" firstAttribute="leading" secondItem="S6c-RZ-iCG" secondAttribute="trailing" constant="8" id="V8Q-Og-saU"/>
+                            <constraint firstAttribute="trailing" secondItem="27O-lg-ijj" secondAttribute="trailing" constant="24" id="c1T-X4-SGQ"/>
+                            <constraint firstItem="g2T-xz-Lfc" firstAttribute="leading" secondItem="57N-hf-aDL" secondAttribute="leading" constant="15" id="d0I-g9-ecx"/>
+                            <constraint firstAttribute="trailing" secondItem="g2T-xz-Lfc" secondAttribute="trailing" constant="15" id="hSn-d2-M90"/>
+                            <constraint firstAttribute="bottom" secondItem="g2T-xz-Lfc" secondAttribute="bottom" id="hz5-EA-ZkS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="57N-hf-aDL" secondAttribute="bottom" id="6bK-Qx-a2C"/>
+                    <constraint firstItem="57N-hf-aDL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="FGg-yX-4Xt"/>
+                    <constraint firstAttribute="trailing" secondItem="57N-hf-aDL" secondAttribute="trailing" id="f3a-Kr-lsp"/>
+                    <constraint firstItem="57N-hf-aDL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="trx-Fe-A6r"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentsView" destination="57N-hf-aDL" id="Ki9-C9-1k2"/>
+                <outlet property="lineView" destination="g2T-xz-Lfc" id="7en-TU-FIV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Personal_rightarrow" width="6.5" height="10"/>
+    </resources>
+</document>

@@ -27,6 +27,46 @@
     
 }
 
+-(void)clearNSUserDefaultUSerInfo{
+    
+    UserModel * model = [[UserModel alloc] init];
+    
+    model.account = @"";
+    model.age = @"";
+    model.avatar = @"";
+    model.balance = @"";
+    model.create_time = @"";
+    model.email = @"";
+    model.extend = @"";
+    model.userId = @"";
+    model.is_admin = @"";
+    model.is_delete = @"";
+    model.is_online = @"";
+    model.lat = @"";
+    model.lng = @"";
+    model.login_count = @"";
+    model.login_time = @"";
+    model.major = @"";
+    model.name = @"";
+    model.parent_id = @"";
+    model.password = @"";
+    
+    model.phone = @"";
+    model.rate = @"";
+    model.rec_code = @"";
+    model.remark = @"";
+    model.role_id = @"";
+    model.score = @"";
+    model.sex = @"";
+    model.skill = @"";
+    model.territory = @"";
+    model.wages = @"";
+    
+    [[PublicManager shareInstance].userManager codeNSUserDefaultsUserInfo:model];
+    
+}
+
+
 #pragma mark - cleanSDImageCache
 
 -(void)cleanSDImageCache{

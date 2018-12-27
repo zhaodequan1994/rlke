@@ -13,11 +13,15 @@
 #import "LoginTitleTableViewCell.h"
 #import "LoginInputTableViewCell.h"
 
+//Models
+#import "LoginModel.h"
 
+#define INPUT_TAG  100
 @interface LoginViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView * tableView;
 
+@property (nonatomic,strong) LoginModel * loginModel;
 
 @end
 
@@ -44,6 +48,14 @@
     return _tableView;
 }
 
+-(LoginModel *)loginModel{
+    
+    if (!_loginModel) {
+        _loginModel = [[LoginModel alloc] init];
+    }
+    return _loginModel;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -67,6 +79,28 @@
 -(void)initializeDataSource{
     
 
+}
+
+-(void)loginNetworkRequest{
+    
+    NSDictionary * parameter = @{@"phone":self.loginModel.phone,@"password":self.loginModel.password};
+    
+    [PublicMethod networkRequestWithPath:PATH_LOGIN Parameters:parameter sender:nil begin:^{
+        
+    } success:^(id  _Nonnull object) {
+        
+        NSLog(@"===%@",object);
+        
+    } error:^(id  _Nonnull object) {
+        
+        NSLog(@"==11=%@",object);
+
+    } failure:^(id  _Nonnull object) {
+        
+        NSLog(@"==22=%@",object);
+
+    }];
+    
 }
 
 #pragma mark  **********  tableView  delegate  ********
@@ -95,9 +129,12 @@
         LoginTitleTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginTitleTableViewCell" forIndexPath:indexPath];
         
         return cell;
+        
     }else if (indexPath.row == 3){
         
         LoginAndRegisterTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginAndRegisterTableViewCell" forIndexPath:indexPath];
+        
+        [cell.loginBtn addTarget:self action:@selector(loginBtnClick) forControlEvents:UIControlEventTouchUpInside];
         
         cell.fatherController = self;
         
@@ -106,11 +143,36 @@
     
     LoginInputTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"LoginInputTableViewCell" forIndexPath:indexPath];
     
+    cell.inputTextField.tag = INPUT_TAG + indexPath.row;
+    
     [cell addIndex:indexPath.row];
 
     return cell;
     
+}
+
+#pragma mark   --------  event  click  ------
+
+-(void)loginBtnClick{
     
+    UITextField * inputTextField1  = (UITextField *)[self.view viewWithTag:INPUT_TAG + 1];
+    
+    UITextField * inputTextField2  = (UITextField *)[self.view viewWithTag:INPUT_TAG + 2];
+
+    if (inputTextField1.text.length != 11) {
+        
+        [PublicMethod alertControllerViewWithTitle:@"请输入正确的电话" sender:self];
+    }else if (inputTextField2.text.length == 0){
+        
+        [PublicMethod alertControllerViewWithTitle:@"请输入密码" sender:self];
+
+    }else{
+        
+        self.loginModel.phone = inputTextField1.text;
+        self.loginModel.password = inputTextField2.text;
+
+        [self loginNetworkRequest];
+    }
 }
 
 @end

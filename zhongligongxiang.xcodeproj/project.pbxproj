@@ -12,6 +12,44 @@
 		EE16C06E21C68F1500C964A3 /* CommiitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE16C06B21C68F1500C964A3 /* CommiitTableViewCell.xib */; };
 		EE16C06F21C68F1500C964A3 /* CommiitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16C06D21C68F1500C964A3 /* CommiitTableViewCell.m */; };
 		EE16C07321C6949000C964A3 /* CommitSuccessView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16C07221C6949000C964A3 /* CommitSuccessView.m */; };
+		EE16C08021C8DFFF00C964A3 /* StarRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16C07F21C8DFFF00C964A3 /* StarRatingBar.m */; };
+		EE16C08421C8E2F300C964A3 /* AgentView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16C08321C8E2F300C964A3 /* AgentView.m */; };
+		EE16C08921C8F28C00C964A3 /* HomeOrderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16C08721C8F28C00C964A3 /* HomeOrderTableViewCell.m */; };
+		EE16C08A21C8F28C00C964A3 /* HomeOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE16C08821C8F28C00C964A3 /* HomeOrderTableViewCell.xib */; };
+		EE16C08D21C9145500C964A3 /* MyCommitsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16C08C21C9145500C964A3 /* MyCommitsViewController.m */; };
+		EE16C09121C914A200C964A3 /* MyCommitTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16C08F21C914A200C964A3 /* MyCommitTableViewCell.m */; };
+		EE16C09221C914A200C964A3 /* MyCommitTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE16C09021C914A200C964A3 /* MyCommitTableViewCell.xib */; };
+		EE27B04021D31B1A00AB0A19 /* IssueTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B03F21D31B1A00AB0A19 /* IssueTaskViewController.m */; };
+		EE27B04921D31D4400AB0A19 /* IssueInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B04721D31D4400AB0A19 /* IssueInputTableViewCell.xib */; };
+		EE27B04A21D31D4400AB0A19 /* IssueInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B04821D31D4400AB0A19 /* IssueInputTableViewCell.m */; };
+		EE27B04F21D31E9C00AB0A19 /* IssuePayTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B04D21D31E9C00AB0A19 /* IssuePayTypeTableViewCell.xib */; };
+		EE27B05221D3208400AB0A19 /* IssuePayTypeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B05121D3208400AB0A19 /* IssuePayTypeTableViewCell.m */; };
+		EE27B05721D320E100AB0A19 /* IssureDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B05521D320E100AB0A19 /* IssureDetialTableViewCell.xib */; };
+		EE27B05A21D3220700AB0A19 /* IssureDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B05921D3220700AB0A19 /* IssureDetialTableViewCell.m */; };
+		EE27B05D21D32D7000AB0A19 /* IssureTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B05C21D32D7000AB0A19 /* IssureTrendViewController.m */; };
+		EE27B06121D32DFA00AB0A19 /* IssureTrendInputTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B05F21D32DFA00AB0A19 /* IssureTrendInputTableViewCell.m */; };
+		EE27B06221D32DFA00AB0A19 /* IssureTrendInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B06021D32DFA00AB0A19 /* IssureTrendInputTableViewCell.xib */; };
+		EE27B06621D32F8A00AB0A19 /* IssureTrendTipTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B06421D32F8A00AB0A19 /* IssureTrendTipTableViewCell.m */; };
+		EE27B06721D32F8A00AB0A19 /* IssureTrendTipTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B06521D32F8A00AB0A19 /* IssureTrendTipTableViewCell.xib */; };
+		EE27B06B21D330F900AB0A19 /* IssureTrendImagesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B06921D330F900AB0A19 /* IssureTrendImagesTableViewCell.m */; };
+		EE27B06C21D330F900AB0A19 /* IssureTrendImagesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B06A21D330F900AB0A19 /* IssureTrendImagesTableViewCell.xib */; };
+		EE27B07121D3757500AB0A19 /* IssureImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B06F21D3757500AB0A19 /* IssureImageCollectionViewCell.m */; };
+		EE27B07221D3757500AB0A19 /* IssureImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B07021D3757500AB0A19 /* IssureImageCollectionViewCell.xib */; };
+		EE27B07521D37B0900AB0A19 /* IssureVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B07421D37B0900AB0A19 /* IssureVideoViewController.m */; };
+		EE27B07A21D37C4200AB0A19 /* IssureVideoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B07821D37C4200AB0A19 /* IssureVideoTableViewCell.xib */; };
+		EE27B07D21D37D6F00AB0A19 /* IssureVideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B07C21D37D6F00AB0A19 /* IssureVideoTableViewCell.m */; };
+		EE27B08121D3850C00AB0A19 /* VideoUploadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B08021D3850C00AB0A19 /* VideoUploadView.m */; };
+		EE27B08421D4AA1800AB0A19 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B08321D4AA1800AB0A19 /* UserInfoViewController.m */; };
+		EE27B08921D4AACB00AB0A19 /* UserInfoIconTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B08721D4AACB00AB0A19 /* UserInfoIconTableViewCell.m */; };
+		EE27B08A21D4AACB00AB0A19 /* UserInfoIconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B08821D4AACB00AB0A19 /* UserInfoIconTableViewCell.xib */; };
+		EE2E25DC21CC94140016F3B7 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25DB21CC94140016F3B7 /* LoginModel.m */; };
+		EE2E25DF21CC942B0016F3B7 /* registerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25DE21CC942B0016F3B7 /* registerModel.m */; };
+		EE2E25E521D0CE380016F3B7 /* UserObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25E421D0CE380016F3B7 /* UserObjectManager.m */; };
+		EE2E25E821D0F4370016F3B7 /* MyFansCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25E721D0F4370016F3B7 /* MyFansCenterViewController.m */; };
+		EE2E25F321D1C6350016F3B7 /* PersonalCenterTableViewCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25F121D1C6350016F3B7 /* PersonalCenterTableViewCell1.m */; };
+		EE2E25F421D1C6350016F3B7 /* PersonalCenterTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2E25F221D1C6350016F3B7 /* PersonalCenterTableViewCell1.xib */; };
+		EE2E25FD21D1C8EF0016F3B7 /* ImagesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25FA21D1C8EE0016F3B7 /* ImagesCollectionViewCell.m */; };
+		EE2E25FE21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2E25FB21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib */; };
 		EE7648BB21B61A810090D98A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7648BA21B61A810090D98A /* AppDelegate.m */; };
 		EE7648C121B61A810090D98A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7648BF21B61A810090D98A /* Main.storyboard */; };
 		EE7648C321B61A820090D98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7648C221B61A820090D98A /* Assets.xcassets */; };
@@ -101,22 +139,18 @@
 		EE84698B21C14DE300D3BF18 /* AuthenSureTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE84698821C14DE300D3BF18 /* AuthenSureTableViewCell.m */; };
 		EE84698C21C14DE300D3BF18 /* AuthenSureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE84698921C14DE300D3BF18 /* AuthenSureTableViewCell.xib */; };
 		EE84699921C23CBF00D3BF18 /* AssistView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE84699821C23CBF00D3BF18 /* AssistView.m */; };
+		EE9C53BC21D4AD6A0071920A /* UserInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE9C53BA21D4AD6A0071920A /* UserInfoTableViewCell.xib */; };
+		EE9C53BF21D4AE920071920A /* UserInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53BE21D4AE920071920A /* UserInfoTableViewCell.m */; };
+		EE9C53C221D4C0030071920A /* UserNickNameAlterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53C121D4C0030071920A /* UserNickNameAlterViewController.m */; };
+		EE9C53C721D4CACE0071920A /* AgePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53C621D4CACE0071920A /* AgePickView.m */; };
+		EE9C53CA21D4CFD20071920A /* PersonalAgentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53C921D4CFD20071920A /* PersonalAgentViewController.m */; };
+		EE9C53CD21D4D23C0071920A /* PersonalPopularizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53CC21D4D23C0071920A /* PersonalPopularizeViewController.m */; };
 		EEB218E021BE557E0061017D /* ZDQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218DF21BE557E0061017D /* ZDQTabBarController.m */; };
 		EEB218E321BE55D90061017D /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218E221BE55D90061017D /* HomePageViewController.m */; };
 		EEB218E921BE563D0061017D /* HomeNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218E821BE563D0061017D /* HomeNewsViewController.m */; };
 		EEB218EC21BE565B0061017D /* HomePersonalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218EB21BE565B0061017D /* HomePersonalViewController.m */; };
 		EEB218EF21BE56700061017D /* HomeOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218EE21BE56700061017D /* HomeOrdersViewController.m */; };
 		EEB218F221BE56C70061017D /* ZDQtabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218F121BE56C70061017D /* ZDQtabBar.m */; };
-		EEB2190E21BE57990061017D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218F621BE57990061017D /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		EEB2190F21BE57990061017D /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218FF21BE57990061017D /* ViewController+MASAdditions.m */; };
-		EEB2191021BE57990061017D /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2190321BE57990061017D /* MASCompositeConstraint.m */; };
-		EEB2191121BE57990061017D /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2190421BE57990061017D /* MASConstraintMaker.m */; };
-		EEB2191221BE57990061017D /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2190521BE57990061017D /* MASLayoutConstraint.m */; };
-		EEB2191321BE57990061017D /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2190621BE57990061017D /* NSArray+MASAdditions.m */; };
-		EEB2191421BE57990061017D /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2190721BE57990061017D /* View+MASAdditions.m */; };
-		EEB2191521BE57990061017D /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2190A21BE57990061017D /* MASConstraint.m */; };
-		EEB2191621BE57990061017D /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2190C21BE57990061017D /* MASViewConstraint.m */; };
-		EEB2191721BE57990061017D /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2190D21BE57990061017D /* MASViewAttribute.m */; };
 		EEB2191B21BE581B0061017D /* UIView+XPFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2191A21BE581B0061017D /* UIView+XPFExtension.m */; };
 		EEB2195F21BE78870061017D /* PersonalHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB2195D21BE78870061017D /* PersonalHeaderTableViewCell.m */; };
 		EEB2196021BE78870061017D /* PersonalHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEB2195E21BE78870061017D /* PersonalHeaderTableViewCell.xib */; };
@@ -143,7 +177,21 @@
 		EEC2005421C3CBAE00F49365 /* RechargeBalanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC2005321C3CBAE00F49365 /* RechargeBalanceViewController.m */; };
 		EEC2005A21C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC2005821C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.m */; };
 		EEC2005B21C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEC2005921C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.xib */; };
-		EEC2006021C3DC6600F49365 /* RechargeAndDrawTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC2005F21C3DC6600F49365 /* RechargeAndDrawTypeModel.m */; };
+		EEC8A9A521D1DFC700E23493 /* CursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9A421D1DFC700E23493 /* CursorView.m */; };
+		EEC8A9B521D208F900E23493 /* SharePeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9B421D208F900E23493 /* SharePeopleViewController.m */; };
+		EEC8A9B821D2090900E23493 /* ShareAvtivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9B721D2090900E23493 /* ShareAvtivityViewController.m */; };
+		EEC8A9BB21D2092900E23493 /* ShareInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9BA21D2092900E23493 /* ShareInfoViewController.m */; };
+		EEC8A9D721D20DF400E23493 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9BF21D20DF400E23493 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		EEC8A9D821D20DF400E23493 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9C821D20DF400E23493 /* ViewController+MASAdditions.m */; };
+		EEC8A9D921D20DF400E23493 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9CC21D20DF400E23493 /* MASCompositeConstraint.m */; };
+		EEC8A9DA21D20DF400E23493 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9CD21D20DF400E23493 /* MASConstraintMaker.m */; };
+		EEC8A9DB21D20DF400E23493 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9CE21D20DF400E23493 /* MASLayoutConstraint.m */; };
+		EEC8A9DC21D20DF400E23493 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9CF21D20DF400E23493 /* NSArray+MASAdditions.m */; };
+		EEC8A9DD21D20DF400E23493 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9D021D20DF400E23493 /* View+MASAdditions.m */; };
+		EEC8A9DE21D20DF400E23493 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9D321D20DF400E23493 /* MASConstraint.m */; };
+		EEC8A9DF21D20DF400E23493 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9D521D20DF400E23493 /* MASViewConstraint.m */; };
+		EEC8A9E021D20DF400E23493 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9D621D20DF400E23493 /* MASViewAttribute.m */; };
+		EEC8A9E621D2252C00E23493 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9E521D2252C00E23493 /* LocationManager.m */; };
 		EEDFA9C721C4FD6A00C26017 /* OrderDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDFA9C621C4FD6A00C26017 /* OrderDetialViewController.m */; };
 		EEDFA9CB21C4FE3600C26017 /* OrderDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDFA9C921C4FE3600C26017 /* OrderDetialTableViewCell.m */; };
 		EEDFA9CC21C4FE3600C26017 /* OrderDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEDFA9CA21C4FE3600C26017 /* OrderDetialTableViewCell.xib */; };
@@ -177,6 +225,69 @@
 		EE16C06D21C68F1500C964A3 /* CommiitTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommiitTableViewCell.m; sourceTree = "<group>"; };
 		EE16C07121C6949000C964A3 /* CommitSuccessView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitSuccessView.h; sourceTree = "<group>"; };
 		EE16C07221C6949000C964A3 /* CommitSuccessView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitSuccessView.m; sourceTree = "<group>"; };
+		EE16C07E21C8DFFF00C964A3 /* StarRatingBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StarRatingBar.h; sourceTree = "<group>"; };
+		EE16C07F21C8DFFF00C964A3 /* StarRatingBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StarRatingBar.m; sourceTree = "<group>"; };
+		EE16C08221C8E2F300C964A3 /* AgentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgentView.h; sourceTree = "<group>"; };
+		EE16C08321C8E2F300C964A3 /* AgentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgentView.m; sourceTree = "<group>"; };
+		EE16C08621C8F28C00C964A3 /* HomeOrderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeOrderTableViewCell.h; sourceTree = "<group>"; };
+		EE16C08721C8F28C00C964A3 /* HomeOrderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeOrderTableViewCell.m; sourceTree = "<group>"; };
+		EE16C08821C8F28C00C964A3 /* HomeOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeOrderTableViewCell.xib; sourceTree = "<group>"; };
+		EE16C08B21C9145500C964A3 /* MyCommitsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCommitsViewController.h; sourceTree = "<group>"; };
+		EE16C08C21C9145500C964A3 /* MyCommitsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCommitsViewController.m; sourceTree = "<group>"; };
+		EE16C08E21C914A200C964A3 /* MyCommitTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCommitTableViewCell.h; sourceTree = "<group>"; };
+		EE16C08F21C914A200C964A3 /* MyCommitTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyCommitTableViewCell.m; sourceTree = "<group>"; };
+		EE16C09021C914A200C964A3 /* MyCommitTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCommitTableViewCell.xib; sourceTree = "<group>"; };
+		EE27B03E21D31B1A00AB0A19 /* IssueTaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssueTaskViewController.h; sourceTree = "<group>"; };
+		EE27B03F21D31B1A00AB0A19 /* IssueTaskViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssueTaskViewController.m; sourceTree = "<group>"; };
+		EE27B04621D31D4300AB0A19 /* IssueInputTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueInputTableViewCell.h; sourceTree = "<group>"; };
+		EE27B04721D31D4400AB0A19 /* IssueInputTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueInputTableViewCell.xib; sourceTree = "<group>"; };
+		EE27B04821D31D4400AB0A19 /* IssueInputTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueInputTableViewCell.m; sourceTree = "<group>"; };
+		EE27B04D21D31E9C00AB0A19 /* IssuePayTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssuePayTypeTableViewCell.xib; sourceTree = "<group>"; };
+		EE27B05021D3208400AB0A19 /* IssuePayTypeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssuePayTypeTableViewCell.h; sourceTree = "<group>"; };
+		EE27B05121D3208400AB0A19 /* IssuePayTypeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssuePayTypeTableViewCell.m; sourceTree = "<group>"; };
+		EE27B05521D320E100AB0A19 /* IssureDetialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssureDetialTableViewCell.xib; sourceTree = "<group>"; };
+		EE27B05821D3220700AB0A19 /* IssureDetialTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssureDetialTableViewCell.h; sourceTree = "<group>"; };
+		EE27B05921D3220700AB0A19 /* IssureDetialTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssureDetialTableViewCell.m; sourceTree = "<group>"; };
+		EE27B05B21D32D7000AB0A19 /* IssureTrendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssureTrendViewController.h; sourceTree = "<group>"; };
+		EE27B05C21D32D7000AB0A19 /* IssureTrendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssureTrendViewController.m; sourceTree = "<group>"; };
+		EE27B05E21D32DFA00AB0A19 /* IssureTrendInputTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssureTrendInputTableViewCell.h; sourceTree = "<group>"; };
+		EE27B05F21D32DFA00AB0A19 /* IssureTrendInputTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssureTrendInputTableViewCell.m; sourceTree = "<group>"; };
+		EE27B06021D32DFA00AB0A19 /* IssureTrendInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssureTrendInputTableViewCell.xib; sourceTree = "<group>"; };
+		EE27B06321D32F8A00AB0A19 /* IssureTrendTipTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssureTrendTipTableViewCell.h; sourceTree = "<group>"; };
+		EE27B06421D32F8A00AB0A19 /* IssureTrendTipTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssureTrendTipTableViewCell.m; sourceTree = "<group>"; };
+		EE27B06521D32F8A00AB0A19 /* IssureTrendTipTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssureTrendTipTableViewCell.xib; sourceTree = "<group>"; };
+		EE27B06821D330F900AB0A19 /* IssureTrendImagesTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssureTrendImagesTableViewCell.h; sourceTree = "<group>"; };
+		EE27B06921D330F900AB0A19 /* IssureTrendImagesTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssureTrendImagesTableViewCell.m; sourceTree = "<group>"; };
+		EE27B06A21D330F900AB0A19 /* IssureTrendImagesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssureTrendImagesTableViewCell.xib; sourceTree = "<group>"; };
+		EE27B06E21D3757500AB0A19 /* IssureImageCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssureImageCollectionViewCell.h; sourceTree = "<group>"; };
+		EE27B06F21D3757500AB0A19 /* IssureImageCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssureImageCollectionViewCell.m; sourceTree = "<group>"; };
+		EE27B07021D3757500AB0A19 /* IssureImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssureImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		EE27B07321D37B0900AB0A19 /* IssureVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IssureVideoViewController.h; sourceTree = "<group>"; };
+		EE27B07421D37B0900AB0A19 /* IssureVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IssureVideoViewController.m; sourceTree = "<group>"; };
+		EE27B07821D37C4200AB0A19 /* IssureVideoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssureVideoTableViewCell.xib; sourceTree = "<group>"; };
+		EE27B07B21D37D6E00AB0A19 /* IssureVideoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssureVideoTableViewCell.h; sourceTree = "<group>"; };
+		EE27B07C21D37D6F00AB0A19 /* IssureVideoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssureVideoTableViewCell.m; sourceTree = "<group>"; };
+		EE27B07F21D3850C00AB0A19 /* VideoUploadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoUploadView.h; sourceTree = "<group>"; };
+		EE27B08021D3850C00AB0A19 /* VideoUploadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoUploadView.m; sourceTree = "<group>"; };
+		EE27B08221D4AA1800AB0A19 /* UserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		EE27B08321D4AA1800AB0A19 /* UserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		EE27B08621D4AACB00AB0A19 /* UserInfoIconTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoIconTableViewCell.h; sourceTree = "<group>"; };
+		EE27B08721D4AACB00AB0A19 /* UserInfoIconTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoIconTableViewCell.m; sourceTree = "<group>"; };
+		EE27B08821D4AACB00AB0A19 /* UserInfoIconTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoIconTableViewCell.xib; sourceTree = "<group>"; };
+		EE2E25DA21CC94140016F3B7 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		EE2E25DB21CC94140016F3B7 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		EE2E25DD21CC942B0016F3B7 /* registerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = registerModel.h; sourceTree = "<group>"; };
+		EE2E25DE21CC942B0016F3B7 /* registerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = registerModel.m; sourceTree = "<group>"; };
+		EE2E25E321D0CE380016F3B7 /* UserObjectManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserObjectManager.h; sourceTree = "<group>"; };
+		EE2E25E421D0CE380016F3B7 /* UserObjectManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserObjectManager.m; sourceTree = "<group>"; };
+		EE2E25E621D0F4370016F3B7 /* MyFansCenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFansCenterViewController.h; sourceTree = "<group>"; };
+		EE2E25E721D0F4370016F3B7 /* MyFansCenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFansCenterViewController.m; sourceTree = "<group>"; };
+		EE2E25F021D1C6340016F3B7 /* PersonalCenterTableViewCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCenterTableViewCell1.h; sourceTree = "<group>"; };
+		EE2E25F121D1C6350016F3B7 /* PersonalCenterTableViewCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCenterTableViewCell1.m; sourceTree = "<group>"; };
+		EE2E25F221D1C6350016F3B7 /* PersonalCenterTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonalCenterTableViewCell1.xib; sourceTree = "<group>"; };
+		EE2E25FA21D1C8EE0016F3B7 /* ImagesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesCollectionViewCell.m; sourceTree = "<group>"; };
+		EE2E25FB21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagesCollectionViewCell.xib; sourceTree = "<group>"; };
+		EE2E25FC21D1C8EF0016F3B7 /* ImagesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesCollectionViewCell.h; sourceTree = "<group>"; };
 		EE7648B621B61A810090D98A /* zhongligongxiang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhongligongxiang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7648B921B61A810090D98A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE7648BA21B61A810090D98A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -353,6 +464,17 @@
 		EE84698A21C14DE300D3BF18 /* AuthenSureTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenSureTableViewCell.h; sourceTree = "<group>"; };
 		EE84699721C23CBF00D3BF18 /* AssistView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AssistView.h; sourceTree = "<group>"; };
 		EE84699821C23CBF00D3BF18 /* AssistView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AssistView.m; sourceTree = "<group>"; };
+		EE9C53BA21D4AD6A0071920A /* UserInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EE9C53BD21D4AE910071920A /* UserInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTableViewCell.h; sourceTree = "<group>"; };
+		EE9C53BE21D4AE920071920A /* UserInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTableViewCell.m; sourceTree = "<group>"; };
+		EE9C53C021D4C0030071920A /* UserNickNameAlterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserNickNameAlterViewController.h; sourceTree = "<group>"; };
+		EE9C53C121D4C0030071920A /* UserNickNameAlterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserNickNameAlterViewController.m; sourceTree = "<group>"; };
+		EE9C53C521D4CACE0071920A /* AgePickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgePickView.h; sourceTree = "<group>"; };
+		EE9C53C621D4CACE0071920A /* AgePickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgePickView.m; sourceTree = "<group>"; };
+		EE9C53C821D4CFD20071920A /* PersonalAgentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalAgentViewController.h; sourceTree = "<group>"; };
+		EE9C53C921D4CFD20071920A /* PersonalAgentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalAgentViewController.m; sourceTree = "<group>"; };
+		EE9C53CB21D4D23C0071920A /* PersonalPopularizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalPopularizeViewController.h; sourceTree = "<group>"; };
+		EE9C53CC21D4D23C0071920A /* PersonalPopularizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalPopularizeViewController.m; sourceTree = "<group>"; };
 		EEB218DE21BE557E0061017D /* ZDQTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDQTabBarController.h; sourceTree = "<group>"; };
 		EEB218DF21BE557E0061017D /* ZDQTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDQTabBarController.m; sourceTree = "<group>"; };
 		EEB218E121BE55D90061017D /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
@@ -365,31 +487,6 @@
 		EEB218EE21BE56700061017D /* HomeOrdersViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeOrdersViewController.m; sourceTree = "<group>"; };
 		EEB218F021BE56C70061017D /* ZDQtabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDQtabBar.h; sourceTree = "<group>"; };
 		EEB218F121BE56C70061017D /* ZDQtabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDQtabBar.m; sourceTree = "<group>"; };
-		EEB218F521BE57990061017D /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		EEB218F621BE57990061017D /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		EEB218F721BE57990061017D /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		EEB218F821BE57990061017D /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		EEB218F921BE57990061017D /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		EEB218FA21BE57990061017D /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		EEB218FB21BE57990061017D /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		EEB218FC21BE57990061017D /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		EEB218FD21BE57990061017D /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		EEB218FE21BE57990061017D /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		EEB218FF21BE57990061017D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		EEB2190021BE57990061017D /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		EEB2190121BE57990061017D /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		EEB2190221BE57990061017D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		EEB2190321BE57990061017D /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		EEB2190421BE57990061017D /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		EEB2190521BE57990061017D /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		EEB2190621BE57990061017D /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		EEB2190721BE57990061017D /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		EEB2190821BE57990061017D /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		EEB2190921BE57990061017D /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		EEB2190A21BE57990061017D /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		EEB2190B21BE57990061017D /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		EEB2190C21BE57990061017D /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		EEB2190D21BE57990061017D /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		EEB2191921BE581B0061017D /* UIView+XPFExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+XPFExtension.h"; sourceTree = "<group>"; };
 		EEB2191A21BE581B0061017D /* UIView+XPFExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+XPFExtension.m"; sourceTree = "<group>"; };
 		EEB2195C21BE78870061017D /* PersonalHeaderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalHeaderTableViewCell.h; sourceTree = "<group>"; };
@@ -432,8 +529,41 @@
 		EEC2005721C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RechargeAndWithDrawHeaderTableViewCell.h; sourceTree = "<group>"; };
 		EEC2005821C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RechargeAndWithDrawHeaderTableViewCell.m; sourceTree = "<group>"; };
 		EEC2005921C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RechargeAndWithDrawHeaderTableViewCell.xib; sourceTree = "<group>"; };
-		EEC2005E21C3DC6600F49365 /* RechargeAndDrawTypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RechargeAndDrawTypeModel.h; sourceTree = "<group>"; };
-		EEC2005F21C3DC6600F49365 /* RechargeAndDrawTypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RechargeAndDrawTypeModel.m; sourceTree = "<group>"; };
+		EEC8A9A321D1DFC700E23493 /* CursorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CursorView.h; sourceTree = "<group>"; };
+		EEC8A9A421D1DFC700E23493 /* CursorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CursorView.m; sourceTree = "<group>"; };
+		EEC8A9B321D208F900E23493 /* SharePeopleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharePeopleViewController.h; sourceTree = "<group>"; };
+		EEC8A9B421D208F900E23493 /* SharePeopleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SharePeopleViewController.m; sourceTree = "<group>"; };
+		EEC8A9B621D2090900E23493 /* ShareAvtivityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareAvtivityViewController.h; sourceTree = "<group>"; };
+		EEC8A9B721D2090900E23493 /* ShareAvtivityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareAvtivityViewController.m; sourceTree = "<group>"; };
+		EEC8A9B921D2092900E23493 /* ShareInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareInfoViewController.h; sourceTree = "<group>"; };
+		EEC8A9BA21D2092900E23493 /* ShareInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShareInfoViewController.m; sourceTree = "<group>"; };
+		EEC8A9BE21D20DF400E23493 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		EEC8A9BF21D20DF400E23493 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		EEC8A9C021D20DF400E23493 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		EEC8A9C121D20DF400E23493 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		EEC8A9C221D20DF400E23493 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		EEC8A9C321D20DF400E23493 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		EEC8A9C421D20DF400E23493 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		EEC8A9C521D20DF400E23493 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		EEC8A9C621D20DF400E23493 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		EEC8A9C721D20DF400E23493 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		EEC8A9C821D20DF400E23493 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		EEC8A9C921D20DF400E23493 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		EEC8A9CA21D20DF400E23493 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		EEC8A9CB21D20DF400E23493 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		EEC8A9CC21D20DF400E23493 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		EEC8A9CD21D20DF400E23493 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		EEC8A9CE21D20DF400E23493 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		EEC8A9CF21D20DF400E23493 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		EEC8A9D021D20DF400E23493 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		EEC8A9D121D20DF400E23493 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		EEC8A9D221D20DF400E23493 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		EEC8A9D321D20DF400E23493 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		EEC8A9D421D20DF400E23493 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		EEC8A9D521D20DF400E23493 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		EEC8A9D621D20DF400E23493 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		EEC8A9E421D2252C00E23493 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		EEC8A9E521D2252C00E23493 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 		EEDFA9C521C4FD6A00C26017 /* OrderDetialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderDetialViewController.h; sourceTree = "<group>"; };
 		EEDFA9C621C4FD6A00C26017 /* OrderDetialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderDetialViewController.m; sourceTree = "<group>"; };
 		EEDFA9C821C4FE3500C26017 /* OrderDetialTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderDetialTableViewCell.h; sourceTree = "<group>"; };
@@ -491,6 +621,171 @@
 				EE16C07221C6949000C964A3 /* CommitSuccessView.m */,
 			);
 			path = CommitSuccessView;
+			sourceTree = "<group>";
+		};
+		EE16C07D21C8DFE900C964A3 /* StarsRatingBar */ = {
+			isa = PBXGroup;
+			children = (
+				EE16C07E21C8DFFF00C964A3 /* StarRatingBar.h */,
+				EE16C07F21C8DFFF00C964A3 /* StarRatingBar.m */,
+			);
+			path = StarsRatingBar;
+			sourceTree = "<group>";
+		};
+		EE16C08121C8E2DF00C964A3 /* AgentView */ = {
+			isa = PBXGroup;
+			children = (
+				EE16C08221C8E2F300C964A3 /* AgentView.h */,
+				EE16C08321C8E2F300C964A3 /* AgentView.m */,
+			);
+			path = AgentView;
+			sourceTree = "<group>";
+		};
+		EE16C08521C8F26100C964A3 /* OrderMainViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE16C08621C8F28C00C964A3 /* HomeOrderTableViewCell.h */,
+				EE16C08721C8F28C00C964A3 /* HomeOrderTableViewCell.m */,
+				EE16C08821C8F28C00C964A3 /* HomeOrderTableViewCell.xib */,
+			);
+			path = OrderMainViews;
+			sourceTree = "<group>";
+		};
+		EE27B03A21D31A2500AB0A19 /* IssueViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE27B03D21D31AC000AB0A19 /* Models */,
+				EE27B03C21D31ABB00AB0A19 /* Views */,
+				EE27B03B21D31AB400AB0A19 /* Controllers */,
+			);
+			path = IssueViewControllers;
+			sourceTree = "<group>";
+		};
+		EE27B03B21D31AB400AB0A19 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE27B03E21D31B1A00AB0A19 /* IssueTaskViewController.h */,
+				EE27B03F21D31B1A00AB0A19 /* IssueTaskViewController.m */,
+				EE27B05B21D32D7000AB0A19 /* IssureTrendViewController.h */,
+				EE27B05C21D32D7000AB0A19 /* IssureTrendViewController.m */,
+				EE27B07321D37B0900AB0A19 /* IssureVideoViewController.h */,
+				EE27B07421D37B0900AB0A19 /* IssureVideoViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EE27B03C21D31ABB00AB0A19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE27B06D21D3754100AB0A19 /* IssureImagesColletionViews */,
+				EE27B04621D31D4300AB0A19 /* IssueInputTableViewCell.h */,
+				EE27B04821D31D4400AB0A19 /* IssueInputTableViewCell.m */,
+				EE27B04721D31D4400AB0A19 /* IssueInputTableViewCell.xib */,
+				EE27B05021D3208400AB0A19 /* IssuePayTypeTableViewCell.h */,
+				EE27B05121D3208400AB0A19 /* IssuePayTypeTableViewCell.m */,
+				EE27B04D21D31E9C00AB0A19 /* IssuePayTypeTableViewCell.xib */,
+				EE27B05821D3220700AB0A19 /* IssureDetialTableViewCell.h */,
+				EE27B05921D3220700AB0A19 /* IssureDetialTableViewCell.m */,
+				EE27B05521D320E100AB0A19 /* IssureDetialTableViewCell.xib */,
+				EE27B05E21D32DFA00AB0A19 /* IssureTrendInputTableViewCell.h */,
+				EE27B05F21D32DFA00AB0A19 /* IssureTrendInputTableViewCell.m */,
+				EE27B06021D32DFA00AB0A19 /* IssureTrendInputTableViewCell.xib */,
+				EE27B06321D32F8A00AB0A19 /* IssureTrendTipTableViewCell.h */,
+				EE27B06421D32F8A00AB0A19 /* IssureTrendTipTableViewCell.m */,
+				EE27B06521D32F8A00AB0A19 /* IssureTrendTipTableViewCell.xib */,
+				EE27B06821D330F900AB0A19 /* IssureTrendImagesTableViewCell.h */,
+				EE27B06921D330F900AB0A19 /* IssureTrendImagesTableViewCell.m */,
+				EE27B06A21D330F900AB0A19 /* IssureTrendImagesTableViewCell.xib */,
+				EE27B07B21D37D6E00AB0A19 /* IssureVideoTableViewCell.h */,
+				EE27B07C21D37D6F00AB0A19 /* IssureVideoTableViewCell.m */,
+				EE27B07821D37C4200AB0A19 /* IssureVideoTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE27B03D21D31AC000AB0A19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE27B06D21D3754100AB0A19 /* IssureImagesColletionViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE27B06E21D3757500AB0A19 /* IssureImageCollectionViewCell.h */,
+				EE27B06F21D3757500AB0A19 /* IssureImageCollectionViewCell.m */,
+				EE27B07021D3757500AB0A19 /* IssureImageCollectionViewCell.xib */,
+			);
+			path = IssureImagesColletionViews;
+			sourceTree = "<group>";
+		};
+		EE27B07E21D384AF00AB0A19 /* VideoUploadView */ = {
+			isa = PBXGroup;
+			children = (
+				EE27B07F21D3850C00AB0A19 /* VideoUploadView.h */,
+				EE27B08021D3850C00AB0A19 /* VideoUploadView.m */,
+			);
+			path = VideoUploadView;
+			sourceTree = "<group>";
+		};
+		EE27B08521D4AA9200AB0A19 /* UserInfoViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE27B08621D4AACB00AB0A19 /* UserInfoIconTableViewCell.h */,
+				EE27B08721D4AACB00AB0A19 /* UserInfoIconTableViewCell.m */,
+				EE27B08821D4AACB00AB0A19 /* UserInfoIconTableViewCell.xib */,
+				EE9C53BD21D4AE910071920A /* UserInfoTableViewCell.h */,
+				EE9C53BE21D4AE920071920A /* UserInfoTableViewCell.m */,
+				EE9C53BA21D4AD6A0071920A /* UserInfoTableViewCell.xib */,
+			);
+			path = UserInfoViews;
+			sourceTree = "<group>";
+		};
+		EE2E25E021D0CE090016F3B7 /* UserObjectManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E25E221D0CE200016F3B7 /* Manager */,
+				EE2E25E121D0CE160016F3B7 /* Model */,
+			);
+			path = UserObjectManager;
+			sourceTree = "<group>";
+		};
+		EE2E25E121D0CE160016F3B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE2E25E221D0CE200016F3B7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E25E321D0CE380016F3B7 /* UserObjectManager.h */,
+				EE2E25E421D0CE380016F3B7 /* UserObjectManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		EE2E25E921D0F4D70016F3B7 /* MyfansCenterViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E25EF21D1C5950016F3B7 /* ImagesCollectionCells */,
+				EE2E25F021D1C6340016F3B7 /* PersonalCenterTableViewCell1.h */,
+				EE2E25F121D1C6350016F3B7 /* PersonalCenterTableViewCell1.m */,
+				EE2E25F221D1C6350016F3B7 /* PersonalCenterTableViewCell1.xib */,
+			);
+			path = MyfansCenterViews;
+			sourceTree = "<group>";
+		};
+		EE2E25EF21D1C5950016F3B7 /* ImagesCollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+				EE2E25FC21D1C8EF0016F3B7 /* ImagesCollectionViewCell.h */,
+				EE2E25FA21D1C8EE0016F3B7 /* ImagesCollectionViewCell.m */,
+				EE2E25FB21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib */,
+			);
+			path = ImagesCollectionCells;
 			sourceTree = "<group>";
 		};
 		EE7648AD21B61A800090D98A = {
@@ -574,7 +869,7 @@
 		EE7648ED21B61BC80090D98A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				EEB218F321BE578D0061017D /* Masonry */,
+				EEC8A9BC21D20DF400E23493 /* Masonry */,
 				EE7648F621B61C100090D98A /* View */,
 				EE7648F521B61C090090D98A /* Manager */,
 				EE7648F421B61C020090D98A /* Public */,
@@ -591,7 +886,7 @@
 				EE84696A21C1400100D3BF18 /* HomePageModule */,
 				EE84699B21C2427A00D3BF18 /* InformModule */,
 				EE84699A21C2426A00D3BF18 /* OrderModule */,
-				EEB218DA21BE55130061017D /* TableControllers */,
+				EEB218DA21BE55130061017D /* TableBarControllers */,
 				EE7648F021B61BE20090D98A /* LoginAndRegisterModule */,
 				EE7648EF21B61BDB0090D98A /* PersonalModule */,
 			);
@@ -621,6 +916,7 @@
 		EE7648F121B61BED0090D98A /* UtilsTool */ = {
 			isa = PBXGroup;
 			children = (
+				EEC8A97B21D1DD6500E23493 /* MenuPageScrollViewControllers */,
 			);
 			path = UtilsTool;
 			sourceTree = "<group>";
@@ -656,6 +952,8 @@
 		EE7648F521B61C090090D98A /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				EEC8A9E121D224FE00E23493 /* LocationManager */,
+				EE2E25E021D0CE090016F3B7 /* UserObjectManager */,
 				EE76498C21B67E5C0090D98A /* UserManager */,
 			);
 			path = Manager;
@@ -664,6 +962,10 @@
 		EE7648F621B61C100090D98A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE9C53C421D4CAB50071920A /* AgePickView */,
+				EE27B07E21D384AF00AB0A19 /* VideoUploadView */,
+				EE16C08121C8E2DF00C964A3 /* AgentView */,
+				EE16C07D21C8DFE900C964A3 /* StarsRatingBar */,
 				EE16C07021C6947100C964A3 /* CommitSuccessView */,
 				EE7658E621C625BB0017BD3A /* PasswordView */,
 				EE7658D221C5FD650017BD3A /* PayTypeView */,
@@ -1009,6 +1311,10 @@
 		EE76499721B6837C0090D98A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE2E25DA21CC94140016F3B7 /* LoginModel.h */,
+				EE2E25DB21CC94140016F3B7 /* LoginModel.m */,
+				EE2E25DD21CC942B0016F3B7 /* registerModel.h */,
+				EE2E25DE21CC942B0016F3B7 /* registerModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1104,6 +1410,7 @@
 		EE84696B21C1401600D3BF18 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				EEC8A9A621D2057D00E23493 /* ShareCommeViewControllers */,
 				EEB218E121BE55D90061017D /* HomePageViewController.h */,
 				EEB218E221BE55D90061017D /* HomePageViewController.m */,
 			);
@@ -1204,6 +1511,7 @@
 		EE8469A021C242B800D3BF18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE16C08521C8F26100C964A3 /* OrderMainViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1215,14 +1523,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		EEB218DA21BE55130061017D /* TableControllers */ = {
+		EE9C53C421D4CAB50071920A /* AgePickView */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C53C521D4CACE0071920A /* AgePickView.h */,
+				EE9C53C621D4CACE0071920A /* AgePickView.m */,
+			);
+			path = AgePickView;
+			sourceTree = "<group>";
+		};
+		EEB218DA21BE55130061017D /* TableBarControllers */ = {
 			isa = PBXGroup;
 			children = (
 				EEB218DD21BE552D0061017D /* Models */,
 				EEB218DC21BE55270061017D /* Views */,
 				EEB218DB21BE55210061017D /* Controllers */,
 			);
-			path = TableControllers;
+			path = TableBarControllers;
 			sourceTree = "<group>";
 		};
 		EEB218DB21BE55210061017D /* Controllers */ = {
@@ -1248,46 +1565,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		EEB218F321BE578D0061017D /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				EEB218F421BE57990061017D /* Masonry */,
-			);
-			path = Masonry;
-			sourceTree = "<group>";
-		};
-		EEB218F421BE57990061017D /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				EEB218F521BE57990061017D /* MASCompositeConstraint.h */,
-				EEB218F621BE57990061017D /* NSLayoutConstraint+MASDebugAdditions.m */,
-				EEB218F721BE57990061017D /* MASConstraint+Private.h */,
-				EEB218F821BE57990061017D /* MASLayoutConstraint.h */,
-				EEB218F921BE57990061017D /* NSArray+MASShorthandAdditions.h */,
-				EEB218FA21BE57990061017D /* MASConstraintMaker.h */,
-				EEB218FB21BE57990061017D /* View+MASAdditions.h */,
-				EEB218FC21BE57990061017D /* NSArray+MASAdditions.h */,
-				EEB218FD21BE57990061017D /* MASUtilities.h */,
-				EEB218FE21BE57990061017D /* MASViewAttribute.h */,
-				EEB218FF21BE57990061017D /* ViewController+MASAdditions.m */,
-				EEB2190021BE57990061017D /* MASViewConstraint.h */,
-				EEB2190121BE57990061017D /* MASConstraint.h */,
-				EEB2190221BE57990061017D /* NSLayoutConstraint+MASDebugAdditions.h */,
-				EEB2190321BE57990061017D /* MASCompositeConstraint.m */,
-				EEB2190421BE57990061017D /* MASConstraintMaker.m */,
-				EEB2190521BE57990061017D /* MASLayoutConstraint.m */,
-				EEB2190621BE57990061017D /* NSArray+MASAdditions.m */,
-				EEB2190721BE57990061017D /* View+MASAdditions.m */,
-				EEB2190821BE57990061017D /* View+MASShorthandAdditions.h */,
-				EEB2190921BE57990061017D /* Masonry.h */,
-				EEB2190A21BE57990061017D /* MASConstraint.m */,
-				EEB2190B21BE57990061017D /* ViewController+MASAdditions.h */,
-				EEB2190C21BE57990061017D /* MASViewConstraint.m */,
-				EEB2190D21BE57990061017D /* MASViewAttribute.m */,
-			);
-			path = Masonry;
 			sourceTree = "<group>";
 		};
 		EEB2191821BE57F90061017D /* UIView */ = {
@@ -1357,6 +1634,10 @@
 				EEC2005321C3CBAE00F49365 /* RechargeBalanceViewController.m */,
 				EE7658EA21C62E120017BD3A /* AddBankViewController.h */,
 				EE7658EB21C62E120017BD3A /* AddBankViewController.m */,
+				EE27B08221D4AA1800AB0A19 /* UserInfoViewController.h */,
+				EE27B08321D4AA1800AB0A19 /* UserInfoViewController.m */,
+				EE9C53C021D4C0030071920A /* UserNickNameAlterViewController.h */,
+				EE9C53C121D4C0030071920A /* UserNickNameAlterViewController.m */,
 			);
 			path = PersonUserViewcontrollers;
 			sourceTree = "<group>";
@@ -1373,6 +1654,7 @@
 		EEB2199121BFE2950061017D /* PersonUserViews */ = {
 			isa = PBXGroup;
 			children = (
+				EE27B08521D4AA9200AB0A19 /* UserInfoViews */,
 				EEC2005621C3CC8100F49365 /* RechargeAndWithdrawViews */,
 				EEC2005521C3CC6A00F49365 /* BalanceViews */,
 			);
@@ -1386,6 +1668,10 @@
 				EEB219A821C0915E0061017D /* MyFollowViewController.m */,
 				EEB219B521C0976C0061017D /* MyFansViewController.h */,
 				EEB219B621C0976C0061017D /* MyFansViewController.m */,
+				EE16C08B21C9145500C964A3 /* MyCommitsViewController.h */,
+				EE16C08C21C9145500C964A3 /* MyCommitsViewController.m */,
+				EE2E25E621D0F4370016F3B7 /* MyFansCenterViewController.h */,
+				EE2E25E721D0F4370016F3B7 /* MyFansCenterViewController.m */,
 			);
 			path = PersonSubUserControllers;
 			sourceTree = "<group>";
@@ -1393,9 +1679,13 @@
 		EEB219AA21C091A90061017D /* PersonSubUserViews */ = {
 			isa = PBXGroup;
 			children = (
+				EE2E25E921D0F4D70016F3B7 /* MyfansCenterViews */,
 				EEB219B021C093D20061017D /* MyFollowTableViewCell.h */,
 				EEB219B121C093D20061017D /* MyFollowTableViewCell.m */,
 				EEB219B221C093D20061017D /* MyFollowTableViewCell.xib */,
+				EE16C08E21C914A200C964A3 /* MyCommitTableViewCell.h */,
+				EE16C08F21C914A200C964A3 /* MyCommitTableViewCell.m */,
+				EE16C09021C914A200C964A3 /* MyCommitTableViewCell.xib */,
 			);
 			path = PersonSubUserViews;
 			sourceTree = "<group>";
@@ -1415,6 +1705,10 @@
 				EEDFA9C621C4FD6A00C26017 /* OrderDetialViewController.m */,
 				EE16C06121C68B8600C964A3 /* DetialCommitViewController.h */,
 				EE16C06221C68B8600C964A3 /* DetialCommitViewController.m */,
+				EE9C53C821D4CFD20071920A /* PersonalAgentViewController.h */,
+				EE9C53C921D4CFD20071920A /* PersonalAgentViewController.m */,
+				EE9C53CB21D4D23C0071920A /* PersonalPopularizeViewController.h */,
+				EE9C53CC21D4D23C0071920A /* PersonalPopularizeViewController.m */,
 			);
 			path = PersonalLastUserControllers;
 			sourceTree = "<group>";
@@ -1467,18 +1761,192 @@
 		EEC2005C21C3DC2E00F49365 /* PersonUserViews */ = {
 			isa = PBXGroup;
 			children = (
-				EEC2005D21C3DC3C00F49365 /* RechargeAndWithdrawViews */,
 			);
 			path = PersonUserViews;
 			sourceTree = "<group>";
 		};
-		EEC2005D21C3DC3C00F49365 /* RechargeAndWithdrawViews */ = {
+		EEC8A97B21D1DD6500E23493 /* MenuPageScrollViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EEC2005E21C3DC6600F49365 /* RechargeAndDrawTypeModel.h */,
-				EEC2005F21C3DC6600F49365 /* RechargeAndDrawTypeModel.m */,
+				EEC8A9A321D1DFC700E23493 /* CursorView.h */,
+				EEC8A9A421D1DFC700E23493 /* CursorView.m */,
 			);
-			path = RechargeAndWithdrawViews;
+			path = MenuPageScrollViewControllers;
+			sourceTree = "<group>";
+		};
+		EEC8A9A621D2057D00E23493 /* ShareCommeViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9A921D2074C00E23493 /* ShareInfosModule */,
+				EEC8A9A821D2071A00E23493 /* ShareActivityModule */,
+				EEC8A9A721D2070300E23493 /* SharePeopleModule */,
+			);
+			path = ShareCommeViewControllers;
+			sourceTree = "<group>";
+		};
+		EEC8A9A721D2070300E23493 /* SharePeopleModule */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9B221D2085B00E23493 /* Models */,
+				EEC8A9B121D2085400E23493 /* Views */,
+				EEC8A9B021D2084B00E23493 /* Controllers */,
+			);
+			path = SharePeopleModule;
+			sourceTree = "<group>";
+		};
+		EEC8A9A821D2071A00E23493 /* ShareActivityModule */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9AF21D2084400E23493 /* Models */,
+				EEC8A9AE21D2083D00E23493 /* Views */,
+				EEC8A9AD21D2082600E23493 /* Controllers */,
+			);
+			path = ShareActivityModule;
+			sourceTree = "<group>";
+		};
+		EEC8A9A921D2074C00E23493 /* ShareInfosModule */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9AC21D207B500E23493 /* Models */,
+				EEC8A9AB21D207AF00E23493 /* Views */,
+				EEC8A9AA21D207A200E23493 /* Controllers */,
+			);
+			path = ShareInfosModule;
+			sourceTree = "<group>";
+		};
+		EEC8A9AA21D207A200E23493 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9B921D2092900E23493 /* ShareInfoViewController.h */,
+				EEC8A9BA21D2092900E23493 /* ShareInfoViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EEC8A9AB21D207AF00E23493 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEC8A9AC21D207B500E23493 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEC8A9AD21D2082600E23493 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9B621D2090900E23493 /* ShareAvtivityViewController.h */,
+				EEC8A9B721D2090900E23493 /* ShareAvtivityViewController.m */,
+				EE27B03A21D31A2500AB0A19 /* IssueViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EEC8A9AE21D2083D00E23493 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEC8A9AF21D2084400E23493 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEC8A9B021D2084B00E23493 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9B321D208F900E23493 /* SharePeopleViewController.h */,
+				EEC8A9B421D208F900E23493 /* SharePeopleViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EEC8A9B121D2085400E23493 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEC8A9B221D2085B00E23493 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEC8A9BC21D20DF400E23493 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9BD21D20DF400E23493 /* Masonry */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		EEC8A9BD21D20DF400E23493 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9BE21D20DF400E23493 /* MASCompositeConstraint.h */,
+				EEC8A9BF21D20DF400E23493 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				EEC8A9C021D20DF400E23493 /* MASConstraint+Private.h */,
+				EEC8A9C121D20DF400E23493 /* MASLayoutConstraint.h */,
+				EEC8A9C221D20DF400E23493 /* NSArray+MASShorthandAdditions.h */,
+				EEC8A9C321D20DF400E23493 /* MASConstraintMaker.h */,
+				EEC8A9C421D20DF400E23493 /* View+MASAdditions.h */,
+				EEC8A9C521D20DF400E23493 /* NSArray+MASAdditions.h */,
+				EEC8A9C621D20DF400E23493 /* MASUtilities.h */,
+				EEC8A9C721D20DF400E23493 /* MASViewAttribute.h */,
+				EEC8A9C821D20DF400E23493 /* ViewController+MASAdditions.m */,
+				EEC8A9C921D20DF400E23493 /* MASViewConstraint.h */,
+				EEC8A9CA21D20DF400E23493 /* MASConstraint.h */,
+				EEC8A9CB21D20DF400E23493 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				EEC8A9CC21D20DF400E23493 /* MASCompositeConstraint.m */,
+				EEC8A9CD21D20DF400E23493 /* MASConstraintMaker.m */,
+				EEC8A9CE21D20DF400E23493 /* MASLayoutConstraint.m */,
+				EEC8A9CF21D20DF400E23493 /* NSArray+MASAdditions.m */,
+				EEC8A9D021D20DF400E23493 /* View+MASAdditions.m */,
+				EEC8A9D121D20DF400E23493 /* View+MASShorthandAdditions.h */,
+				EEC8A9D221D20DF400E23493 /* Masonry.h */,
+				EEC8A9D321D20DF400E23493 /* MASConstraint.m */,
+				EEC8A9D421D20DF400E23493 /* ViewController+MASAdditions.h */,
+				EEC8A9D521D20DF400E23493 /* MASViewConstraint.m */,
+				EEC8A9D621D20DF400E23493 /* MASViewAttribute.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		EEC8A9E121D224FE00E23493 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9E321D2251300E23493 /* Manager */,
+				EEC8A9E221D2250B00E23493 /* Model */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		EEC8A9E221D2250B00E23493 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEC8A9E321D2251300E23493 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EEC8A9E421D2252C00E23493 /* LocationManager.h */,
+				EEC8A9E521D2252C00E23493 /* LocationManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1492,6 +1960,7 @@
 				EE7648B221B61A800090D98A /* Sources */,
 				EE7648B321B61A800090D98A /* Frameworks */,
 				EE7648B421B61A800090D98A /* Resources */,
+				559D9D9DA6830509480BD6BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1585,11 +2054,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE27B07221D3757500AB0A19 /* IssureImageCollectionViewCell.xib in Resources */,
 				EEB2196E21BE8E320061017D /* PersonSubHeaderTableViewCell.xib in Resources */,
+				EE27B07A21D37C4200AB0A19 /* IssureVideoTableViewCell.xib in Resources */,
 				EEB2199621BFE2BE0061017D /* BalanceHeaderTableViewCell.xib in Resources */,
 				EEB219A521BFE91B0061017D /* BalanceListTableViewCell.xib in Resources */,
+				EE2E25F421D1C6350016F3B7 /* PersonalCenterTableViewCell1.xib in Resources */,
+				EE27B06C21D330F900AB0A19 /* IssureTrendImagesTableViewCell.xib in Resources */,
 				EE84698C21C14DE300D3BF18 /* AuthenSureTableViewCell.xib in Resources */,
 				EE76591021C63C240017BD3A /* AddBankSureTableViewCell.xib in Resources */,
+				EE27B04F21D31E9C00AB0A19 /* IssuePayTypeTableViewCell.xib in Resources */,
 				EE7658E521C602C60017BD3A /* PayTypeTitleTableViewCell.xib in Resources */,
 				EE7649B621B69E040090D98A /* PhoneCodeTableViewCell.xib in Resources */,
 				EE7648C621B61A820090D98A /* LaunchScreen.storyboard in Resources */,
@@ -1600,10 +2074,13 @@
 				EE7649A421B685900090D98A /* LoginInputTableViewCell.xib in Resources */,
 				EEC2005B21C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.xib in Resources */,
 				EE7658DB21C5FF120017BD3A /* PayTpyeTableViewCell.xib in Resources */,
+				EE16C08A21C8F28C00C964A3 /* HomeOrderTableViewCell.xib in Resources */,
 				EE7658FB21C636970017BD3A /* AddBankInputTableViewCell.xib in Resources */,
+				EE2E25FE21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib in Resources */,
 				EE7648C321B61A820090D98A /* Assets.xcassets in Resources */,
 				EE76590521C638C70017BD3A /* AddBankCodeTableViewCell.xib in Resources */,
 				EE7658D121C5F6090017BD3A /* OrdertialCannerBtnTableViewCell.xib in Resources */,
+				EE27B06221D32DFA00AB0A19 /* IssureTrendInputTableViewCell.xib in Resources */,
 				EE7649CC21B6AB700090D98A /* ResertSureTableViewCell.xib in Resources */,
 				EE76499F21B684E70090D98A /* LoginTitleTableViewCell.xib in Resources */,
 				EE7658F221C62E770017BD3A /* AddBankHeaderTableViewCell.xib in Resources */,
@@ -1615,10 +2092,16 @@
 				EEB2196021BE78870061017D /* PersonalHeaderTableViewCell.xib in Resources */,
 				EE16C06E21C68F1500C964A3 /* CommiitTableViewCell.xib in Resources */,
 				EE84698121C14CD000D3BF18 /* AuthenInputTableViewCell.xib in Resources */,
+				EE27B04921D31D4400AB0A19 /* IssueInputTableViewCell.xib in Resources */,
 				EE7648C121B61A810090D98A /* Main.storyboard in Resources */,
+				EE9C53BC21D4AD6A0071920A /* UserInfoTableViewCell.xib in Resources */,
+				EE16C09221C914A200C964A3 /* MyCommitTableViewCell.xib in Resources */,
+				EE27B05721D320E100AB0A19 /* IssureDetialTableViewCell.xib in Resources */,
+				EE27B06721D32F8A00AB0A19 /* IssureTrendTipTableViewCell.xib in Resources */,
 				EEB219B421C093D20061017D /* MyFollowTableViewCell.xib in Resources */,
 				EE84696921C13D2600D3BF18 /* MyRecommendCodeTableViewCell.xib in Resources */,
 				EEB2197D21BEACA70061017D /* PersonalCenterTableViewCell.xib in Resources */,
+				EE27B08A21D4AACB00AB0A19 /* UserInfoIconTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1661,6 +2144,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		559D9D9DA6830509480BD6BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zhongligongxiang/Pods-zhongligongxiang-resources.sh",
+				"${PODS_ROOT}/AMap2DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zhongligongxiang/Pods-zhongligongxiang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -1668,8 +2173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2E25E821D0F4370016F3B7 /* MyFansCenterViewController.m in Sources */,
 				EE76496F21B678BC0090D98A /* UIScrollView+MJExtension.m in Sources */,
+				EE27B04021D31B1A00AB0A19 /* IssueTaskViewController.m in Sources */,
+				EE27B08121D3850C00AB0A19 /* VideoUploadView.m in Sources */,
+				EE9C53C221D4C0030071920A /* UserNickNameAlterViewController.m in Sources */,
+				EE2E25F321D1C6350016F3B7 /* PersonalCenterTableViewCell1.m in Sources */,
 				EE76492321B661FE0090D98A /* UIImageView+Convenience.m in Sources */,
+				EEC8A9D821D20DF400E23493 /* ViewController+MASAdditions.m in Sources */,
 				EEB219A921C0915E0061017D /* MyFollowViewController.m in Sources */,
 				EE76495B21B6773F0090D98A /* MJRefreshAutoFooter.m in Sources */,
 				EEDFA9C721C4FD6A00C26017 /* OrderDetialViewController.m in Sources */,
@@ -1677,11 +2188,14 @@
 				EE84697221C1497100D3BF18 /* AuthenViewController.m in Sources */,
 				EE76497521B6793B0090D98A /* UIScrollView+MJRefresh.m in Sources */,
 				EE7658DA21C5FF120017BD3A /* PayTpyeTableViewCell.m in Sources */,
+				EE27B06121D32DFA00AB0A19 /* IssureTrendInputTableViewCell.m in Sources */,
+				EEC8A9D721D20DF400E23493 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				EEC8A9BB21D2092900E23493 /* ShareInfoViewController.m in Sources */,
 				EE84696821C13D2600D3BF18 /* MyRecommendCodeTableViewCell.m in Sources */,
 				EE7658EC21C62E120017BD3A /* AddBankViewController.m in Sources */,
 				EE76494621B675F70090D98A /* MJRefreshAutoStateFooter.m in Sources */,
-				EEB2191721BE57990061017D /* MASViewAttribute.m in Sources */,
 				EEB219C021C0EC9E0061017D /* SharedListTableViewCell.m in Sources */,
+				EE27B08921D4AACB00AB0A19 /* UserInfoIconTableViewCell.m in Sources */,
 				EE76590621C638C70017BD3A /* AddBankCodeTableViewCell.m in Sources */,
 				EE7649C221B6A9870090D98A /* ResetSecretViewController.m in Sources */,
 				EEB219BB21C0EBF30061017D /* SharedListViewController.m in Sources */,
@@ -1690,86 +2204,111 @@
 				EE7658E921C625DC0017BD3A /* PasswordView.m in Sources */,
 				EE84695221C134C900D3BF18 /* BillLsitViewController.m in Sources */,
 				EEB218F221BE56C70061017D /* ZDQtabBar.m in Sources */,
+				EE27B06B21D330F900AB0A19 /* IssureTrendImagesTableViewCell.m in Sources */,
+				EE27B05221D3208400AB0A19 /* IssuePayTypeTableViewCell.m in Sources */,
 				EEB218E921BE563D0061017D /* HomeNewsViewController.m in Sources */,
 				EE76494F21B676820090D98A /* MJRefreshBackStateFooter.m in Sources */,
 				EE84698B21C14DE300D3BF18 /* AuthenSureTableViewCell.m in Sources */,
+				EE27B07D21D37D6F00AB0A19 /* IssureVideoTableViewCell.m in Sources */,
+				EEC8A9DE21D20DF400E23493 /* MASConstraint.m in Sources */,
 				EE76492821B6677D0090D98A /* BaseNavigationController.m in Sources */,
 				EE16C06421C68B8600C964A3 /* DetialCommitViewController.m in Sources */,
 				EE76591321C644CB0017BD3A /* PasswordOtherView.m in Sources */,
 				EE76498B21B67DFF0090D98A /* UIViewController+Convenience.m in Sources */,
 				EE76495821B677110090D98A /* MJRefreshStateHeader.m in Sources */,
+				EE16C08021C8DFFF00C964A3 /* StarRatingBar.m in Sources */,
 				EEC2005A21C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.m in Sources */,
-				EEB2191621BE57990061017D /* MASViewConstraint.m in Sources */,
 				EE7648C921B61A820090D98A /* main.m in Sources */,
 				EE7649B521B69E040090D98A /* PhoneCodeTableViewCell.m in Sources */,
+				EEC8A9DD21D20DF400E23493 /* View+MASAdditions.m in Sources */,
 				EE76496121B677940090D98A /* MJRefreshComponent.m in Sources */,
 				EE76495221B676BB0090D98A /* MJRefreshGifHeader.m in Sources */,
 				EE7658FC21C636970017BD3A /* AddBankInputTableViewCell.m in Sources */,
 				EE7649AE21B6894A0090D98A /* LoginAndRegisterTableViewCell.m in Sources */,
 				EE7658E421C602C60017BD3A /* PayTypeTitleTableViewCell.m in Sources */,
-				EEB2191321BE57990061017D /* NSArray+MASAdditions.m in Sources */,
+				EE16C08D21C9145500C964A3 /* MyCommitsViewController.m in Sources */,
 				EE84698221C14CD000D3BF18 /* AuthenInputTableViewCell.m in Sources */,
 				EE7649B121B690E00090D98A /* RegisterViewController.m in Sources */,
 				EE7649A321B685900090D98A /* LoginInputTableViewCell.m in Sources */,
 				EE7658D521C5FD860017BD3A /* PayTypeView.m in Sources */,
+				EE9C53CA21D4CFD20071920A /* PersonalAgentViewController.m in Sources */,
 				EE7658F121C62E770017BD3A /* AddBankHeaderTableViewCell.m in Sources */,
-				EEB2191021BE57990061017D /* MASCompositeConstraint.m in Sources */,
+				EE16C09121C914A200C964A3 /* MyCommitTableViewCell.m in Sources */,
 				EEB2197321BE9BC20061017D /* PersonalUserTableViewCell.m in Sources */,
 				EE76494C21B676580090D98A /* MJRefreshBackNormalFooter.m in Sources */,
+				EEC8A9E621D2252C00E23493 /* LocationManager.m in Sources */,
+				EEC8A9DB21D20DF400E23493 /* MASLayoutConstraint.m in Sources */,
 				EE76491C21B650B20090D98A /* BaseNetwork.m in Sources */,
 				EE84699921C23CBF00D3BF18 /* AssistView.m in Sources */,
+				EE9C53CD21D4D23C0071920A /* PersonalPopularizeViewController.m in Sources */,
 				EE76497C21B679BC0090D98A /* MJRefreshConst.m in Sources */,
 				EE7648BB21B61A810090D98A /* AppDelegate.m in Sources */,
 				EE16C06F21C68F1500C964A3 /* CommiitTableViewCell.m in Sources */,
-				EEB2190F21BE57990061017D /* ViewController+MASAdditions.m in Sources */,
 				EE76498321B67D550090D98A /* UILabel+Convenience.m in Sources */,
 				EE76497821B679650090D98A /* UIView+MJExtension.m in Sources */,
 				EEB2191B21BE581B0061017D /* UIView+XPFExtension.m in Sources */,
 				EE76494321B6759D0090D98A /* MJRefreshAutoNormalFooter.m in Sources */,
+				EE27B05D21D32D7000AB0A19 /* IssureTrendViewController.m in Sources */,
 				EEB2199A21BFE6B50061017D /* BalanceConsumeTitleTableViewCell.m in Sources */,
-				EEB2191121BE57990061017D /* MASConstraintMaker.m in Sources */,
 				EE76491F21B661220090D98A /* PublicManager.m in Sources */,
 				EEB219B721C0976C0061017D /* MyFansViewController.m in Sources */,
+				EE27B08421D4AA1800AB0A19 /* UserInfoViewController.m in Sources */,
+				EEC8A9A521D1DFC700E23493 /* CursorView.m in Sources */,
+				EEC8A9B821D2090900E23493 /* ShareAvtivityViewController.m in Sources */,
+				EE2E25DC21CC94140016F3B7 /* LoginModel.m in Sources */,
 				EE76499421B67EB30090D98A /* UserManager.m in Sources */,
+				EE2E25E521D0CE380016F3B7 /* UserObjectManager.m in Sources */,
 				EEB2196F21BE8E320061017D /* PersonSubHeaderTableViewCell.m in Sources */,
 				EEC2005421C3CBAE00F49365 /* RechargeBalanceViewController.m in Sources */,
 				EE76499121B67E8F0090D98A /* UserModel.m in Sources */,
 				EE76496C21B6788B0090D98A /* NSBundle+MJRefresh.m in Sources */,
 				EE76495E21B677650090D98A /* MJRefreshBackFooter.m in Sources */,
-				EEC2006021C3DC6600F49365 /* RechargeAndDrawTypeModel.m in Sources */,
+				EEC8A9E021D20DF400E23493 /* MASViewAttribute.m in Sources */,
 				EE76499E21B684E70090D98A /* LoginTitleTableViewCell.m in Sources */,
 				EEB219B321C093D20061017D /* MyFollowTableViewCell.m in Sources */,
-				EEB2191521BE57990061017D /* MASConstraint.m in Sources */,
 				EEDFA9CB21C4FE3600C26017 /* OrderDetialTableViewCell.m in Sources */,
+				EE2E25DF21CC942B0016F3B7 /* registerModel.m in Sources */,
 				EE76494021B675590090D98A /* MJRefreshAutoGifFooter.m in Sources */,
 				EE76496421B677D60090D98A /* MJRefreshFooter.m in Sources */,
 				EEB219A421BFE91B0061017D /* BalanceListTableViewCell.m in Sources */,
 				EE16C07321C6949000C964A3 /* CommitSuccessView.m in Sources */,
+				EEC8A9DC21D20DF400E23493 /* NSArray+MASAdditions.m in Sources */,
+				EEC8A9B521D208F900E23493 /* SharePeopleViewController.m in Sources */,
+				EEC8A9DF21D20DF400E23493 /* MASViewConstraint.m in Sources */,
 				EEB218EF21BE56700061017D /* HomeOrdersViewController.m in Sources */,
-				EEB2191421BE57990061017D /* View+MASAdditions.m in Sources */,
 				EE76492E21B6686B0090D98A /* BaseTitleViewController.m in Sources */,
-				EEB2190E21BE57990061017D /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				EE27B06621D32F8A00AB0A19 /* IssureTrendTipTableViewCell.m in Sources */,
 				EEB218E321BE55D90061017D /* HomePageViewController.m in Sources */,
 				EE76493121B670DF0090D98A /* BaseWebViewController.m in Sources */,
 				EE84697721C14A3000D3BF18 /* AuthenImageTableViewCell.m in Sources */,
+				EE27B07121D3757500AB0A19 /* IssureImageCollectionViewCell.m in Sources */,
 				EE76496721B678040090D98A /* MJRefreshHeader.m in Sources */,
+				EE27B07521D37B0900AB0A19 /* IssureVideoViewController.m in Sources */,
 				EE84695C21C1387800D3BF18 /* BillListTableViewCell.m in Sources */,
 				EE84695F21C13B2100D3BF18 /* MyRecommedCodeViewController.m in Sources */,
 				EE76493621B673460090D98A /* UIScrollView+MJRefreshEX.m in Sources */,
+				EE9C53C721D4CACE0071920A /* AgePickView.m in Sources */,
 				EE76499A21B6839F0090D98A /* LoginViewController.m in Sources */,
 				EE76494921B676260090D98A /* MJRefreshBackGifFooter.m in Sources */,
 				EE7658D021C5F6090017BD3A /* OrdertialCannerBtnTableViewCell.m in Sources */,
 				EEB2199521BFE2BE0061017D /* BalanceHeaderTableViewCell.m in Sources */,
+				EE16C08921C8F28C00C964A3 /* HomeOrderTableViewCell.m in Sources */,
+				EE16C08421C8E2F300C964A3 /* AgentView.m in Sources */,
 				EE7649CB21B6AB700090D98A /* ResertSureTableViewCell.m in Sources */,
 				EE7649BF21B6A4B10090D98A /* NSString+Attribute.m in Sources */,
 				EE76491421B64F6D0090D98A /* PublicMethod.m in Sources */,
+				EEC8A9DA21D20DF400E23493 /* MASConstraintMaker.m in Sources */,
+				EE2E25FD21D1C8EF0016F3B7 /* ImagesCollectionViewCell.m in Sources */,
 				EEB2197E21BEACA70061017D /* PersonalCenterTableViewCell.m in Sources */,
+				EE27B04A21D31D4400AB0A19 /* IssueInputTableViewCell.m in Sources */,
 				EEB2195F21BE78870061017D /* PersonalHeaderTableViewCell.m in Sources */,
-				EEB2191221BE57990061017D /* MASLayoutConstraint.m in Sources */,
+				EEC8A9D921D20DF400E23493 /* MASCompositeConstraint.m in Sources */,
 				EEB218E021BE557E0061017D /* ZDQTabBarController.m in Sources */,
+				EE27B05A21D3220700AB0A19 /* IssureDetialTableViewCell.m in Sources */,
 				EE76590F21C63C240017BD3A /* AddBankSureTableViewCell.m in Sources */,
 				EE7649BA21B69F7D0090D98A /* RegisterTableViewCell.m in Sources */,
 				EEB2199021BFE22B0061017D /* MyBalanceViewController.m in Sources */,
+				EE9C53BF21D4AE920071920A /* UserInfoTableViewCell.m in Sources */,
 				EE76495521B676EB0090D98A /* MJRefreshNormalHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

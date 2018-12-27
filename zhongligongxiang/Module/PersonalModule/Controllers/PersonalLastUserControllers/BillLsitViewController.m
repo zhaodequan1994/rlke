@@ -86,7 +86,6 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
     BillListTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"BillListTableViewCell" forIndexPath:indexPath];
     
     cell.fatherController = self;

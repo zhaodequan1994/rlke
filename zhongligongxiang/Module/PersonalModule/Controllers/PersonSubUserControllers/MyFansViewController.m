@@ -11,6 +11,9 @@
 //Cells
 #import "MyFollowTableViewCell.h"
 
+//Controllers
+#import "MyFansCenterViewController.h"
+
 @interface MyFansViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView * tableView;
@@ -22,7 +25,7 @@
 -(UITableView *)tableView{
     
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT ) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 64) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = RGB(243, 243, 243);
@@ -89,6 +92,17 @@
     MyFollowTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyFollowTableViewCell" forIndexPath:indexPath];
     
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    self.hidesBottomBarWhenPushed = YES;
+    
+    MyFansCenterViewController * mfvc = [[MyFansCenterViewController alloc] init];
+    
+    [self.navigationController pushViewController:mfvc animated:YES];
 }
 
 @end

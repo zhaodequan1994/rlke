@@ -15,18 +15,24 @@
 
 @interface RechargeAndWithDrawHeaderTableViewCell ()
 
-@property (nonatomic,strong) RechargeAndDrawTypeModel * rechargeModel;
 @end
 
 @implementation RechargeAndWithDrawHeaderTableViewCell
 
--(void)addContntModel:(RechargeAndDrawTypeModel *)rechargeModel{
+-(void)addContntModel:(BOOL)isRechagre{
     
-    self.moneyTitleTypeLabel.text = rechargeModel.moneyTitleType;
-    [self.rechargeAndDrawBtn setTitle:rechargeModel.title forState:UIControlStateNormal];
-    self.tipsLabel.text = rechargeModel.tipsText;
+    if (isRechagre) {
+        
+        self.moneyTitleTypeLabel.text = @"充值金额";
+        [self.rechargeAndDrawBtn setTitle:@"充值余额" forState:UIControlStateNormal];
+        self.tipsLabel.text = @"温馨提示: 您充值的金额可用于支付发布的求助订单，也可随时提现使用！";
+        
+    }else{
+        
+        self.moneyTitleTypeLabel.text = @"提现金额";
+        [self.rechargeAndDrawBtn setTitle:@"立即提现" forState:UIControlStateNormal];
+    }
     
-    self.rechargeModel = rechargeModel;
 }
 
 - (void)awakeFromNib {
@@ -54,7 +60,7 @@
 -(void)moneyTypeBtnClick{
     
     PayTypeView * payTypeView = [[PayTypeView alloc] initWithFrame:SCREEN_RECT];
-    if (self.rechargeModel.isCharge) {
+    if (self.isRechagre) {
         
         payTypeView.title = @"选择充值方式";
     }else{

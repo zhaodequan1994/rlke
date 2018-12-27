@@ -24,6 +24,9 @@
     self.contentsView1.layer.shadowRadius = 2;// 阴影扩散的范围控制
     self.contentsView1.layer.shadowOffset = CGSizeMake(1, 1);// 阴影的范围
     
+    self.userImageView.layer.masksToBounds = YES;
+    self.userImageView.layer.cornerRadius = self.userImageView.frame.size.height/2;
+    
     self.contentsView.layer.masksToBounds = YES;
     self.contentsView.layer.cornerRadius = 5.0f;
     

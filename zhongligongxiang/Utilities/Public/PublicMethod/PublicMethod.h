@@ -26,6 +26,38 @@ NS_ASSUME_NONNULL_BEGIN
 //获得 Window
 + (UIWindow *)getWindow;
 
+/**
+ *  获取当前系统版本
+ */
++ (NSString *)getCurrentVersion;
+
+
+#pragma mark  ********   call phone  ***********
+
++ (void)callPhone:(UIViewController *)controller phone:(NSString *)phone;
+
+
+#pragma mark  *********  OR code  ***********
+
+/**
+ *  QRurl :头像的链接
+ *  messages: 二维码里面存放的信息
+ */
+
++ (UIImage *)QRurl:(NSString *)url messages:(NSString *)message;
+
+#pragma mark *******  get date time  *******
+/**
+ *
+ *  messages: 获取当前时间戳
+ */
++(NSString*)getCurrentTimestamp;
+
+#pragma mark  ******   alert  View  *********
+
++ (void)alertControllerViewWithTitle:(NSString *)title sender:(UIViewController *)sender;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

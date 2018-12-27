@@ -11,6 +11,18 @@
 #import "SharedListViewController.h"
 #import "BillLsitViewController.h"
 #import "MyRecommedCodeViewController.h"
+#import "AuthenViewController.h"
+#import "PersonalAgentViewController.h"
+
+//View
+#import "AgentView.h"
+
+
+@interface PersonalCenterTableViewCell ()
+
+@property (nonatomic,strong) AgentView * agentView;
+
+@end
 
 @implementation PersonalCenterTableViewCell
 
@@ -30,6 +42,10 @@
     [self.grabBtn addTarget:self action:@selector(grabBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.billBtn addTarget:self action:@selector(billBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.recommendBtn addTarget:self action:@selector(recommendBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.agentBtn addTarget:self action:@selector(agentBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.authenBtn addTarget:self action:@selector(authenBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.customBtn addTarget:self action:@selector(customBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.evaluateBtn addTarget:self action:@selector(evaluateBtnClick) forControlEvents:UIControlEventTouchUpInside];
 
 }
 
@@ -56,6 +72,11 @@
     self.fatherController.hidesBottomBarWhenPushed = NO;
 }
 
+-(void)evaluateBtnClick{
+    
+    
+}
+
 -(void)recommendBtnClick{
     
     self.fatherController.hidesBottomBarWhenPushed = YES;
@@ -65,6 +86,43 @@
     [self.fatherController.navigationController pushViewController:mrvc animated:YES];
     
     self.fatherController.hidesBottomBarWhenPushed = NO;
+}
+
+-(void)agentBtnClick{
+    
+    self.agentView = [[AgentView alloc] initWithFrame:SCREEN_RECT];
+    [self.agentView agentShow];
+    [self.agentView.personalBtn addTarget:self action:@selector(personalBtnClick) forControlEvents:UIControlEventTouchUpInside];
+}
+
+-(void)authenBtnClick{
+    
+    self.fatherController.hidesBottomBarWhenPushed = YES;
+    
+    AuthenViewController * atvc  = [[AuthenViewController alloc] init];
+    
+    [self.fatherController.navigationController pushViewController:atvc animated:YES];
+    
+    self.fatherController.hidesBottomBarWhenPushed = NO;
+}
+
+-(void)customBtnClick{
+    
+    [PublicMethod callPhone:self.fatherController phone:CALL_PHONE];
+}
+
+-(void)personalBtnClick{
+    
+    [self.agentView agentDissmiss];
+    
+    self.fatherController.hidesBottomBarWhenPushed = YES;
+    
+    PersonalAgentViewController * pavc  = [[PersonalAgentViewController alloc] init];
+    
+    [self.fatherController.navigationController pushViewController:pavc animated:YES];
+    
+    self.fatherController.hidesBottomBarWhenPushed = NO;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

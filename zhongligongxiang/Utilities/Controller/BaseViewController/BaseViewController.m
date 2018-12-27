@@ -10,6 +10,9 @@
 
 @interface BaseViewController ()
 
+@property (nonatomic, strong)UIImageView *navigationLineImageView;
+
+
 @end
 
 @implementation BaseViewController
@@ -26,6 +29,25 @@
     return _activityView;
 }
 
+- (UIImageView *)findHairlineImageViewUnder:(UIView *)view {
+    //内省
+    if ([view isKindOfClass:UIImageView.class] && view.bounds.size.height <= 1.0) {
+        
+        return (UIImageView *)view;
+    }
+    
+    for (UIView *subview in view.subviews) {
+        
+        UIImageView *imageView = [self findHairlineImageViewUnder:subview];
+        
+        if (imageView) {
+            return imageView;
+        }
+    }
+    return nil;
+}
+
+
 -(void)viewWillAppear:(BOOL)animated{
     
     [super viewWillAppear:animated];
@@ -38,8 +60,18 @@
     
     [self setNeedsStatusBarAppearanceUpdate];
     
+    self.navigationLineImageView.hidden = YES;
+    
     [self addAbsover];
     
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    
+    [super viewWillDisappear:animated];
+    
+    self.navigationLineImageView.hidden = NO;
+
 }
 
 -(void)addAbsover{
@@ -54,6 +86,8 @@
     [self initializeBaseAppearance];
     
     [self initializeBaseDataSource];
+    
+    [self initNavigationBar];//导航栏底部黑线处理
 }
 
 -(void)initializeBaseAppearance{
@@ -65,6 +99,16 @@
     
     
 }
+
+-(void)initNavigationBar{
+    
+    _navigationLineImageView = [self findHairlineImageViewUnder:self.navigationController.navigationBar];
+    
+    // 系统默认YES 可能你得到的颜色与实际的不匹配  因为默认为YES是有透明度的
+    self.navigationController.navigationBar.translucent = NO;
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+}
+
 
 #pragma mark - **********  Activity   *********
 
@@ -94,12 +138,24 @@
     return _publicManager;
 }
 
-
-
 -(void)coverWindowClick{
     
     
 }
+
+#pragma mark  ------- other   ---------
+
+-(UserModel *)userModel{
+    
+    return [self.publicManager.userManager enCodeNSUserDefaultsUserInfo];
+}
+
+-(BOOL)isLogin
+{
+    
+    return self.userModel.login.length > 0 ? YES : NO;
+}
+
 
 
 @end

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="IssureVideoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="erB-E8-v5I">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="15"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="MKe-xw-QY6"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2u4-Vn-KJC">
+                        <rect key="frame" x="0.0" y="15" width="375" height="144.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="b7a-63-jaL">
+                                <rect key="frame" x="15" y="15" width="112" height="112"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="jaF-jv-To0"/>
+                                    <constraint firstAttribute="width" constant="112" id="oVd-Ve-CKs"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fei-cY-lFu">
+                                <rect key="frame" x="10" y="10" width="122" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="122" id="fxn-BY-0NU"/>
+                                    <constraint firstAttribute="width" constant="122" id="udj-zk-cqH"/>
+                                </constraints>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b7a-63-jaL" firstAttribute="leading" secondItem="2u4-Vn-KJC" secondAttribute="leading" constant="15" id="6LZ-pu-qaY"/>
+                            <constraint firstItem="b7a-63-jaL" firstAttribute="top" secondItem="2u4-Vn-KJC" secondAttribute="top" constant="15" id="INo-Jw-rR7"/>
+                            <constraint firstItem="fei-cY-lFu" firstAttribute="top" secondItem="2u4-Vn-KJC" secondAttribute="top" constant="10" id="UYd-Bv-rcC"/>
+                            <constraint firstItem="fei-cY-lFu" firstAttribute="leading" secondItem="2u4-Vn-KJC" secondAttribute="leading" constant="10" id="woA-Rl-Uhb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="erB-E8-v5I" secondAttribute="trailing" id="B9d-ls-WsM"/>
+                    <constraint firstItem="2u4-Vn-KJC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UqL-2s-LWL"/>
+                    <constraint firstItem="erB-E8-v5I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bxs-Jf-ftU"/>
+                    <constraint firstAttribute="bottom" secondItem="2u4-Vn-KJC" secondAttribute="bottom" id="jB5-aA-5JS"/>
+                    <constraint firstAttribute="trailing" secondItem="2u4-Vn-KJC" secondAttribute="trailing" id="qoo-eb-hUt"/>
+                    <constraint firstItem="2u4-Vn-KJC" firstAttribute="top" secondItem="erB-E8-v5I" secondAttribute="bottom" id="ujM-gs-NSQ"/>
+                    <constraint firstItem="erB-E8-v5I" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wtn-ka-djx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentsView" destination="2u4-Vn-KJC" id="yRD-G4-kcs"/>
+                <outlet property="headerView" destination="erB-E8-v5I" id="orK-wx-PNQ"/>
+                <outlet property="imageBtn" destination="fei-cY-lFu" id="iVQ-oc-8ph"/>
+                <outlet property="videoImageView" destination="b7a-63-jaL" id="pm5-LJ-BG6"/>
+            </connections>
+            <point key="canvasLocation" x="53.600000000000001" y="48.575712143928037"/>
+        </tableViewCell>
+    </objects>
+</document>

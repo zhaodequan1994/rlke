@@ -112,7 +112,7 @@
         
         BalanceConsumeTitleTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"BalanceConsumeTitleTableViewCell" forIndexPath:indexPath];
         
-        [cell addTitleString:@"消费记录"];
+        [cell addTitleString:NO];
         
         return cell;
        
