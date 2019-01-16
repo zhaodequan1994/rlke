@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) UIViewController * fatherController;
 
+-(void)addListType:(WorksListType)worksListType;
+
 @end
 
 NS_ASSUME_NONNULL_END

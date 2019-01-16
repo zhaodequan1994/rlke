@@ -171,7 +171,7 @@
     CGFloat threeBtnx = twoBtnx + (twoBtnx - oneBtnx);
     CGFloat threeBtny = oneBtny;
     UIButton *threeBtn = [[UIButton alloc] initWithFrame:CGRectMake(threeBtnx, threeBtny, threeBtnw, threeBtnh)];
-    [threeBtn setImage:[UIImage imageNamed:@"icon_popup_kefu"] forState:(UIControlStateNormal)];
+    [threeBtn setImage:[UIImage imageNamed:@"tabbar_add"] forState:(UIControlStateNormal)];
     threeBtn.clipsToBounds = YES;
     threeBtn.layer.cornerRadius = oneBtnw/2;
     threeBtn.tag = 10003;

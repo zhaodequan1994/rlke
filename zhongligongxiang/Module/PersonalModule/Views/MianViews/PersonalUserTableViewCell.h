@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+//Models
+#import "PersoalUserModel.h"
+
+//Controllers
+#import "HomePersonalViewController.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface PersonalUserTableViewCell : UITableViewCell
@@ -35,8 +41,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *myBrowseLabel;
 @property (weak, nonatomic) IBOutlet UIButton *myBrowseBtn;
 
-@property (nonatomic,strong) UIViewController * fatherController;
+@property (nonatomic,strong) HomePersonalViewController * fatherController;
 
+-(void)addModel:(PersoalUserModel *)model;
 
 @end
 

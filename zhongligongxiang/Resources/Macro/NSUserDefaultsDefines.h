@@ -12,4 +12,8 @@
 //user
 #define K_USER_INFO              @"K_USER_INFO"
 
+//UUID
+
+#define K_ONLY_UUID               @"K_ONLY_UUID"
+
 #endif /* NSUserDefaultsDefines_h */

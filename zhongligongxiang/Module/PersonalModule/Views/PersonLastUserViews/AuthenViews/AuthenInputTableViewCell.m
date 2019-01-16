@@ -8,6 +8,11 @@
 
 #import "AuthenInputTableViewCell.h"
 
+@interface AuthenInputTableViewCell()
+
+
+@end
+
 @implementation AuthenInputTableViewCell
 
 

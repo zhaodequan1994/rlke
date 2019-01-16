@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-//Model
-#import "UserModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *subNameLabel;
 
--(void)addIndex:(NSInteger)index withModel:(UserModel *)userModel;
+-(void)addIndex:(NSInteger)index withModel:(UserModel*)userModel;
 
 @end
 

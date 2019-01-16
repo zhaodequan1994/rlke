@@ -84,6 +84,41 @@
     
 }
 
+-(void)networkRequest{
+    
+    WEAKSELF
+    NSDictionary * parameter = @{@"uid":self.userModel.userId,@"name":self.nameTextField.text};
+    
+    [PublicMethod networkRequestWithPath:PATH_MODIFYINFO Parameters:parameter sender:nil begin:^{
+        
+        [weakSelf startActivityView];
+
+    } success:^(id  _Nonnull object) {
+        
+        [[PublicManager shareInstance].userObjectManager encodeUserModelObject:object[@"data"] superUserModel:self.userModel];
+        
+        [weakSelf.delegate infoUpdateDelegate];
+        
+        [weakSelf.navigationController popViewControllerAnimated:YES];
+        
+        [weakSelf stopActivityView];
+
+    } error:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+
+        
+    } failure:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+
+    }];
+}
+
 #pragma mark   --------  other  -------
 
 -(void)setRightBtn{
@@ -96,13 +131,24 @@
 -(void)nameTextFieldDidChange:(id)sender{
     
     UITextField * textfield = (UITextField *)sender;
+    
+    if (textfield.text.length > 10) {
+        
+        textfield.text = [textfield.text substringToIndex:10];
+    }
 
 }
 
 #pragma mark   --------  right  click  -------
 
 -(void)rightBtnClick{
-
     
+    if (self.nameTextField.text.length == 0) {
+        
+        [PublicMethod alertControllerViewWithTitle:@"请输入昵称" sender:self];
+    }else{
+        
+        [self networkRequest];
+    }
 }
 @end

@@ -17,6 +17,7 @@
 #import "LoginModel.h"
 
 #define INPUT_TAG  100
+
 @interface LoginViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView * tableView;
@@ -83,21 +84,36 @@
 
 -(void)loginNetworkRequest{
     
-    NSDictionary * parameter = @{@"phone":self.loginModel.phone,@"password":self.loginModel.password};
+    WEAKSELF
+    NSDictionary * parameter = @{@"phone":self.loginModel.phone,@"password":self.loginModel.password,@"online_device":[PublicMethod getDeviceUUID]};
     
     [PublicMethod networkRequestWithPath:PATH_LOGIN Parameters:parameter sender:nil begin:^{
         
+        [weakSelf startActivityView];
+
     } success:^(id  _Nonnull object) {
         
         NSLog(@"===%@",object);
         
+        [[PublicManager shareInstance].userObjectManager encodeUserModelObject:object[@"data"] superUserModel:self.userModel];
+        
+        [weakSelf closeTextfield];
+
+        [weakSelf.navigationController dismissViewControllerAnimated:YES completion:nil];
+        
+        [weakSelf stopActivityView];
+
     } error:^(id  _Nonnull object) {
         
-        NSLog(@"==11=%@",object);
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
 
     } failure:^(id  _Nonnull object) {
         
-        NSLog(@"==22=%@",object);
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
 
     }];
     
@@ -151,6 +167,15 @@
     
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.view endEditing:YES];
+    
+}
+
+
 #pragma mark   --------  event  click  ------
 
 -(void)loginBtnClick{
@@ -173,6 +198,21 @@
 
         [self loginNetworkRequest];
     }
+}
+
+#pragma mark   **********  event clcik ********
+
+-(void)leftClick{
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+#pragma mark  ---------  other  -------
+
+-(void)closeTextfield{
+    
+    [self.view endEditing:YES];
 }
 
 @end

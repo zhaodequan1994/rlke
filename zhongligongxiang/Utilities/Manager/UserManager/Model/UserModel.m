@@ -37,6 +37,9 @@
 #define K_SKILL                 @"K_SKILL"
 #define K_TERRITORY             @"K_TERRITORY"
 #define K_WAGES                 @"K_WAGES"
+#define K_ONLINEDEVICE          @"K_ONLINEDEVICE"
+#define K_IS_LOGIN              @"K_IS_LOGIN"
+#define K_IS_REAL               @"K_IS_REAL"
 
 
 @implementation UserModel
@@ -79,7 +82,11 @@
               K_SEX:model.sex,
               K_SKILL:model.skill,
               K_TERRITORY:model.territory,
-              K_WAGES:model.wages};
+              K_WAGES:model.wages,
+              K_ONLINEDEVICE:model.is_online,
+              K_IS_LOGIN:model.login,
+              K_IS_REAL:model.is_real
+              };
 }
 
 -(UserModel *)fillUserInfoWithNSDictionary:(NSDictionary *)dictionary{
@@ -115,11 +122,19 @@
     model.skill         =         [dictionary objectForKey:K_SKILL];
     model.territory     =         [dictionary objectForKey:K_TERRITORY];
     model.wages         =         [dictionary objectForKey:K_WAGES];
+    model.online_device =         [dictionary objectForKey:K_ONLINEDEVICE];
+    model.login         =         [dictionary objectForKey:K_IS_LOGIN];
+    model.is_real       =         [dictionary objectForKey:K_IS_REAL];
 
     return model;
 }
 
 #pragma mark - ********** Setter / Getter **********
+
+-(NSString *)login{
+    
+    return _login.length == 0 ? @"":_login;
+}
 
 -(NSString *)account{
     
@@ -382,5 +397,25 @@
     
     return _wages.length == 0 ? @"":_wages;
 }
+-(NSString *)online_device{
+    
+    if (_online_device == nil||[_online_device isEqual:[NSNull null]]||[_online_device isEqualToString:@"(null)"]||[_online_device isEqualToString:@"<null>"]) {
+        
+        return @"";
+    }
+    
+    return _online_device.length == 0 ? @"":_online_device;
+}
+
+-(NSString *)is_real{
+    
+    if (_is_real == nil||[_is_real isEqual:[NSNull null]]||[_is_real isEqualToString:@"(null)"]||[_online_device isEqualToString:@"<null>"]) {
+        
+        return @"";
+    }
+    
+    return _is_real.length == 0 ? @"":_is_real;
+}
+
 
 @end

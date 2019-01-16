@@ -16,7 +16,27 @@
 //Views
 #import "AssistView.h"
 
+@interface PersonalUserTableViewCell ()
+
+@property (nonatomic,strong) PersoalUserModel * personalModel;
+
+@end
+
 @implementation PersonalUserTableViewCell
+
+-(void)addModel:(PersoalUserModel *)model{
+    
+    self.fansTitileLabel.text = model.fans_num;
+    
+    self.followTitleLabel.text = model.follows_num;
+    
+    self.zanTitleLabel.text = model.th_nums;
+    
+    self.zanedTitleLabel.text = model.get_th_nums;
+    
+    self.personalModel = model;
+    
+}
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -37,6 +57,10 @@
     [self.myCommitBtn addTarget:self action:@selector(myCommitBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.zanedBtn addTarget:self action:@selector(zanedBtnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.zanBtn addTarget:self action:@selector(zanBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.myVideoBtn addTarget:self action:@selector(myVideoBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.myCollectionBtn addTarget:self action:@selector(myCollectionBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.myBrowseBtn addTarget:self action:@selector(myBrowseBtnClick) forControlEvents:UIControlEventTouchUpInside];
+
 
 }
 
@@ -44,51 +68,119 @@
 
 -(void)followBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        MyFollowViewController * mfvc =[[MyFollowViewController alloc] init];
+        
+        [self.fatherController.navigationController pushViewController:mfvc animated:YES];
+        
+        self.fatherController.hidesBottomBarWhenPushed = NO;
+        
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
     
-    MyFollowViewController * mfvc =[[MyFollowViewController alloc] init];
-    
-    [self.fatherController.navigationController pushViewController:mfvc animated:YES];
-    
-    self.fatherController.hidesBottomBarWhenPushed = NO;
 }
 
 -(void)fansBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
-    
-    MyFansViewController * mfvc =[[MyFansViewController alloc] init];
-    
-    [self.fatherController.navigationController pushViewController:mfvc animated:YES];
-    
-    self.fatherController.hidesBottomBarWhenPushed = NO;
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        MyFansViewController * mfvc =[[MyFansViewController alloc] init];
+        
+        [self.fatherController.navigationController pushViewController:mfvc animated:YES];
+        
+        self.fatherController.hidesBottomBarWhenPushed = NO;
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
 
 }
 
 -(void)myCommitBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        MyCommitsViewController * mcvc =[[MyCommitsViewController alloc] init];
+        
+        [self.fatherController.navigationController pushViewController:mcvc animated:YES];
+        
+        self.fatherController.hidesBottomBarWhenPushed = NO;
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
     
-    MyCommitsViewController * mcvc =[[MyCommitsViewController alloc] init];
-    
-    [self.fatherController.navigationController pushViewController:mcvc animated:YES];
-    
-    self.fatherController.hidesBottomBarWhenPushed = NO;
 }
 
 -(void)zanedBtnClick{
     
-    AssistView * assistView = [[AssistView alloc] initWithFrame:SCREEN_RECT];
-    assistView.contentText = @"共赞了128个";
-    [assistView assistShow];
-    
+    if (self.fatherController.isLogin) {
+        
+        AssistView * assistView = [[AssistView alloc] initWithFrame:SCREEN_RECT];
+        assistView.contentText = [NSString stringWithFormat:@"共赞了%@个",self.personalModel.th_nums];
+        [assistView assistShow];
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+
 }
 
 -(void)zanBtnClick{
     
-    AssistView * assistView = [[AssistView alloc] initWithFrame:SCREEN_RECT];
-    assistView.contentText = @"获得了128个赞";
-    [assistView assistShow];
+    if (self.fatherController.isLogin) {
+        
+        AssistView * assistView = [[AssistView alloc] initWithFrame:SCREEN_RECT];
+        assistView.contentText = [NSString stringWithFormat:@"获得了%@个赞",self.personalModel.get_th_nums];
+        [assistView assistShow];
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+
+
+}
+
+-(void)myBrowseBtnClick{
+    
+    if (self.fatherController.isLogin) {
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+}
+-(void)myVideoBtnClick{
+    
+    if (self.fatherController.isLogin) {
+        
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+    
+}
+-(void)myCollectionBtnClick{
+    
+    if (self.fatherController.isLogin) {
+        
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
 
 }
 

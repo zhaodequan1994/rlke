@@ -14,6 +14,19 @@
 
 @implementation BillListTableViewCell
 
+-(void)addListType:(WorksListType)worksListType{
+    
+    if (worksListType == WorksBillType) {
+        
+        [self.cannerBtn setTitle:@"取消发单" forState:UIControlStateNormal];
+        
+    }else if (worksListType == WorksCommitType){
+        
+        [self.cannerBtn setTitle:@"确认评价" forState:UIControlStateNormal];
+
+    }
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     

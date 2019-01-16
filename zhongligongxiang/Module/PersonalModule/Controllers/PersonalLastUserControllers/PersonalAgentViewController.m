@@ -8,6 +8,9 @@
 
 #import "PersonalAgentViewController.h"
 
+//Controllers
+#import "PersonalAgentInfoViewController.h"
+
 @interface PersonalAgentViewController ()
 
 @property (nonatomic,strong) UIImageView * backImageView;
@@ -36,7 +39,9 @@
         _aplyBtn.backgroundColor = RGB(255, 84, 85);
         [_aplyBtn setTitleColor:RGB(255, 255, 255) forState:UIControlStateNormal];
         [_aplyBtn setTitle:@"立刻申请" forState:UIControlStateNormal];
+        
         _aplyBtn.titleLabel.font = [UIFont systemFontOfSize:20];
+        [_aplyBtn setTitleColor:RGB(255, 255, 255) forState:UIControlStateNormal];
         [_aplyBtn addTarget:self action:@selector(aplyBtnClik) forControlEvents:UIControlEventTouchUpInside];
         
         CAGradientLayer *gl = [CAGradientLayer layer];
@@ -47,7 +52,7 @@
         gl.colors = @[(__bridge id)RGB(255, 149, 127).CGColor,(__bridge id)RGB(255, 84, 85).CGColor];
         gl.locations = @[@(0.0),@(1.0)];
         
-        [_aplyBtn.layer addSublayer:gl];
+//        [_aplyBtn.layer addSublayer:gl];
     }
     return _aplyBtn;
 }
@@ -96,6 +101,10 @@
 
 -(void)aplyBtnClik{
     
+    self.hidesBottomBarWhenPushed = YES;
     
+    PersonalAgentInfoViewController * pavc = [[PersonalAgentInfoViewController alloc] init];
+    
+    [self.navigationController pushViewController:pavc animated:YES];
 }
 @end

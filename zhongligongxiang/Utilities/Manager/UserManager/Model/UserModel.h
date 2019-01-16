@@ -47,7 +47,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString * skill;//
 @property (nonatomic,copy) NSString * territory;//
 @property (nonatomic,copy) NSString * wages;//
-
+@property (nonatomic,copy) NSString * online_device;//
+@property (nonatomic,copy) NSString * is_real;//
 
 //Login
 

@@ -90,6 +90,8 @@
     
     cell.fatherController = self;
     
+    [cell addListType:WorksBillType];
+    
     return cell;
     
 }

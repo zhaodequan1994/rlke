@@ -11,9 +11,15 @@
 //Cells
 #import "MyFollowTableViewCell.h"
 
-@interface MyFollowViewController ()<UITableViewDelegate,UITableViewDataSource>
+//Models
+#import "MyFollowsModel.h"
+
+@interface MyFollowViewController ()<UITableViewDelegate,UITableViewDataSource,MJRefreshEXDelegate>
 
 @property (nonatomic,strong) UITableView * tableView;
+@property (nonatomic,strong) NSMutableArray * dataArray;
+
+@property (nonatomic,assign) NSInteger pageCount;
 
 @end
 
@@ -33,6 +39,13 @@
     return _tableView;
 }
 
+-(NSMutableArray *)dataArray{
+    
+    if (!_dataArray) {
+        _dataArray = [[NSMutableArray alloc] init];
+    }
+    return _dataArray;
+}
 
 -(void)viewWillAppear:(BOOL)animated{
     
@@ -64,19 +77,158 @@
 -(void)initializeAppearance{
     
     [self.view addSubview:self.tableView];
-    
+    [self.tableView addHeaderWithHeaderClass:nil beginRefresh:NO delegate:self animation:NO];
+
 }
 
 -(void)initializeDataSource{
     
+    self.pageCount = 10;
+
+    [self requestNetWorkingWithPageNumIsHeader:NO];
+
+}
+
+- (void)requestNetWorkingWithPageNumIsHeader:(BOOL)isHeader {
+
+    WEAKSELF
+    NSDictionary * parameter = @{@"uid":self.userModel.userId,@"limit":[NSString stringWithFormat:@"%ld",self.pageCount]};
     
+    [PublicMethod networkRequestWithPath:PATH_MYFOLLOWS Parameters:parameter sender:nil begin:^{
+        
+        [weakSelf startActivityView];
+
+    } success:^(id  _Nonnull object) {
+        
+        NSDictionary * dic = object[@"data"];
+        
+        NSMutableArray * array = [dic objectForKey:@"data"];
+        
+        NSMutableArray * tempArray = [[NSMutableArray alloc] init];
+        
+        for (NSDictionary * dict in array) {
+            
+            MyFollowsModel * followModel = [[MyFollowsModel alloc] init];
+            followModel.followId = [NSString stringWithFormat:@"%@",[dict objectForKey:@"id"]];
+            followModel.uid = [NSString stringWithFormat:@"%@",[dict objectForKey:@"uid"]];
+            followModel.follow_id = [NSString stringWithFormat:@"%@",[dict objectForKey:@"follow_id"]];
+            followModel.create_time = [NSString stringWithFormat:@"%@",[dict objectForKey:@"create_time"]];
+            followModel.follow_count = [NSString stringWithFormat:@"%@",[dict objectForKey:@"follow_count"]];
+            
+            NSDictionary * userdic = [dict objectForKey:@"user"];
+            followModel.account = [NSString stringWithFormat:@"%@",[userdic objectForKey:@"account"]];
+            followModel.avatar = [NSString stringWithFormat:@"%@",[userdic objectForKey:@"avatar"]];
+            followModel.name = [NSString stringWithFormat:@"%@",[userdic objectForKey:@"name"]];
+
+            [tempArray addObject:followModel];
+        }
+        
+        if (isHeader) {
+            
+            [weakSelf.tableView endHeaderRefresh];
+            [weakSelf.tableView resetSelfPageNum];
+            [weakSelf.dataArray removeAllObjects];
+            [weakSelf.dataArray addObjectsFromArray:tempArray];
+            
+        }else{
+            
+            [weakSelf.dataArray addObjectsFromArray:tempArray];
+        }
+
+        if (weakSelf.dataArray.count >= weakSelf.pageCount) {
+            
+            [weakSelf.tableView addFooterWithFooterClass:nil automaticallyRefresh:YES delegate:weakSelf];
+            
+        }
+        
+        [weakSelf stopActivityView];
+
+    } error:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf.tableView resetSelfPageNum];
+        
+        [weakSelf.tableView endHeaderRefresh];
+        
+        [weakSelf stopActivityView];
+
+    } failure:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf.tableView resetSelfPageNum];
+        
+        [weakSelf.tableView endHeaderRefresh];
+        
+        [weakSelf stopActivityView];
+
+    }];
+}
+
+- (void)requestNetWorkingWithPageNum:(NSInteger)pageNum isHeader:(BOOL)isHeader {
+
+    WEAKSELF
+    NSDictionary * parameter = @{@"uid":self.userModel.userId,@"limit":[NSString stringWithFormat:@"%ld",self.pageCount],@"offset":[NSString stringWithFormat:@"%ld",pageNum * self.pageCount]};
+    
+    [PublicMethod networkRequestWithPath:PATH_MYFOLLOWS Parameters:parameter sender:nil begin:^{
+        
+    } success:^(id  _Nonnull object) {
+        
+        NSDictionary * dic = object[@"data"];
+        
+        NSMutableArray * array = [dic objectForKey:@"data"];
+        
+        NSMutableArray * tempArray = [[NSMutableArray alloc] init];
+        
+        for (NSDictionary * dict in array) {
+            
+            MyFollowsModel * followModel = [[MyFollowsModel alloc] init];
+            followModel.followId = [NSString stringWithFormat:@"%@",[dict objectForKey:@"id"]];
+            followModel.uid = [NSString stringWithFormat:@"%@",[dict objectForKey:@"uid"]];
+            followModel.follow_id = [NSString stringWithFormat:@"%@",[dict objectForKey:@"follow_id"]];
+            followModel.create_time = [NSString stringWithFormat:@"%@",[dict objectForKey:@"create_time"]];
+            followModel.follow_count = [NSString stringWithFormat:@"%@",[dict objectForKey:@"follow_count"]];
+            
+            NSDictionary * userdic = [dict objectForKey:@"user"];
+            followModel.account = [NSString stringWithFormat:@"%@",[userdic objectForKey:@"account"]];
+            followModel.avatar = [NSString stringWithFormat:@"%@",[userdic objectForKey:@"avatar"]];
+            followModel.name = [NSString stringWithFormat:@"%@",[userdic objectForKey:@"name"]];
+            
+            [weakSelf.dataArray addObject:followModel];
+            [tempArray addObject:followModel];
+        }
+        
+        [weakSelf.tableView endFooterRefreshWithChangePageIndex:YES];
+        
+        if (tempArray.count <= 0) {
+            
+            [weakSelf.tableView noMoreData];
+            
+        }
+
+        [weakSelf stopActivityView];
+
+    } error:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+
+        [weakSelf stopActivityView];
+        
+    } failure:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+    }];
+
 }
 
 #pragma mark  **********  tableView  delegate  ********
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 10;
+    return self.dataArray.count;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -90,6 +242,19 @@
     MyFollowTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"MyFollowTableViewCell" forIndexPath:indexPath];
     
     return cell;
+}
+
+#pragma mark - MJRefreshEXDelegate
+
+- (void)onLoadingMoreData:(id)control pageNum:(NSNumber *)pageNum {
+    
+    [self requestNetWorkingWithPageNum:pageNum.integerValue + 1 isHeader:NO];
+    
+}
+
+-(void)onRefreshing:(id)control{
+    
+    [self requestNetWorkingWithPageNumIsHeader:YES];
 }
 
 @end

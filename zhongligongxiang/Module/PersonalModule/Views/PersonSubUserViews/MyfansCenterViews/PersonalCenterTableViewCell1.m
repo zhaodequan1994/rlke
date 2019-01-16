@@ -8,13 +8,17 @@
 
 #import "PersonalCenterTableViewCell1.h"
 
+//Controllers
+#import "SDPhotoBrowser.h"
+
+
 //Cells
 #import "ImagesCollectionViewCell.h"
 
 
 #define kImageWithAndHeight (self.imagesCollectionView.frame.size.width - 20)/3
 
-@interface PersonalCenterTableViewCell1 ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface PersonalCenterTableViewCell1 ()<UICollectionViewDelegate,UICollectionViewDataSource,SDPhotoBrowserDelegate>
 
 
 @end
@@ -64,7 +68,6 @@
     
     ImagesCollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ImagesCollectionViewCell" forIndexPath:indexPath];
     
-    
     return cell;
 }
 
@@ -90,8 +93,38 @@
     
     [collectionView deselectItemAtIndexPath:indexPath animated:YES];
    
-    
+    SDPhotoBrowser *photoBrowser = [SDPhotoBrowser new];
+
+    NSMutableArray * imageArray = [[NSMutableArray alloc] init];
+
+    photoBrowser.delegate = self;
+    photoBrowser.currentImageIndex = indexPath.row;
+    photoBrowser.imageCount = imageArray.count;
+    photoBrowser.sourceImagesContainerView = self;
+    [photoBrowser show];
 }
+
+#pragma mark  SDPhotoBrowserDelegate
+
+// 返回临时占位图片（即原来的小图）
+- (UIImage *)photoBrowser:(SDPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
+{
+    // 不建议用此种方式获取小图，这里只是为了简单实现展示而已
+    
+    
+    return nil;
+}
+
+// 返回高质量图片的url
+- (NSURL *)photoBrowser:(SDPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
+{
+    
+    
+//    return [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",[[PublicManager shareInstance].environmentManager getImageCurrentUrl],resorceModel.path]];
+    
+    return nil;
+}
+
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

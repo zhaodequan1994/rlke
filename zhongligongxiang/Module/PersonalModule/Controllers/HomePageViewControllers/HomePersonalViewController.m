@@ -8,6 +8,10 @@
 
 #import "HomePersonalViewController.h"
 
+//Models
+#import "PersoalUserModel.h"
+
+
 //cells
 #import "PersonalCenterTableViewCell.h"
 #import "PersonSubHeaderTableViewCell.h"
@@ -20,6 +24,7 @@
 
 @property (nonatomic,strong) UITableView * tableView;
 
+@property (nonatomic,strong) PersoalUserModel * personalModel;
 
 @end
 
@@ -42,6 +47,13 @@
     return _tableView;
 }
 
+-(PersoalUserModel *)personalModel{
+    
+    if (!_personalModel) {
+        _personalModel = [[PersoalUserModel alloc] init];
+    }
+    return _personalModel;
+}
 
 -(void)viewWillAppear:(BOOL)animated{
     
@@ -53,6 +65,8 @@
     
     
     self.navigationController.navigationBar.hidden = YES;
+    
+    [self addAbsover];
     
 }
 -(void)viewWillDisappear:(BOOL)animated{
@@ -85,12 +99,82 @@
 
 -(void)initializeDataSource{
 
-//    [self netWorkrequest];
+    [self netWorkrequest];
+
 }
 
 -(void)netWorkrequest{
     
-   
+    WEAKSELF
+    NSDictionary * parameter = @{@"uid":self.userModel.userId};
+    
+    [PublicMethod networkRequestWithPath:PATH_USERINFO Parameters:parameter sender:nil begin:^{
+        
+        [weakSelf startActivityView];
+
+    } success:^(id  _Nonnull object) {
+        
+        NSLog(@"%@",object);
+        
+        NSDictionary * dic = object[@"data"];
+        
+        weakSelf.personalModel.userId = [NSString stringWithFormat:@"%@",[dic objectForKey:@"id"]];
+        weakSelf.personalModel.parent_id = [NSString stringWithFormat:@"%@",[dic objectForKey:@"parent_id"]];
+        weakSelf.personalModel.rec_code = [NSString stringWithFormat:@"%@",[dic objectForKey:@"rec_code"]];
+        weakSelf.personalModel.account = [NSString stringWithFormat:@"%@",[dic objectForKey:@"account"]];
+        weakSelf.personalModel.email = [NSString stringWithFormat:@"%@",[dic objectForKey:@"email"]];
+        weakSelf.personalModel.balance = [NSString stringWithFormat:@"%@",[dic objectForKey:@"balance"]];
+        weakSelf.personalModel.name = [NSString stringWithFormat:@"%@",[dic objectForKey:@"name"]];
+        weakSelf.personalModel.phone = [NSString stringWithFormat:@"%@",[dic objectForKey:@"phone"]];
+        weakSelf.personalModel.score = [NSString stringWithFormat:@"%@",[dic objectForKey:@"score"]];
+        weakSelf.personalModel.sex = [NSString stringWithFormat:@"%@",[dic objectForKey:@"sex"]];
+        weakSelf.personalModel.age = [NSString stringWithFormat:@"%@",[dic objectForKey:@"age"]];
+        weakSelf.personalModel.avatar = [NSString stringWithFormat:@"%@",[dic objectForKey:@"avatar"]];
+        weakSelf.personalModel.major = [NSString stringWithFormat:@"%@",[dic objectForKey:@"major"]];
+        weakSelf.personalModel.rate = [NSString stringWithFormat:@"%@",[dic objectForKey:@"rate"]];
+        weakSelf.personalModel.territory = [NSString stringWithFormat:@"%@",[dic objectForKey:@"territory"]];
+        weakSelf.personalModel.login_count = [NSString stringWithFormat:@"%@",[dic objectForKey:@"login_count"]];
+        weakSelf.personalModel.login_time = [NSString stringWithFormat:@"%@",[dic objectForKey:@"login_time"]];
+        weakSelf.personalModel.role_id = [NSString stringWithFormat:@"%@",[dic objectForKey:@"role_id"]];
+        weakSelf.personalModel.remark = [NSString stringWithFormat:@"%@",[dic objectForKey:@"remark"]];
+        weakSelf.personalModel.create_time = [NSString stringWithFormat:@"%@",[dic objectForKey:@"create_time"]];
+        weakSelf.personalModel.lat = [NSString stringWithFormat:@"%@",[dic objectForKey:@"lat"]];
+        weakSelf.personalModel.lng = [NSString stringWithFormat:@"%@",[dic objectForKey:@"lng"]];
+        weakSelf.personalModel.extend = [NSString stringWithFormat:@"%@",[dic objectForKey:@"extend"]];
+        weakSelf.personalModel.skill = [NSString stringWithFormat:@"%@",[dic objectForKey:@"skill"]];
+        weakSelf.personalModel.online_device = [NSString stringWithFormat:@"%@",[dic objectForKey:@"online_device"]];
+        weakSelf.personalModel.is_online = [NSString stringWithFormat:@"%@",[dic objectForKey:@"is_online"]];
+        weakSelf.personalModel.is_delete = [NSString stringWithFormat:@"%@",[dic objectForKey:@"is_delete"]];
+        weakSelf.personalModel.is_admin = [NSString stringWithFormat:@"%@",[dic objectForKey:@"is_admin"]];
+        weakSelf.personalModel.wages = [NSString stringWithFormat:@"%@",[dic objectForKey:@"wages"]];
+        weakSelf.personalModel.is_real = [NSString stringWithFormat:@"%@",[dic objectForKey:@"is_real"]];
+        weakSelf.personalModel.fans_num = [NSString stringWithFormat:@"%@",[dic objectForKey:@"fans_num"]];
+        weakSelf.personalModel.follows_num = [NSString stringWithFormat:@"%@",[dic objectForKey:@"follows_num"]];
+        weakSelf.personalModel.th_nums = [NSString stringWithFormat:@"%@",[dic objectForKey:@"th_nums"]];
+        weakSelf.personalModel.get_th_nums = [NSString stringWithFormat:@"%@",[dic objectForKey:@"get_th_nums"]];
+        weakSelf.personalModel.used_cash = [NSString stringWithFormat:@"%@",[dic objectForKey:@"used_cash"]];
+        weakSelf.personalModel.using_cash = [NSString stringWithFormat:@"%@",[dic objectForKey:@"using_cash"]];
+
+        
+        [[PublicManager shareInstance].userObjectManager encodeUserModelObject:object[@"data"] superUserModel:self.userModel];
+
+        [weakSelf.tableView reloadData];
+        
+        [weakSelf stopActivityView];
+        
+    } error:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+        
+    } failure:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+        
+    }];
 }
 
 #pragma mark  **********  tableView  delegate  ********
@@ -126,12 +210,16 @@
         
         cell.fatherController = self;
         
+        [cell addModel:self.userModel];
+        
         return cell;
         
     }else if (indexPath.row == 1){
         
         PersonSubHeaderTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PersonSubHeaderTableViewCell" forIndexPath:indexPath];
         cell.fatherController = self;
+        
+        [cell addModel:self.personalModel];
         
         return cell;
         
@@ -141,6 +229,8 @@
         
         cell.fatherController = self;
         
+        [cell addModel:self.personalModel];
+        
         return cell;
         
     }else{
@@ -148,6 +238,8 @@
         PersonalCenterTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"PersonalCenterTableViewCell" forIndexPath:indexPath];
         
         cell.fatherController = self;
+        
+        cell.personalModel = self.personalModel;
 
         return cell;
     }
@@ -158,6 +250,20 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
+}
+
+#pragma mark  ---------  absover   ---------
+
+-(void)addAbsover{
+    
+    [PublicMethod addObserver:self selector:@selector(infoUpdate) name:MESSAGE_HOMEPAGE_UPDATEINFO object:nil];
+    
+}
+
+-(void)infoUpdate{
+    
+    [self netWorkrequest];
+
 }
 
 @end

@@ -8,9 +8,6 @@
 
 #import "HomeNewsViewController.h"
 
-//Views
-#import "AssistView.h"
-
 @interface HomeNewsViewController ()
 
 @end
@@ -61,12 +58,13 @@
 
 -(void)initializeDataSource{
     
+    
+    
 }
 
 -(void)btnClick{
     
-    AssistView * assistView = [[AssistView alloc] initWithFrame:SCREEN_RECT];
-    [assistView assistShow];
+    NSLog(@"%@,%@,%@",self.userModel.phone,self.userModel.password,self.userModel.account);
 }
 
 @end

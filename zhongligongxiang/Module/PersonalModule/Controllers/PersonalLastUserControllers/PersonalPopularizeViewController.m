@@ -28,7 +28,7 @@
 -(UIButton *)aplyBtn{
     
     if (!_aplyBtn) {
-        _aplyBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, SCREEN_HEIGHT - 65, SCREEN_WIDTH - 30, 44)];
+        _aplyBtn = [[UIButton alloc] initWithFrame:CGRectMake(15, SCREEN_HEIGHT - 65 - 64, SCREEN_WIDTH - 30, 44)];
         _aplyBtn.layer.masksToBounds = YES;
         _aplyBtn.layer.cornerRadius = _aplyBtn.frame.size.height/2;
         _aplyBtn.backgroundColor = RGB(255, 84, 85);
@@ -45,7 +45,7 @@
         gl.colors = @[(__bridge id)RGB(255, 149, 127).CGColor,(__bridge id)RGB(255, 84, 85).CGColor];
         gl.locations = @[@(0.0),@(1.0)];
         
-        [_aplyBtn.layer addSublayer:gl];
+//        [_aplyBtn.layer addSublayer:gl];
     }
     return _aplyBtn;
 }
@@ -82,6 +82,7 @@
     
     [self.view addSubview:self.backImageView];
     [self.view addSubview:self.aplyBtn];
+    
 }
 
 -(void)initializeDataSource{

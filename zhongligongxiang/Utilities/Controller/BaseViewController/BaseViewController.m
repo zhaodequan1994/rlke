@@ -138,6 +138,16 @@
     return _publicManager;
 }
 
+-(NSInteger)superHeight{
+    
+    if (!_superHeight) {
+        
+        _superHeight = SCREEN_HEIGHT;
+    }
+    
+    return _superHeight;
+}
+
 -(void)coverWindowClick{
     
     

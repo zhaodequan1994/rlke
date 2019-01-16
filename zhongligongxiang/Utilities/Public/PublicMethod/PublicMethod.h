@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PublicMethod : NSObject
 
 
-+ (void)networkRequestWithPath:(NSString *)path Parameters:(NSDictionary *)parameters sender:(UIView *)sender
++ (void)networkRequestWithPath:(NSString *)path Parameters:(NSDictionary *)parameters sender:(nullable UIView *)sender
                          begin:(void (^)())begin success:(void (^)(id object))success error:(void (^)(id object))error failure:(void (^)(id object))failure;
 
-+ (void)networkGetRequestWithPath:(NSString *)path Parameters:(NSDictionary *)parameters sender:(UIView *)sender
++ (void)networkGetRequestWithPath:(NSString *)path Parameters:(NSDictionary *)parameters sender:(nullable UIView *)sender
                             begin:(void (^)())begin success:(void (^)(id object))success error:(void (^)(id object))error failure:(void (^)(id object))failure;
 
 #pragma mark  *********  NSString   **********
@@ -57,6 +57,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)alertControllerViewWithTitle:(NSString *)title sender:(UIViewController *)sender;
 
+
+#pragma mark  *****   push  LoginController  ******
+
++ (void)PushToLoginViewController:(UIViewController *)parentController;
+
+
+/**
+ *  返回UUID
+ */
++ (NSString *)getDeviceUUID;
+
+#pragma mark  *****   NSNotificationCenter    ******
+
++ (void)postNotificationName:(NSString *)aName object:(nullable id)anObject;
+
++ (void)removeObserver:(id)observer name:(NSString *)aName object:(nullable id)anObject;
+
++ (void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(nullable id)anObject;
+
++ (void)removeAllObserver:(id)observer;
 
 @end
 

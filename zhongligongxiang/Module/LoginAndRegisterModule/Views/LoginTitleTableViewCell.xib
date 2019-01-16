@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="hg3-3O-WAq">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="hg3-3O-WAq">
                         <rect key="frame" x="154" y="19" width="67" height="67"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="67" id="SSJ-85-1oo"/>
@@ -37,6 +37,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="1.png" width="1082" height="1208"/>
+        <image name="icon.png" width="80" height="80"/>
     </resources>
 </document>

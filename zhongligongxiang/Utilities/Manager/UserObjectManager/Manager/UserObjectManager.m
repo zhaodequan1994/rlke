@@ -364,7 +364,18 @@
         
         model.wages = wagesStr;
     }
+    //-----------------------------30---------------------------
     
+    NSString * realStr = [NSString stringWithFormat:@"%@",[object objectForKey:@"is_real"]];
+    if (realStr == nil||[realStr isEqual:[NSNull null]]||[realStr isEqualToString:@"(null)"]||[realStr isEqualToString:@"<null>"]||realStr.length == 0) {
+        
+        model.is_real = userObjectModel.is_real;
+        
+    }else{
+        
+        model.is_real = realStr;
+    }
+
     
     [[PublicManager shareInstance].userManager codeNSUserDefaultsUserInfo:model];
     

@@ -77,7 +77,7 @@
 -(UIImageView *)userImageView{
     
     if (!_userImageView) {
-        _userImageView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 51)/2, 36, 51, 51)];
+        _userImageView = [[UIImageView alloc] initWithFrame:CGRectMake((SCREEN_WIDTH - 51)/2, 43, 51, 51)];
         _userImageView.image = [UIImage imageNamed:@"1.png"];
         _userImageView.layer.masksToBounds = YES;
         _userImageView.layer.cornerRadius = _userImageView.frame.size.height/2;

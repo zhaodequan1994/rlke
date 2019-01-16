@@ -42,6 +42,18 @@
 		EE27B08421D4AA1800AB0A19 /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B08321D4AA1800AB0A19 /* UserInfoViewController.m */; };
 		EE27B08921D4AACB00AB0A19 /* UserInfoIconTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE27B08721D4AACB00AB0A19 /* UserInfoIconTableViewCell.m */; };
 		EE27B08A21D4AACB00AB0A19 /* UserInfoIconTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE27B08821D4AACB00AB0A19 /* UserInfoIconTableViewCell.xib */; };
+		EE2C228C21DF81EE0017FC12 /* CommitedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C228B21DF81ED0017FC12 /* CommitedViewController.m */; };
+		EE2C228F21DF84E80017FC12 /* AuthenSuccendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C228E21DF84E80017FC12 /* AuthenSuccendViewController.m */; };
+		EE2C229221DF8BC60017FC12 /* PersonalAgentInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C229121DF8BC60017FC12 /* PersonalAgentInfoViewController.m */; };
+		EE2C229721DF8C410017FC12 /* PersonalAgentInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C229521DF8C410017FC12 /* PersonalAgentInfoTableViewCell.m */; };
+		EE2C229821DF8C410017FC12 /* PersonalAgentInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2C229621DF8C410017FC12 /* PersonalAgentInfoTableViewCell.xib */; };
+		EE2C229C21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C229A21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.m */; };
+		EE2C229D21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2C229B21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.xib */; };
+		EE2C22A321E478AE0017FC12 /* CLPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C22A221E478AE0017FC12 /* CLPlayerView.m */; };
+		EE2C22A621E479860017FC12 /* CLPlayerMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C22A521E479860017FC12 /* CLPlayerMaskView.m */; };
+		EE2C22A921E479B40017FC12 /* AILoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C22A821E479B40017FC12 /* AILoadingView.m */; };
+		EE2C22AC21E479F20017FC12 /* CLGCDTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C22AB21E479F20017FC12 /* CLGCDTimerManager.m */; };
+		EE2C22AF21E47A4C0017FC12 /* CLSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2C22AE21E47A4C0017FC12 /* CLSlider.m */; };
 		EE2E25DC21CC94140016F3B7 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25DB21CC94140016F3B7 /* LoginModel.m */; };
 		EE2E25DF21CC942B0016F3B7 /* registerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25DE21CC942B0016F3B7 /* registerModel.m */; };
 		EE2E25E521D0CE380016F3B7 /* UserObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25E421D0CE380016F3B7 /* UserObjectManager.m */; };
@@ -50,6 +62,11 @@
 		EE2E25F421D1C6350016F3B7 /* PersonalCenterTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2E25F221D1C6350016F3B7 /* PersonalCenterTableViewCell1.xib */; };
 		EE2E25FD21D1C8EF0016F3B7 /* ImagesCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2E25FA21D1C8EE0016F3B7 /* ImagesCollectionViewCell.m */; };
 		EE2E25FE21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2E25FB21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib */; };
+		EE2EC0C721EEE0C200DEA9FC /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EE2EC0C621EEE0C200DEA9FC /* icon.png */; };
+		EE2EC0CA21EEFFE600DEA9FC /* ScanCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2EC0C921EEFFE600DEA9FC /* ScanCodeViewController.m */; };
+		EE2EC0D021EF007200DEA9FC /* ScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2EC0CF21EF007200DEA9FC /* ScanView.m */; };
+		EE2EC0D321EF00A900DEA9FC /* LoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2EC0D221EF00A900DEA9FC /* LoadView.m */; };
+		EE2EC0D721EF160E00DEA9FC /* PersoalUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE2EC0D621EF160E00DEA9FC /* PersoalUserModel.m */; };
 		EE7648BB21B61A810090D98A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7648BA21B61A810090D98A /* AppDelegate.m */; };
 		EE7648C121B61A810090D98A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7648BF21B61A810090D98A /* Main.storyboard */; };
 		EE7648C321B61A820090D98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7648C221B61A820090D98A /* Assets.xcassets */; };
@@ -145,6 +162,14 @@
 		EE9C53C721D4CACE0071920A /* AgePickView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53C621D4CACE0071920A /* AgePickView.m */; };
 		EE9C53CA21D4CFD20071920A /* PersonalAgentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53C921D4CFD20071920A /* PersonalAgentViewController.m */; };
 		EE9C53CD21D4D23C0071920A /* PersonalPopularizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53CC21D4D23C0071920A /* PersonalPopularizeViewController.m */; };
+		EE9C53D521D6157F0071920A /* SDPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53D421D6157F0071920A /* SDPhotoItem.m */; };
+		EE9C53D821D615C30071920A /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53D621D615C20071920A /* SDWaitingView.m */; };
+		EE9C53DB21D616140071920A /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53D921D616130071920A /* SDCollectionViewCell.m */; };
+		EE9C53DE21D6162F0071920A /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53DC21D6162E0071920A /* SDPhotoBrowser.m */; };
+		EE9C53E121D616450071920A /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53E021D616450071920A /* SDBrowserImageView.m */; };
+		EE9C53E421D616680071920A /* SDCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53E221D616680071920A /* SDCollectionViewController.m */; };
+		EE9C53E921D61E3B0071920A /* KeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53E721D61E3A0071920A /* KeyChainStore.m */; };
+		EE9C53EC21D623F20071920A /* ResertPasswordModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE9C53EB21D623F20071920A /* ResertPasswordModel.m */; };
 		EEB218E021BE557E0061017D /* ZDQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218DF21BE557E0061017D /* ZDQTabBarController.m */; };
 		EEB218E321BE55D90061017D /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218E221BE55D90061017D /* HomePageViewController.m */; };
 		EEB218E921BE563D0061017D /* HomeNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB218E821BE563D0061017D /* HomeNewsViewController.m */; };
@@ -192,6 +217,8 @@
 		EEC8A9DF21D20DF400E23493 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9D521D20DF400E23493 /* MASViewConstraint.m */; };
 		EEC8A9E021D20DF400E23493 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9D621D20DF400E23493 /* MASViewAttribute.m */; };
 		EEC8A9E621D2252C00E23493 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC8A9E521D2252C00E23493 /* LocationManager.m */; };
+		EED92FAF21DCB1660014BB40 /* MyFollowsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EED92FAE21DCB1660014BB40 /* MyFollowsModel.m */; };
+		EED92FB221DCBD500014BB40 /* MyFansModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EED92FB121DCBD500014BB40 /* MyFansModel.m */; };
 		EEDFA9C721C4FD6A00C26017 /* OrderDetialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDFA9C621C4FD6A00C26017 /* OrderDetialViewController.m */; };
 		EEDFA9CB21C4FE3600C26017 /* OrderDetialTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDFA9C921C4FE3600C26017 /* OrderDetialTableViewCell.m */; };
 		EEDFA9CC21C4FE3600C26017 /* OrderDetialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EEDFA9CA21C4FE3600C26017 /* OrderDetialTableViewCell.xib */; };
@@ -274,6 +301,28 @@
 		EE27B08621D4AACB00AB0A19 /* UserInfoIconTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoIconTableViewCell.h; sourceTree = "<group>"; };
 		EE27B08721D4AACB00AB0A19 /* UserInfoIconTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoIconTableViewCell.m; sourceTree = "<group>"; };
 		EE27B08821D4AACB00AB0A19 /* UserInfoIconTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoIconTableViewCell.xib; sourceTree = "<group>"; };
+		EE2C228A21DF81ED0017FC12 /* CommitedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommitedViewController.h; sourceTree = "<group>"; };
+		EE2C228B21DF81ED0017FC12 /* CommitedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommitedViewController.m; sourceTree = "<group>"; };
+		EE2C228D21DF84E80017FC12 /* AuthenSuccendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthenSuccendViewController.h; sourceTree = "<group>"; };
+		EE2C228E21DF84E80017FC12 /* AuthenSuccendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthenSuccendViewController.m; sourceTree = "<group>"; };
+		EE2C229021DF8BC60017FC12 /* PersonalAgentInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalAgentInfoViewController.h; sourceTree = "<group>"; };
+		EE2C229121DF8BC60017FC12 /* PersonalAgentInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalAgentInfoViewController.m; sourceTree = "<group>"; };
+		EE2C229421DF8C410017FC12 /* PersonalAgentInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalAgentInfoTableViewCell.h; sourceTree = "<group>"; };
+		EE2C229521DF8C410017FC12 /* PersonalAgentInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalAgentInfoTableViewCell.m; sourceTree = "<group>"; };
+		EE2C229621DF8C410017FC12 /* PersonalAgentInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalAgentInfoTableViewCell.xib; sourceTree = "<group>"; };
+		EE2C229921DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalAgentInfoDetialTableViewCell.h; sourceTree = "<group>"; };
+		EE2C229A21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalAgentInfoDetialTableViewCell.m; sourceTree = "<group>"; };
+		EE2C229B21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalAgentInfoDetialTableViewCell.xib; sourceTree = "<group>"; };
+		EE2C22A121E478AE0017FC12 /* CLPlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPlayerView.h; sourceTree = "<group>"; };
+		EE2C22A221E478AE0017FC12 /* CLPlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPlayerView.m; sourceTree = "<group>"; };
+		EE2C22A421E479860017FC12 /* CLPlayerMaskView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLPlayerMaskView.h; sourceTree = "<group>"; };
+		EE2C22A521E479860017FC12 /* CLPlayerMaskView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLPlayerMaskView.m; sourceTree = "<group>"; };
+		EE2C22A721E479B40017FC12 /* AILoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AILoadingView.h; sourceTree = "<group>"; };
+		EE2C22A821E479B40017FC12 /* AILoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AILoadingView.m; sourceTree = "<group>"; };
+		EE2C22AA21E479F20017FC12 /* CLGCDTimerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLGCDTimerManager.h; sourceTree = "<group>"; };
+		EE2C22AB21E479F20017FC12 /* CLGCDTimerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLGCDTimerManager.m; sourceTree = "<group>"; };
+		EE2C22AD21E47A4C0017FC12 /* CLSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLSlider.h; sourceTree = "<group>"; };
+		EE2C22AE21E47A4C0017FC12 /* CLSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLSlider.m; sourceTree = "<group>"; };
 		EE2E25DA21CC94140016F3B7 /* LoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
 		EE2E25DB21CC94140016F3B7 /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		EE2E25DD21CC942B0016F3B7 /* registerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = registerModel.h; sourceTree = "<group>"; };
@@ -288,6 +337,15 @@
 		EE2E25FA21D1C8EE0016F3B7 /* ImagesCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesCollectionViewCell.m; sourceTree = "<group>"; };
 		EE2E25FB21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImagesCollectionViewCell.xib; sourceTree = "<group>"; };
 		EE2E25FC21D1C8EF0016F3B7 /* ImagesCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesCollectionViewCell.h; sourceTree = "<group>"; };
+		EE2EC0C621EEE0C200DEA9FC /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		EE2EC0C821EEFFE500DEA9FC /* ScanCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanCodeViewController.h; sourceTree = "<group>"; };
+		EE2EC0C921EEFFE600DEA9FC /* ScanCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanCodeViewController.m; sourceTree = "<group>"; };
+		EE2EC0CE21EF007200DEA9FC /* ScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanView.h; sourceTree = "<group>"; };
+		EE2EC0CF21EF007200DEA9FC /* ScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanView.m; sourceTree = "<group>"; };
+		EE2EC0D121EF00A900DEA9FC /* LoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadView.h; sourceTree = "<group>"; };
+		EE2EC0D221EF00A900DEA9FC /* LoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadView.m; sourceTree = "<group>"; };
+		EE2EC0D521EF160E00DEA9FC /* PersoalUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersoalUserModel.h; sourceTree = "<group>"; };
+		EE2EC0D621EF160E00DEA9FC /* PersoalUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersoalUserModel.m; sourceTree = "<group>"; };
 		EE7648B621B61A810090D98A /* zhongligongxiang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhongligongxiang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7648B921B61A810090D98A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE7648BA21B61A810090D98A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -475,6 +533,23 @@
 		EE9C53C921D4CFD20071920A /* PersonalAgentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalAgentViewController.m; sourceTree = "<group>"; };
 		EE9C53CB21D4D23C0071920A /* PersonalPopularizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalPopularizeViewController.h; sourceTree = "<group>"; };
 		EE9C53CC21D4D23C0071920A /* PersonalPopularizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalPopularizeViewController.m; sourceTree = "<group>"; };
+		EE9C53D321D6157F0071920A /* SDPhotoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDPhotoItem.h; sourceTree = "<group>"; };
+		EE9C53D421D6157F0071920A /* SDPhotoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDPhotoItem.m; sourceTree = "<group>"; };
+		EE9C53D621D615C20071920A /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
+		EE9C53D721D615C30071920A /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		EE9C53D921D616130071920A /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		EE9C53DA21D616140071920A /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		EE9C53DC21D6162E0071920A /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		EE9C53DD21D6162E0071920A /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		EE9C53DF21D616450071920A /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		EE9C53E021D616450071920A /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		EE9C53E221D616680071920A /* SDCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewController.m; sourceTree = "<group>"; };
+		EE9C53E321D616680071920A /* SDCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewController.h; sourceTree = "<group>"; };
+		EE9C53E521D6168F0071920A /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		EE9C53E721D61E3A0071920A /* KeyChainStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyChainStore.m; sourceTree = "<group>"; };
+		EE9C53E821D61E3B0071920A /* KeyChainStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyChainStore.h; sourceTree = "<group>"; };
+		EE9C53EA21D623F20071920A /* ResertPasswordModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResertPasswordModel.h; sourceTree = "<group>"; };
+		EE9C53EB21D623F20071920A /* ResertPasswordModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResertPasswordModel.m; sourceTree = "<group>"; };
 		EEB218DE21BE557E0061017D /* ZDQTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZDQTabBarController.h; sourceTree = "<group>"; };
 		EEB218DF21BE557E0061017D /* ZDQTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZDQTabBarController.m; sourceTree = "<group>"; };
 		EEB218E121BE55D90061017D /* HomePageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
@@ -564,6 +639,10 @@
 		EEC8A9D621D20DF400E23493 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
 		EEC8A9E421D2252C00E23493 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
 		EEC8A9E521D2252C00E23493 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		EED92FAD21DCB1660014BB40 /* MyFollowsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowsModel.h; sourceTree = "<group>"; };
+		EED92FAE21DCB1660014BB40 /* MyFollowsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowsModel.m; sourceTree = "<group>"; };
+		EED92FB021DCBD500014BB40 /* MyFansModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFansModel.h; sourceTree = "<group>"; };
+		EED92FB121DCBD500014BB40 /* MyFansModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFansModel.m; sourceTree = "<group>"; };
 		EEDFA9C521C4FD6A00C26017 /* OrderDetialViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderDetialViewController.h; sourceTree = "<group>"; };
 		EEDFA9C621C4FD6A00C26017 /* OrderDetialViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderDetialViewController.m; sourceTree = "<group>"; };
 		EEDFA9C821C4FE3500C26017 /* OrderDetialTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderDetialTableViewCell.h; sourceTree = "<group>"; };
@@ -742,6 +821,52 @@
 			path = UserInfoViews;
 			sourceTree = "<group>";
 		};
+		EE2C229321DF8C0C0017FC12 /* PersonalAgentView */ = {
+			isa = PBXGroup;
+			children = (
+				EE2C229421DF8C410017FC12 /* PersonalAgentInfoTableViewCell.h */,
+				EE2C229521DF8C410017FC12 /* PersonalAgentInfoTableViewCell.m */,
+				EE2C229621DF8C410017FC12 /* PersonalAgentInfoTableViewCell.xib */,
+				EE2C229921DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.h */,
+				EE2C229A21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.m */,
+				EE2C229B21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.xib */,
+			);
+			path = PersonalAgentView;
+			sourceTree = "<group>";
+		};
+		EE2C229E21E477D00017FC12 /* CLPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				EE2C22A021E478930017FC12 /* Others */,
+				EE2C229F21E478610017FC12 /* CLPlayerViews */,
+			);
+			path = CLPlayerView;
+			sourceTree = "<group>";
+		};
+		EE2C229F21E478610017FC12 /* CLPlayerViews */ = {
+			isa = PBXGroup;
+			children = (
+				EE2C22A121E478AE0017FC12 /* CLPlayerView.h */,
+				EE2C22A221E478AE0017FC12 /* CLPlayerView.m */,
+				EE2C22A421E479860017FC12 /* CLPlayerMaskView.h */,
+				EE2C22A521E479860017FC12 /* CLPlayerMaskView.m */,
+				EE2C22A721E479B40017FC12 /* AILoadingView.h */,
+				EE2C22A821E479B40017FC12 /* AILoadingView.m */,
+				EE2C22AD21E47A4C0017FC12 /* CLSlider.h */,
+				EE2C22AE21E47A4C0017FC12 /* CLSlider.m */,
+			);
+			path = CLPlayerViews;
+			sourceTree = "<group>";
+		};
+		EE2C22A021E478930017FC12 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				EE2C22AA21E479F20017FC12 /* CLGCDTimerManager.h */,
+				EE2C22AB21E479F20017FC12 /* CLGCDTimerManager.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		EE2E25E021D0CE090016F3B7 /* UserObjectManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,6 +911,43 @@
 				EE2E25FB21D1C8EF0016F3B7 /* ImagesCollectionViewCell.xib */,
 			);
 			path = ImagesCollectionCells;
+			sourceTree = "<group>";
+		};
+		EE2EC0CB21EF002B00DEA9FC /* ScanCode */ = {
+			isa = PBXGroup;
+			children = (
+				EE2EC0CD21EF005300DEA9FC /* Views */,
+				EE2EC0CC21EF004B00DEA9FC /* Controllers */,
+			);
+			path = ScanCode;
+			sourceTree = "<group>";
+		};
+		EE2EC0CC21EF004B00DEA9FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE7CBF6421EC780800469655 /* ScanCodeViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EE2EC0CD21EF005300DEA9FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE2EC0CE21EF007200DEA9FC /* ScanView.h */,
+				EE2EC0CF21EF007200DEA9FC /* ScanView.m */,
+				EE2EC0D121EF00A900DEA9FC /* LoadView.h */,
+				EE2EC0D221EF00A900DEA9FC /* LoadView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE2EC0D421EF15F900DEA9FC /* MainModels */ = {
+			isa = PBXGroup;
+			children = (
+				EE2EC0D521EF160E00DEA9FC /* PersoalUserModel.h */,
+				EE2EC0D621EF160E00DEA9FC /* PersoalUserModel.m */,
+			);
+			path = MainModels;
 			sourceTree = "<group>";
 		};
 		EE7648AD21B61A800090D98A = {
@@ -924,6 +1086,7 @@
 		EE7648F221B61BF40090D98A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EE7CBF6321EC77FA00469655 /* OtherControllers */,
 				EE76492521B6675D0090D98A /* BaseWebViewController */,
 				EE76492421B664470090D98A /* BaseViewController */,
 			);
@@ -933,6 +1096,7 @@
 		EE7648F321B61BFB0090D98A /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				EE9C53E621D61E1F0071920A /* KeyChain */,
 				EE76491921B6508E0090D98A /* Categary */,
 				EE76491821B650870090D98A /* Base */,
 			);
@@ -962,6 +1126,8 @@
 		EE7648F621B61C100090D98A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE2C229E21E477D00017FC12 /* CLPlayerView */,
+				EE9C53CE21D615380071920A /* ImageBrowseView */,
 				EE9C53C421D4CAB50071920A /* AgePickView */,
 				EE27B07E21D384AF00AB0A19 /* VideoUploadView */,
 				EE16C08121C8E2DF00C964A3 /* AgentView */,
@@ -978,6 +1144,7 @@
 		EE7648F721B61C1B0090D98A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EE2EC0C621EEE0C200DEA9FC /* icon.png */,
 				EE84696E21C1413300D3BF18 /* 1.png */,
 			);
 			path = Images;
@@ -1315,6 +1482,8 @@
 				EE2E25DB21CC94140016F3B7 /* LoginModel.m */,
 				EE2E25DD21CC942B0016F3B7 /* registerModel.h */,
 				EE2E25DE21CC942B0016F3B7 /* registerModel.m */,
+				EE9C53EA21D623F20071920A /* ResertPasswordModel.h */,
+				EE9C53EB21D623F20071920A /* ResertPasswordModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1395,6 +1564,23 @@
 				EE7658F021C62E770017BD3A /* AddBankHeaderTableViewCell.xib */,
 			);
 			path = AddBankViews;
+			sourceTree = "<group>";
+		};
+		EE7CBF6321EC77FA00469655 /* OtherControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE2EC0CB21EF002B00DEA9FC /* ScanCode */,
+			);
+			path = OtherControllers;
+			sourceTree = "<group>";
+		};
+		EE7CBF6421EC780800469655 /* ScanCodeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EE2EC0C821EEFFE500DEA9FC /* ScanCodeViewController.h */,
+				EE2EC0C921EEFFE600DEA9FC /* ScanCodeViewController.m */,
+			);
+			path = ScanCodeViewController;
 			sourceTree = "<group>";
 		};
 		EE84696A21C1400100D3BF18 /* HomePageModule */ = {
@@ -1532,6 +1718,67 @@
 			path = AgePickView;
 			sourceTree = "<group>";
 		};
+		EE9C53CE21D615380071920A /* ImageBrowseView */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C53D221D615610071920A /* Other */,
+				EE9C53D121D615590071920A /* Controller */,
+				EE9C53D021D615500071920A /* Views */,
+				EE9C53CF21D615480071920A /* Model */,
+			);
+			path = ImageBrowseView;
+			sourceTree = "<group>";
+		};
+		EE9C53CF21D615480071920A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C53D321D6157F0071920A /* SDPhotoItem.h */,
+				EE9C53D421D6157F0071920A /* SDPhotoItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE9C53D021D615500071920A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C53D721D615C30071920A /* SDWaitingView.h */,
+				EE9C53D621D615C20071920A /* SDWaitingView.m */,
+				EE9C53DA21D616140071920A /* SDCollectionViewCell.h */,
+				EE9C53D921D616130071920A /* SDCollectionViewCell.m */,
+				EE9C53DD21D6162E0071920A /* SDPhotoBrowser.h */,
+				EE9C53DC21D6162E0071920A /* SDPhotoBrowser.m */,
+				EE9C53DF21D616450071920A /* SDBrowserImageView.h */,
+				EE9C53E021D616450071920A /* SDBrowserImageView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE9C53D121D615590071920A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C53E321D616680071920A /* SDCollectionViewController.h */,
+				EE9C53E221D616680071920A /* SDCollectionViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EE9C53D221D615610071920A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C53E521D6168F0071920A /* SDPhotoBrowserConfig.h */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EE9C53E621D61E1F0071920A /* KeyChain */ = {
+			isa = PBXGroup;
+			children = (
+				EE9C53E821D61E3B0071920A /* KeyChainStore.h */,
+				EE9C53E721D61E3A0071920A /* KeyChainStore.m */,
+			);
+			path = KeyChain;
+			sourceTree = "<group>";
+		};
 		EEB218DA21BE55130061017D /* TableBarControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1601,7 +1848,8 @@
 		EEB2195A21BE781F0061017D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EEC2005C21C3DC2E00F49365 /* PersonUserViews */,
+				EE2EC0D421EF15F900DEA9FC /* MainModels */,
+				EED92FAC21DCB14F0014BB40 /* PersonalSubModels */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1709,6 +1957,12 @@
 				EE9C53C921D4CFD20071920A /* PersonalAgentViewController.m */,
 				EE9C53CB21D4D23C0071920A /* PersonalPopularizeViewController.h */,
 				EE9C53CC21D4D23C0071920A /* PersonalPopularizeViewController.m */,
+				EE2C228A21DF81ED0017FC12 /* CommitedViewController.h */,
+				EE2C228B21DF81ED0017FC12 /* CommitedViewController.m */,
+				EE2C228D21DF84E80017FC12 /* AuthenSuccendViewController.h */,
+				EE2C228E21DF84E80017FC12 /* AuthenSuccendViewController.m */,
+				EE2C229021DF8BC60017FC12 /* PersonalAgentInfoViewController.h */,
+				EE2C229121DF8BC60017FC12 /* PersonalAgentInfoViewController.m */,
 			);
 			path = PersonalLastUserControllers;
 			sourceTree = "<group>";
@@ -1716,6 +1970,7 @@
 		EEB219BC21C0EC330061017D /* PersonLastUserViews */ = {
 			isa = PBXGroup;
 			children = (
+				EE2C229321DF8C0C0017FC12 /* PersonalAgentView */,
 				EE7658ED21C62E530017BD3A /* AddBankViews */,
 				EE7658CC21C5F5DB0017BD3A /* OrderDetialViews */,
 				EE84697321C149F900D3BF18 /* AuthenViews */,
@@ -1756,13 +2011,6 @@
 				EEC2005921C3CD2200F49365 /* RechargeAndWithDrawHeaderTableViewCell.xib */,
 			);
 			path = RechargeAndWithdrawViews;
-			sourceTree = "<group>";
-		};
-		EEC2005C21C3DC2E00F49365 /* PersonUserViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PersonUserViews;
 			sourceTree = "<group>";
 		};
 		EEC8A97B21D1DD6500E23493 /* MenuPageScrollViewControllers */ = {
@@ -1949,6 +2197,17 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		EED92FAC21DCB14F0014BB40 /* PersonalSubModels */ = {
+			isa = PBXGroup;
+			children = (
+				EED92FAD21DCB1660014BB40 /* MyFollowsModel.h */,
+				EED92FAE21DCB1660014BB40 /* MyFollowsModel.m */,
+				EED92FB021DCBD500014BB40 /* MyFansModel.h */,
+				EED92FB121DCBD500014BB40 /* MyFansModel.m */,
+			);
+			path = PersonalSubModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2082,6 +2341,8 @@
 				EE7658D121C5F6090017BD3A /* OrdertialCannerBtnTableViewCell.xib in Resources */,
 				EE27B06221D32DFA00AB0A19 /* IssureTrendInputTableViewCell.xib in Resources */,
 				EE7649CC21B6AB700090D98A /* ResertSureTableViewCell.xib in Resources */,
+				EE2C229D21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.xib in Resources */,
+				EE2EC0C721EEE0C200DEA9FC /* icon.png in Resources */,
 				EE76499F21B684E70090D98A /* LoginTitleTableViewCell.xib in Resources */,
 				EE7658F221C62E770017BD3A /* AddBankHeaderTableViewCell.xib in Resources */,
 				EEB2197421BE9BC20061017D /* PersonalUserTableViewCell.xib in Resources */,
@@ -2091,6 +2352,7 @@
 				EEDFA9CC21C4FE3600C26017 /* OrderDetialTableViewCell.xib in Resources */,
 				EEB2196021BE78870061017D /* PersonalHeaderTableViewCell.xib in Resources */,
 				EE16C06E21C68F1500C964A3 /* CommiitTableViewCell.xib in Resources */,
+				EE2C229821DF8C410017FC12 /* PersonalAgentInfoTableViewCell.xib in Resources */,
 				EE84698121C14CD000D3BF18 /* AuthenInputTableViewCell.xib in Resources */,
 				EE27B04921D31D4400AB0A19 /* IssueInputTableViewCell.xib in Resources */,
 				EE7648C121B61A810090D98A /* Main.storyboard in Resources */,
@@ -2190,23 +2452,30 @@
 				EE7658DA21C5FF120017BD3A /* PayTpyeTableViewCell.m in Sources */,
 				EE27B06121D32DFA00AB0A19 /* IssureTrendInputTableViewCell.m in Sources */,
 				EEC8A9D721D20DF400E23493 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				EE2EC0CA21EEFFE600DEA9FC /* ScanCodeViewController.m in Sources */,
 				EEC8A9BB21D2092900E23493 /* ShareInfoViewController.m in Sources */,
+				EE9C53DE21D6162F0071920A /* SDPhotoBrowser.m in Sources */,
 				EE84696821C13D2600D3BF18 /* MyRecommendCodeTableViewCell.m in Sources */,
 				EE7658EC21C62E120017BD3A /* AddBankViewController.m in Sources */,
 				EE76494621B675F70090D98A /* MJRefreshAutoStateFooter.m in Sources */,
 				EEB219C021C0EC9E0061017D /* SharedListTableViewCell.m in Sources */,
 				EE27B08921D4AACB00AB0A19 /* UserInfoIconTableViewCell.m in Sources */,
+				EE9C53DB21D616140071920A /* SDCollectionViewCell.m in Sources */,
 				EE76590621C638C70017BD3A /* AddBankCodeTableViewCell.m in Sources */,
+				EE9C53E121D616450071920A /* SDBrowserImageView.m in Sources */,
+				EE2C228F21DF84E80017FC12 /* AuthenSuccendViewController.m in Sources */,
 				EE7649C221B6A9870090D98A /* ResetSecretViewController.m in Sources */,
 				EEB219BB21C0EBF30061017D /* SharedListViewController.m in Sources */,
 				EEB218EC21BE565B0061017D /* HomePersonalViewController.m in Sources */,
 				EE76498721B67DC60090D98A /* UITabBarItem+Convenience.m in Sources */,
+				EE2C229221DF8BC60017FC12 /* PersonalAgentInfoViewController.m in Sources */,
 				EE7658E921C625DC0017BD3A /* PasswordView.m in Sources */,
 				EE84695221C134C900D3BF18 /* BillLsitViewController.m in Sources */,
 				EEB218F221BE56C70061017D /* ZDQtabBar.m in Sources */,
 				EE27B06B21D330F900AB0A19 /* IssureTrendImagesTableViewCell.m in Sources */,
 				EE27B05221D3208400AB0A19 /* IssuePayTypeTableViewCell.m in Sources */,
 				EEB218E921BE563D0061017D /* HomeNewsViewController.m in Sources */,
+				EE9C53D821D615C30071920A /* SDWaitingView.m in Sources */,
 				EE76494F21B676820090D98A /* MJRefreshBackStateFooter.m in Sources */,
 				EE84698B21C14DE300D3BF18 /* AuthenSureTableViewCell.m in Sources */,
 				EE27B07D21D37D6F00AB0A19 /* IssureVideoTableViewCell.m in Sources */,
@@ -2224,7 +2493,9 @@
 				EE76496121B677940090D98A /* MJRefreshComponent.m in Sources */,
 				EE76495221B676BB0090D98A /* MJRefreshGifHeader.m in Sources */,
 				EE7658FC21C636970017BD3A /* AddBankInputTableViewCell.m in Sources */,
+				EE2C229C21DF8D7B0017FC12 /* PersonalAgentInfoDetialTableViewCell.m in Sources */,
 				EE7649AE21B6894A0090D98A /* LoginAndRegisterTableViewCell.m in Sources */,
+				EE9C53EC21D623F20071920A /* ResertPasswordModel.m in Sources */,
 				EE7658E421C602C60017BD3A /* PayTypeTitleTableViewCell.m in Sources */,
 				EE16C08D21C9145500C964A3 /* MyCommitsViewController.m in Sources */,
 				EE84698221C14CD000D3BF18 /* AuthenInputTableViewCell.m in Sources */,
@@ -2234,12 +2505,15 @@
 				EE9C53CA21D4CFD20071920A /* PersonalAgentViewController.m in Sources */,
 				EE7658F121C62E770017BD3A /* AddBankHeaderTableViewCell.m in Sources */,
 				EE16C09121C914A200C964A3 /* MyCommitTableViewCell.m in Sources */,
+				EE2C22A621E479860017FC12 /* CLPlayerMaskView.m in Sources */,
 				EEB2197321BE9BC20061017D /* PersonalUserTableViewCell.m in Sources */,
 				EE76494C21B676580090D98A /* MJRefreshBackNormalFooter.m in Sources */,
+				EE9C53E921D61E3B0071920A /* KeyChainStore.m in Sources */,
 				EEC8A9E621D2252C00E23493 /* LocationManager.m in Sources */,
 				EEC8A9DB21D20DF400E23493 /* MASLayoutConstraint.m in Sources */,
 				EE76491C21B650B20090D98A /* BaseNetwork.m in Sources */,
 				EE84699921C23CBF00D3BF18 /* AssistView.m in Sources */,
+				EE2C22A921E479B40017FC12 /* AILoadingView.m in Sources */,
 				EE9C53CD21D4D23C0071920A /* PersonalPopularizeViewController.m in Sources */,
 				EE76497C21B679BC0090D98A /* MJRefreshConst.m in Sources */,
 				EE7648BB21B61A810090D98A /* AppDelegate.m in Sources */,
@@ -2247,19 +2521,24 @@
 				EE76498321B67D550090D98A /* UILabel+Convenience.m in Sources */,
 				EE76497821B679650090D98A /* UIView+MJExtension.m in Sources */,
 				EEB2191B21BE581B0061017D /* UIView+XPFExtension.m in Sources */,
+				EE2EC0D321EF00A900DEA9FC /* LoadView.m in Sources */,
 				EE76494321B6759D0090D98A /* MJRefreshAutoNormalFooter.m in Sources */,
 				EE27B05D21D32D7000AB0A19 /* IssureTrendViewController.m in Sources */,
 				EEB2199A21BFE6B50061017D /* BalanceConsumeTitleTableViewCell.m in Sources */,
+				EE2C22AC21E479F20017FC12 /* CLGCDTimerManager.m in Sources */,
 				EE76491F21B661220090D98A /* PublicManager.m in Sources */,
 				EEB219B721C0976C0061017D /* MyFansViewController.m in Sources */,
 				EE27B08421D4AA1800AB0A19 /* UserInfoViewController.m in Sources */,
 				EEC8A9A521D1DFC700E23493 /* CursorView.m in Sources */,
 				EEC8A9B821D2090900E23493 /* ShareAvtivityViewController.m in Sources */,
 				EE2E25DC21CC94140016F3B7 /* LoginModel.m in Sources */,
+				EE9C53E421D616680071920A /* SDCollectionViewController.m in Sources */,
+				EE2EC0D721EF160E00DEA9FC /* PersoalUserModel.m in Sources */,
 				EE76499421B67EB30090D98A /* UserManager.m in Sources */,
 				EE2E25E521D0CE380016F3B7 /* UserObjectManager.m in Sources */,
 				EEB2196F21BE8E320061017D /* PersonSubHeaderTableViewCell.m in Sources */,
 				EEC2005421C3CBAE00F49365 /* RechargeBalanceViewController.m in Sources */,
+				EE2EC0D021EF007200DEA9FC /* ScanView.m in Sources */,
 				EE76499121B67E8F0090D98A /* UserModel.m in Sources */,
 				EE76496C21B6788B0090D98A /* NSBundle+MJRefresh.m in Sources */,
 				EE76495E21B677650090D98A /* MJRefreshBackFooter.m in Sources */,
@@ -2280,15 +2559,21 @@
 				EE27B06621D32F8A00AB0A19 /* IssureTrendTipTableViewCell.m in Sources */,
 				EEB218E321BE55D90061017D /* HomePageViewController.m in Sources */,
 				EE76493121B670DF0090D98A /* BaseWebViewController.m in Sources */,
+				EE2C22AF21E47A4C0017FC12 /* CLSlider.m in Sources */,
 				EE84697721C14A3000D3BF18 /* AuthenImageTableViewCell.m in Sources */,
 				EE27B07121D3757500AB0A19 /* IssureImageCollectionViewCell.m in Sources */,
 				EE76496721B678040090D98A /* MJRefreshHeader.m in Sources */,
 				EE27B07521D37B0900AB0A19 /* IssureVideoViewController.m in Sources */,
+				EE2C22A321E478AE0017FC12 /* CLPlayerView.m in Sources */,
+				EED92FB221DCBD500014BB40 /* MyFansModel.m in Sources */,
+				EE2C229721DF8C410017FC12 /* PersonalAgentInfoTableViewCell.m in Sources */,
 				EE84695C21C1387800D3BF18 /* BillListTableViewCell.m in Sources */,
 				EE84695F21C13B2100D3BF18 /* MyRecommedCodeViewController.m in Sources */,
 				EE76493621B673460090D98A /* UIScrollView+MJRefreshEX.m in Sources */,
+				EE9C53D521D6157F0071920A /* SDPhotoItem.m in Sources */,
 				EE9C53C721D4CACE0071920A /* AgePickView.m in Sources */,
 				EE76499A21B6839F0090D98A /* LoginViewController.m in Sources */,
+				EED92FAF21DCB1660014BB40 /* MyFollowsModel.m in Sources */,
 				EE76494921B676260090D98A /* MJRefreshBackGifFooter.m in Sources */,
 				EE7658D021C5F6090017BD3A /* OrdertialCannerBtnTableViewCell.m in Sources */,
 				EEB2199521BFE2BE0061017D /* BalanceHeaderTableViewCell.m in Sources */,
@@ -2299,6 +2584,7 @@
 				EE76491421B64F6D0090D98A /* PublicMethod.m in Sources */,
 				EEC8A9DA21D20DF400E23493 /* MASConstraintMaker.m in Sources */,
 				EE2E25FD21D1C8EF0016F3B7 /* ImagesCollectionViewCell.m in Sources */,
+				EE2C228C21DF81EE0017FC12 /* CommitedViewController.m in Sources */,
 				EEB2197E21BEACA70061017D /* PersonalCenterTableViewCell.m in Sources */,
 				EE27B04A21D31D4400AB0A19 /* IssueInputTableViewCell.m in Sources */,
 				EEB2195F21BE78870061017D /* PersonalHeaderTableViewCell.m in Sources */,
@@ -2491,6 +2777,39 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"SDWebImage\"",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AMapFoundationKit\"",
+					"-framework",
+					"\"AMapLocationKit\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"ExternalAccessory\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MAMapKit\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zlkj.zhongligongxiang;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2511,6 +2830,39 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"SDWebImage\"",
+					"-l\"c++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AMapFoundationKit\"",
+					"-framework",
+					"\"AMapLocationKit\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"ExternalAccessory\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MAMapKit\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zlkj.zhongligongxiang;
 				PRODUCT_NAME = "$(TARGET_NAME)";

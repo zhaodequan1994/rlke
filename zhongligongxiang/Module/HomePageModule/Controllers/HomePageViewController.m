@@ -47,7 +47,7 @@
 
 - (NSArray *)pagesArray {
     if (!_pagesArray) {
-        _pagesArray = [NSArray arrayWithObjects:@"主页",@"推荐",@"资讯", nil];
+        _pagesArray = [NSArray arrayWithObjects:@"共享人力",@"共享尬舞",@"共享信息", nil];
     }
     return _pagesArray;
 }
@@ -126,14 +126,8 @@
 }
 
 -(void)btnClick{
-    
-    self.hidesBottomBarWhenPushed = YES;
-    
-    LoginViewController * lvc = [[LoginViewController alloc] init];
-    
-    [self.navigationController pushViewController:lvc animated:YES];
-    
-    self.hidesBottomBarWhenPushed = NO;
+   
+    [PublicMethod PushToLoginViewController:self];
 
 }
 @end

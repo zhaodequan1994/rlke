@@ -8,9 +8,17 @@
 
 #import "BaseTitleViewController.h"
 
+@protocol infoUpdateDelegate <NSObject>
+
+-(void)infoUpdateDelegate;
+
+@end
+
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UserNickNameAlterViewController : BaseTitleViewController
+@property (nonatomic,weak) id<infoUpdateDelegate>delegate;
 
 @end
 

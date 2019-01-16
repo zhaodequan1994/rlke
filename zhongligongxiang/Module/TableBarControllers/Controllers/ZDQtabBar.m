@@ -14,8 +14,8 @@
     if (self = [super initWithFrame:frame]) {
         
         UIButton *publishButton = [[UIButton alloc] init];
-        [publishButton setBackgroundImage:[UIImage imageNamed:@"icon_popup_kefu"] forState:UIControlStateNormal];
-        [publishButton setBackgroundImage:[UIImage imageNamed:@"icon_popup_kefu"] forState:UIControlStateHighlighted];
+        [publishButton setBackgroundImage:[UIImage imageNamed:@"tabbar_add"] forState:UIControlStateNormal];
+        [publishButton setBackgroundImage:[UIImage imageNamed:@"tabbar_add"] forState:UIControlStateHighlighted];
         
         [self addSubview:publishButton];
         

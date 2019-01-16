@@ -17,8 +17,9 @@
 
 //Controllers
 #import "UserNickNameAlterViewController.h"
+#import "AuthenViewController.h"
 
-@interface UserInfoViewController ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface UserInfoViewController ()<UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate,UINavigationControllerDelegate,infoUpdateDelegate>
 
 @property (nonatomic,strong) UITableView * tableView;
 
@@ -79,6 +80,37 @@
     
     self.view.backgroundColor = RGB(247, 247, 247);
     
+}
+
+-(void)userInfoNetworkRequest:(NSDictionary *)parameter{
+    
+    WEAKSELF
+    [PublicMethod networkRequestWithPath:PATH_MODIFYINFO Parameters:parameter sender:nil begin:^{
+        
+        [weakSelf startActivityView];
+        
+    } success:^(id  _Nonnull object) {
+        
+        [[PublicManager shareInstance].userObjectManager encodeUserModelObject:object[@"data"] superUserModel:self.userModel];
+        
+        [weakSelf.tableView reloadData];
+        
+        [weakSelf stopActivityView];
+        
+    } error:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+        
+        
+    } failure:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+        
+    }];
 }
 
 #pragma mark  **********  tableView  delegate  ********
@@ -150,6 +182,8 @@
         
         UserNickNameAlterViewController * unvc = [[UserNickNameAlterViewController alloc] init];
         
+        unvc.delegate = self;
+        
         [self.navigationController pushViewController:unvc animated:YES];
     }else if (indexPath.row == 2){
         
@@ -159,9 +193,16 @@
         
         UIAlertAction *action1 = [UIAlertAction actionWithTitle:@"男" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
+            NSDictionary * parameter = @{@"uid":weakSelf.userModel.userId,@"sex":[NSString stringWithFormat:@"%ld",(long)SexTypeMale]};
+            
+            [weakSelf userInfoNetworkRequest:parameter];
         }];
         UIAlertAction *action2 = [UIAlertAction actionWithTitle:@"女" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             
+            NSDictionary * parameter = @{@"uid":weakSelf.userModel.userId,@"sex":[NSString stringWithFormat:@"%ld",(long)SexTypeFemale]};
+
+            [weakSelf userInfoNetworkRequest:parameter];
+
         }];
         UIAlertAction *action3 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
             
@@ -171,7 +212,6 @@
         [action1 setValue:[UIColor blackColor] forKey:@"titleTextColor"];
         [action2 setValue:[UIColor blackColor] forKey:@"titleTextColor"];
         [action3 setValue:[UIColor redColor] forKey:@"titleTextColor"];
-        
         
         [actionSheet addAction:action1];
         [actionSheet addAction:action2];
@@ -185,7 +225,7 @@
         
     }else if (indexPath.row == 4){
         
-        
+        [self autherComfire];
     }
 }
 
@@ -261,6 +301,13 @@
     }];
 }
 
+#pragma mark ********* infoUpdateDelegate  **********
+
+-(void)infoUpdateDelegate{
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark   ---------  other  ---------
 
 -(void)getAgeSelectView{
@@ -269,11 +316,48 @@
     ageView.dataSource = @[@"20",@"21",@"22",@"23",@"24",@"25"];
     ageView.pickerTitle = @"选择年龄";
     ageView.defaultStr = @"22/3";
+    WEAKSELF
     ageView.valueDidSelect = ^(NSString * ageString){
         
+        NSDictionary * parameter = @{@"uid":weakSelf.userModel.userId,@"age":ageString};
         
+        [weakSelf userInfoNetworkRequest:parameter];
+
     };
+    
     [ageView show];
+}
+
+-(void)autherComfire{
+    
+    if (self.userModel.is_real.integerValue == 1) {
+        
+        [PublicMethod alertControllerViewWithTitle:@"已认证" sender:self];
+        
+    }else{
+        
+        self.hidesBottomBarWhenPushed = YES;
+        
+        AuthenViewController * avc = [[AuthenViewController alloc] init];
+        
+        [self.navigationController pushViewController:avc animated:YES];
+    }
+}
+
+#pragma mark   **********  event clcik ********
+
+-(void)leftClick{
+    
+    [PublicMethod postNotificationName:MESSAGE_HOMEPAGE_UPDATEINFO object:nil];
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark   **********  dealloc ********
+
+-(void)dealloc{
+    
+    [PublicMethod removeAllObserver:self];
 }
 
 @end

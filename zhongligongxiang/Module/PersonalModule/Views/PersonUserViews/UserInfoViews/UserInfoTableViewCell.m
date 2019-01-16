@@ -33,16 +33,20 @@
     if (index == 1) {
         
         self.subNameLabel.text = userModel.name;
+        
     }else if (index == 2){
         
-        if (userModel.sex.integerValue == 0) {
+        if (userModel.sex.integerValue == SexTypeFemale) {
             
             self.subNameLabel.text = @"女";
 
-        }else if (userModel.sex.integerValue == 1){
+        }else if (userModel.sex.integerValue == SexTypeMale){
             
             self.subNameLabel.text = @"男";
 
+        }else{
+            
+            self.subNameLabel.text = @"未知";
         }
         
     }else if (index == 3){

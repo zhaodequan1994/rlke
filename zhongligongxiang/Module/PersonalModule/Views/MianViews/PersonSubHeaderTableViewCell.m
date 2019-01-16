@@ -14,6 +14,14 @@
 
 @implementation PersonSubHeaderTableViewCell
 
+-(void)addModel:(PersoalUserModel *)model{
+    
+    self.moeyLabel1.text = [NSString stringWithFormat:@"%.2f",model.wages.floatValue];
+    self.moneyLabel2.text = [NSString stringWithFormat:@"%.2f",model.used_cash.floatValue];
+    self.moneyLabel3.text = [NSString stringWithFormat:@"%.2f",model.using_cash.floatValue];
+
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     
@@ -53,25 +61,38 @@
 
 -(void)moneyBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
-    
-    MyBalanceViewController * mvc =[[MyBalanceViewController alloc] init];
-    
-    [self.fatherController.navigationController pushViewController:mvc animated:YES];
-    
-    self.fatherController.hidesBottomBarWhenPushed = NO;
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        MyBalanceViewController * mvc =[[MyBalanceViewController alloc] init];
+        
+        [self.fatherController.navigationController pushViewController:mvc animated:YES];
+        
+        self.fatherController.hidesBottomBarWhenPushed = NO;
 
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
 }
 
 -(void)withDrawalBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
-    
-    RechargeBalanceViewController * rbvc = [[RechargeBalanceViewController alloc] init];
-    
-    rbvc.isRecharge = NO;
-    
-    [self.fatherController.navigationController pushViewController:rbvc animated:YES];
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        RechargeBalanceViewController * rbvc = [[RechargeBalanceViewController alloc] init];
+        
+        rbvc.isRecharge = NO;
+        
+        [self.fatherController.navigationController pushViewController:rbvc animated:YES];
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
 
 }
 

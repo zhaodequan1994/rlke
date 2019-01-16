@@ -113,13 +113,13 @@
         
     } error:^(id  _Nonnull object) {
         
-        [PublicMethod alertControllerViewWithTitle:object[@"message"] sender:weakSelf];
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
         
         [weakSelf stopActivityView];
         
     } failure:^(id  _Nonnull object) {
         
-        [PublicMethod alertControllerViewWithTitle:object[@"message"] sender:weakSelf];
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
         
         [weakSelf stopActivityView];
 
@@ -144,13 +144,13 @@
         
         codeBtn.userInteractionEnabled = YES;
         
-        [PublicMethod alertControllerViewWithTitle:object[@"message"] sender:weakSelf];
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
 
     } failure:^(id  _Nonnull object) {
         
         codeBtn.userInteractionEnabled = YES;
 
-        [PublicMethod alertControllerViewWithTitle:object[@"message"] sender:weakSelf];
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
         
     }];
 }
@@ -211,6 +211,15 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.view endEditing:YES];
+    
+}
+
+
 #pragma mark  ---------  event  click  --------
 
 -(void)registerBtnClick{
@@ -255,8 +264,6 @@
     UIButton * codeBtn = (UIButton *)[self.view viewWithTag:INPUT_SNSCODE];
     
     
-    NSLog(@"-----%@",inputTextField.text);
-
     if (inputTextField.text.length != 11) {
         
         [PublicMethod alertControllerViewWithTitle:@"请输入正确手机号码" sender:self];

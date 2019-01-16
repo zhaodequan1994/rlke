@@ -12,6 +12,12 @@
 #import "AuthenSureTableViewCell.h"
 #import "AuthenInputTableViewCell.h"
 #import "AuthenImageTableViewCell.h"
+
+//Controllers
+#import "AuthenSuccendViewController.h"
+
+#define INPUTTEXTFIELD_TAG  100
+
 @interface AuthenViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic,strong) UITableView * tableView;
@@ -81,6 +87,38 @@
     
 }
 
+-(void)autherNetworkRequestName:(NSString *)name withNumberId:(NSString *)number{
+    
+    WEAKSELF
+    NSDictionary * dic = @{@"cardNo":number,@"realName":name,@"uid":self.userModel.userId};
+    
+    [PublicMethod networkRequestWithPath:PATH_REALNAME Parameters:dic sender:nil begin:^{
+        
+        [weakSelf startActivityView];
+
+    } success:^(id  _Nonnull object) {
+        
+
+        [weakSelf psuhToSuccessController];
+        
+        [weakSelf stopActivityView];
+
+    } error:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+
+    } failure:^(id  _Nonnull object) {
+        
+        [PublicMethod alertControllerViewWithTitle:object[@"msg"] sender:weakSelf];
+        
+        [weakSelf stopActivityView];
+
+    }];
+    
+}
+
 #pragma mark  **********  tableView  delegate  ********
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -119,11 +157,15 @@
         
         AuthenSureTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AuthenSureTableViewCell" forIndexPath:indexPath];
         
+        [cell.authenBtn addTarget:self action:@selector(authenBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        
         return cell;
         
     }else{
         
         AuthenInputTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"AuthenInputTableViewCell" forIndexPath:indexPath];
+        
+        cell.inputTextField.tag = INPUTTEXTFIELD_TAG + indexPath.row;
         
         [cell addIndex:indexPath.row];
         
@@ -131,6 +173,53 @@
         
     }
     
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    [self.view endEditing:YES];
+
+}
+
+
+#pragma mark  --------  event  click  --------
+
+-(void)authenBtnClick{
+    
+    
+    UITextField * nameTextField = (UITextField *)[self.view viewWithTag:INPUTTEXTFIELD_TAG + 1];
+    
+    UITextField * numberTextField = (UITextField *)[self.view viewWithTag:INPUTTEXTFIELD_TAG + 2];
+    
+    if (nameTextField.text.length == 0) {
+        
+        [PublicMethod alertControllerViewWithTitle:@"请输入身份证姓名" sender:self];
+        
+    }else if (numberTextField.text.length == 0){
+        
+        [PublicMethod alertControllerViewWithTitle:@"请输入身份证号码" sender:self];
+
+    }else{
+        
+        [self autherNetworkRequestName:nameTextField.text withNumberId:numberTextField.text];
+    }
+
+}
+
+#pragma mark  ---------  other  -------------
+
+-(void)psuhToSuccessController{
+    
+    self.hidesBottomBarWhenPushed = YES;
+    
+    AuthenSuccendViewController * asvc = [[AuthenSuccendViewController alloc] init];
+    
+    asvc.authenType = AuthenTypeSuccess;
+    
+    [self.navigationController pushViewController:asvc animated:YES];
+
 }
 
 @end

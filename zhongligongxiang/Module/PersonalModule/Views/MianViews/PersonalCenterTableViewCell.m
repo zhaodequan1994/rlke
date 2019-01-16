@@ -7,12 +7,15 @@
 //
 
 #import "PersonalCenterTableViewCell.h"
+
 //Controllers
 #import "SharedListViewController.h"
 #import "BillLsitViewController.h"
 #import "MyRecommedCodeViewController.h"
 #import "AuthenViewController.h"
 #import "PersonalAgentViewController.h"
+#import "CommitedViewController.h"
+#import "PersonalPopularizeViewController.h"
 
 //View
 #import "AgentView.h"
@@ -53,60 +56,122 @@
 
 -(void)grabBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
-    
-    SharedListViewController * slvc =[[SharedListViewController alloc] init];
-    
-    [self.fatherController.navigationController pushViewController:slvc animated:YES];
-    
-    self.fatherController.hidesBottomBarWhenPushed = NO;
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        SharedListViewController * slvc =[[SharedListViewController alloc] init];
+        
+        [self.fatherController.navigationController pushViewController:slvc animated:YES];
+        
+        self.fatherController.hidesBottomBarWhenPushed = NO;
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+
 }
 -(void)billBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
-    
-    BillLsitViewController * blvc =[[BillLsitViewController alloc] init];
-    
-    [self.fatherController.navigationController pushViewController:blvc animated:YES];
-    
-    self.fatherController.hidesBottomBarWhenPushed = NO;
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        BillLsitViewController * blvc =[[BillLsitViewController alloc] init];
+        
+        [self.fatherController.navigationController pushViewController:blvc animated:YES];
+        
+        self.fatherController.hidesBottomBarWhenPushed = NO;
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+
 }
 
 -(void)evaluateBtnClick{
     
-    
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        CommitedViewController * cvc =[[CommitedViewController alloc] init];
+        
+        [self.fatherController.navigationController pushViewController:cvc animated:YES];
+        
+        self.fatherController.hidesBottomBarWhenPushed = NO;
+
+        
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
 }
 
 -(void)recommendBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
-    
-    MyRecommedCodeViewController * mrvc =[[MyRecommedCodeViewController alloc] init];
-    
-    [self.fatherController.navigationController pushViewController:mrvc animated:YES];
-    
-    self.fatherController.hidesBottomBarWhenPushed = NO;
+    if (self.fatherController.isLogin) {
+        
+        self.fatherController.hidesBottomBarWhenPushed = YES;
+        
+        MyRecommedCodeViewController * mrvc =[[MyRecommedCodeViewController alloc] init];
+        
+        [self.fatherController.navigationController pushViewController:mrvc animated:YES];
+        
+        self.fatherController.hidesBottomBarWhenPushed = NO;
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+
 }
 
 -(void)agentBtnClick{
     
-    self.agentView = [[AgentView alloc] initWithFrame:SCREEN_RECT];
-    [self.agentView agentShow];
-    [self.agentView.personalBtn addTarget:self action:@selector(personalBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    if (self.fatherController.isLogin) {
+        
+        self.agentView = [[AgentView alloc] initWithFrame:SCREEN_RECT];
+        [self.agentView agentShow];
+        [self.agentView.personalBtn addTarget:self action:@selector(personalBtnClick) forControlEvents:UIControlEventTouchUpInside];
+        [self.agentView.customBtn addTarget:self action:@selector(customBtnedClick) forControlEvents:UIControlEventTouchUpInside];
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+
+
 }
 
 -(void)authenBtnClick{
     
-    self.fatherController.hidesBottomBarWhenPushed = YES;
-    
-    AuthenViewController * atvc  = [[AuthenViewController alloc] init];
-    
-    [self.fatherController.navigationController pushViewController:atvc animated:YES];
-    
-    self.fatherController.hidesBottomBarWhenPushed = NO;
+    if (self.fatherController.isLogin) {
+        
+        if (self.personalModel.is_real.integerValue == 1) {
+            
+            [PublicMethod alertControllerViewWithTitle:@"已认证" sender:self.fatherController];
+        }else{
+            
+            self.fatherController.hidesBottomBarWhenPushed = YES;
+            
+            AuthenViewController * atvc  = [[AuthenViewController alloc] init];
+            
+            [self.fatherController.navigationController pushViewController:atvc animated:YES];
+            
+            self.fatherController.hidesBottomBarWhenPushed = NO;
+        }
+
+    }else{
+        
+        [PublicMethod PushToLoginViewController:self.fatherController];
+    }
+
 }
 
 -(void)customBtnClick{
+    
     
     [PublicMethod callPhone:self.fatherController phone:CALL_PHONE];
 }
@@ -118,6 +183,20 @@
     self.fatherController.hidesBottomBarWhenPushed = YES;
     
     PersonalAgentViewController * pavc  = [[PersonalAgentViewController alloc] init];
+    
+    [self.fatherController.navigationController pushViewController:pavc animated:YES];
+    
+    self.fatherController.hidesBottomBarWhenPushed = NO;
+
+}
+
+-(void)customBtnedClick{
+    
+    [self.agentView agentDissmiss];
+    
+    self.fatherController.hidesBottomBarWhenPushed = YES;
+    
+    PersonalPopularizeViewController * pavc  = [[PersonalPopularizeViewController alloc] init];
     
     [self.fatherController.navigationController pushViewController:pavc animated:YES];
     

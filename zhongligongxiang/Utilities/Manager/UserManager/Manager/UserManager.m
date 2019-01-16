@@ -42,6 +42,7 @@
     model.is_admin = @"";
     model.is_delete = @"";
     model.is_online = @"";
+    model.is_real = @"";
     model.lat = @"";
     model.lng = @"";
     model.login_count = @"";

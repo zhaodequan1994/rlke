@@ -47,7 +47,6 @@ static BaseNetwork *baseNetwork = nil;
 
 +(void)networkRequestWithPath:(NSString *)path parameters:(NSDictionary *)paramaters sender:(UIView *)sender begin:(void (^)())begin success:(void (^)(id))success error:(void (^)(id))error failure:(void (^)(id))failure{
     
-    
     [self setupNetworkRequestConfiguration];
     
     [self setupHTTPHeader];
@@ -112,7 +111,18 @@ static BaseNetwork *baseNetwork = nil;
     
     [BaseNetwork shareInstance].identifier = [[BaseNetwork shareInstance] POST:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        [self setupSuccessStatus:responseObject success:success sender:sender];
+        NSString * codeString = responseObject[@"code"];
+        
+        if (codeString.integerValue == 200) {
+            
+            [self setupSuccessStatus:responseObject success:success sender:sender];
+
+        }else{
+            
+            [self setupFailtureStatus:responseObject task:task failture:failure sender:sender];
+
+        }
+        
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         

@@ -52,7 +52,6 @@
     [self initializeBaseNavigationAppearance];
     [self initializeAppearance];
     [self initializeDataSource];
-    
 }
 
 -(void)initializeBaseNavigationAppearance{
@@ -70,7 +69,6 @@
     
 
 }
-
 #pragma mark  **********  tableView  delegate  ********
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

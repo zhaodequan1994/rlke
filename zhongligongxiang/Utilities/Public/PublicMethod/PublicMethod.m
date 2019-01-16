@@ -11,6 +11,12 @@
 #import "UIImage+MultiFormat.h"
 #import <CoreImage/CoreImage.h>
 
+#import "KeyChainStore.h"
+#import <AdSupport/AdSupport.h>
+
+
+//Controller
+#import "LoginViewController.h"
 
 @implementation PublicMethod
 
@@ -166,6 +172,68 @@
     return [UIDevice currentDevice].systemVersion;
 }
 
+
++ (void)PushToLoginViewController:(UIViewController *)parentController{
+    
+    LoginViewController * livc = [[LoginViewController alloc] init];
+    
+    UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:livc];
+    
+    
+
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+
+    [delegate.window.rootViewController presentViewController:navi animated:YES completion:nil];
+    
+}
+
+
++ (NSString *)getDeviceUUID{
+    
+    NSString*strUUID = (NSString*)[KeyChainStore load:K_ONLY_UUID];
+    //首次执行该方法时，uuid为空
+    if([strUUID isEqualToString:@""]|| !strUUID)
+    {
+        // 获取UUID 这个是要引入<AdSupport/AdSupport.h>的
+        strUUID = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
+        
+        if(strUUID.length ==0 || [strUUID isEqualToString:@"00000000-0000-0000-0000-000000000000"])
+        {
+            //生成一个uuid的方法
+            CFUUIDRef uuidRef= CFUUIDCreate(kCFAllocatorDefault);
+            strUUID = (NSString*)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault,uuidRef));
+            CFRelease(uuidRef);
+        }
+        
+        //将该uuid保存到keychain
+        [KeyChainStore save:K_ONLY_UUID data:strUUID];
+    }
+    
+    return strUUID;
+}
+
++ (void)postNotificationName:(NSString *)aName object:(nullable id)anObject{
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:aName object:anObject];
+
+}
+
++ (void)removeObserver:(id)observer name:(NSString *)aName object:(nullable id)anObject{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:observer name:aName object:anObject];
+
+}
+
++ (void)addObserver:(id)observer selector:(SEL)aSelector name:(NSString *)aName object:(nullable id)anObject{
+    
+    [[NSNotificationCenter defaultCenter] addObserver:observer selector:(SEL)aSelector name:aName object:anObject];
+
+}
+
++ (void)removeAllObserver:(id)observer{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:observer];
+}
 
 
 @end

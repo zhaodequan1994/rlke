@@ -9,5 +9,8 @@
 #ifndef MessageDefines_h
 #define MessageDefines_h
 
+#define MESSAGE_HOMEPAGE_UPDATEINFO                      @"MESSAGE_HOMEPAGE_UPDATEINFO"
+
+
 
 #endif /* MessageDefines_h */

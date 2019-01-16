@@ -49,4 +49,8 @@
 
 #import "MJRefresh.h"
 
+//AppDelegate
+
+#import "AppDelegate.h"
+
 #endif /* Defines_h */
