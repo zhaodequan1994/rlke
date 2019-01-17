@@ -78,6 +78,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)removeAllObserver:(id)observer;
 
+
+#pragma mark  *********  height  label   **********
+
++ (CGFloat)getHeightLineWithString:(NSString *)string withWidth:(CGFloat)width withFont:(UIFont *)font withLineSpline:(CGFloat)spline withHeadLine:(CGFloat)headLine;
 @end
 
 NS_ASSUME_NONNULL_END

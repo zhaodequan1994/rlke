@@ -110,7 +110,7 @@ static BaseNetwork *baseNetwork = nil;
     }
     
     [BaseNetwork shareInstance].identifier = [[BaseNetwork shareInstance] POST:URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
+                
         NSString * codeString = responseObject[@"code"];
         
         if (codeString.integerValue == 200) {

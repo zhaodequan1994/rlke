@@ -92,8 +92,8 @@
         [weakSelf startActivityView];
 
     } success:^(id  _Nonnull object) {
-        
-        NSLog(@"===%@",object);
+    
+        [PublicMethod postNotificationName:MESSAGE_LOGIN_SUCCESSED object:nil];
         
         [[PublicManager shareInstance].userObjectManager encodeUserModelObject:object[@"data"] superUserModel:self.userModel];
         
@@ -213,6 +213,11 @@
 -(void)closeTextfield{
     
     [self.view endEditing:YES];
+}
+
+-(void)dealloc{
+    
+    [PublicMethod removeAllObserver:self];
 }
 
 @end

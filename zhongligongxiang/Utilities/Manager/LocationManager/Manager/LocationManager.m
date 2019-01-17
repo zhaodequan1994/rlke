@@ -14,6 +14,8 @@
 
 @property (nonatomic,strong) AMapLocationManager * locationManager;
 
+@property (nonatomic,copy) NSString * detialAddress;
+
 @end
 
 @implementation LocationManager
@@ -24,15 +26,16 @@
         _locationManager = [[AMapLocationManager alloc] init];
         _locationManager.delegate = self;
         _locationManager.distanceFilter = 200;
-        
+        _locationManager.locatingWithReGeocode = YES;
     }
     return _locationManager;
 }
 
 -(void)registerGaode{
     
+    [AMapServices sharedServices].enableHTTPS = YES;
     [AMapServices sharedServices].apiKey = GAODE_APIKEY;
-    
+
 }
 
 -(void)startUpdateingLocation{
@@ -45,6 +48,11 @@
     [self.locationManager stopUpdatingHeading];
 }
 
+-(NSString *)getLocationDetialAddress{
+    
+    return self.detialAddress;
+}
+
 #pragma mark  ------ AMapLocationManagerDelegate  ----
 
 - (void)amapLocationManager:(AMapLocationManager *)manager didUpdateLocation:(CLLocation *)location reGeocode:(AMapLocationReGeocode *)reGeocode
@@ -53,6 +61,8 @@
     if (reGeocode)
     {
         NSLog(@"reGeocode:%@", reGeocode);
+        
+        self.detialAddress = reGeocode.formattedAddress;
     }
 }
 

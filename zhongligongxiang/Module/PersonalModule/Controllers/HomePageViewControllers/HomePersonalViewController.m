@@ -257,10 +257,14 @@
 -(void)addAbsover{
     
     [PublicMethod addObserver:self selector:@selector(infoUpdate) name:MESSAGE_HOMEPAGE_UPDATEINFO object:nil];
+    [PublicMethod addObserver:self selector:@selector(loginSuccessed) name:MESSAGE_LOGIN_SUCCESSED object:nil];
+}
+-(void)infoUpdate{
+    
+    [self netWorkrequest];
     
 }
-
--(void)infoUpdate{
+-(void)loginSuccessed{
     
     [self netWorkrequest];
 

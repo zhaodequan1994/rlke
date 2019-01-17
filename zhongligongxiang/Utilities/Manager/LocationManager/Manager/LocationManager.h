@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(void)stopUpdateingLocation;
 
+-(NSString *)getLocationDetialAddress;
+
 @end
 
 NS_ASSUME_NONNULL_END

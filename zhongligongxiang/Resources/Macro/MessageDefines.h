@@ -11,6 +11,6 @@
 
 #define MESSAGE_HOMEPAGE_UPDATEINFO                      @"MESSAGE_HOMEPAGE_UPDATEINFO"
 
-
+#define MESSAGE_LOGIN_SUCCESSED                      @"MESSAGE_LOGIN_SUCCESSED"
 
 #endif /* MessageDefines_h */

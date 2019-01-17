@@ -11,7 +11,6 @@
 
 static NSString *const itemReuseIdentifier = @"__item__cell";
 
-#define ZH_SCREEN_WIDTH             ([[UIScreen mainScreen] bounds].size.width)
 
 @interface MenuPageScrollView ()<UICollectionViewDelegateFlowLayout,UICollectionViewDataSource>
 
@@ -43,7 +42,7 @@ static NSString *const itemReuseIdentifier = @"__item__cell";
 
 - (void)updateSelectedPage {
     [self.menuPageCollectionView reloadData];
-    CGFloat point_x = ZH_SCREEN_WIDTH *_didSelectedIndex;
+    CGFloat point_x = SCREEN_WIDTH *_didSelectedIndex;
     [_menuPageScrollView setContentOffset:CGPointMake(point_x, 0) animated:NO];
     
 }
@@ -112,9 +111,9 @@ static NSString *const itemReuseIdentifier = @"__item__cell";
     CGFloat height = 2.0f;
     UIEdgeInsets lineEdgeInsets = UIEdgeInsetsMake(0, 3, 0, 3);
     
-    CGRect rect = CGRectMake(CGRectGetMinX(frame) + lineEdgeInsets.left + CGRectGetWidth(frame)/4,
+    CGRect rect = CGRectMake(CGRectGetMinX(frame) + lineEdgeInsets.left + CGRectGetWidth(frame)/6,
                              CGRectGetHeight(self.menuPageCollectionView.frame) - height -lineEdgeInsets.bottom,
-                             CGRectGetWidth(frame)/2 - lineEdgeInsets.left*2, height - lineEdgeInsets.top);
+                             CGRectGetWidth(frame)/3*2 - lineEdgeInsets.left*2, height - lineEdgeInsets.top);
     
     if (animated) {
         [UIView animateWithDuration:0.1f animations:^{
@@ -154,7 +153,7 @@ static NSString *const itemReuseIdentifier = @"__item__cell";
     //    [self setCollectionViewOffsetWithSelectedItemRect:rect];
     [self stretchIndicatorFactorWithSelectedItemRect:rect animated:YES];
     
-    CGFloat startX = ZH_SCREEN_WIDTH *_didSelectedIndex;
+    CGFloat startX = SCREEN_WIDTH *_didSelectedIndex;
     [_menuPageScrollView setContentOffset:CGPointMake(startX, 0) animated:NO];
 }
 
@@ -261,7 +260,7 @@ static NSString *const itemReuseIdentifier = @"__item__cell";
 - (UIView*)indicatorFactorView {
     if (!_indicatorFactorView) {
         _indicatorFactorView = [[UIView alloc]init];
-        _indicatorFactorView.backgroundColor = RGB(51, 146, 255);
+        _indicatorFactorView.backgroundColor = RGB(255, 84, 85);
         [self.menuPageCollectionView addSubview:_indicatorFactorView];
     }
     return _indicatorFactorView;
@@ -273,11 +272,12 @@ static NSString *const itemReuseIdentifier = @"__item__cell";
         flowLayout.minimumLineSpacing = 0;
         flowLayout.minimumInteritemSpacing = 0;
         flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-        _menuPageCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH - 75*3)/2, 0, 75*3, 40) collectionViewLayout:flowLayout];
+        _menuPageCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake((SCREEN_WIDTH - 105*3)/2, 0, 105*3, 40) collectionViewLayout:flowLayout];
         _menuPageCollectionView.showsVerticalScrollIndicator = NO;
         _menuPageCollectionView.showsHorizontalScrollIndicator = NO;
         _menuPageCollectionView.scrollsToTop = NO;
         _menuPageCollectionView.backgroundColor = [UIColor whiteColor];
+
         _menuPageScrollView.scrollEnabled = NO;
         _menuPageCollectionView.delegate = self;
         _menuPageCollectionView.dataSource = self;
@@ -305,6 +305,7 @@ static NSString *const itemReuseIdentifier = @"__item__cell";
     if (!_itemNameLabel) {
         _itemNameLabel = [[UILabel alloc]init];
         _itemNameLabel.textAlignment = NSTextAlignmentCenter;
+        _itemNameLabel.font = [UIFont fontWithName:@"Arial-BoldMT" size:16];
         _itemNameLabel.backgroundColor = [UIColor whiteColor];
     }
     return _itemNameLabel;
@@ -313,7 +314,7 @@ static NSString *const itemReuseIdentifier = @"__item__cell";
 - (void)setSelected:(BOOL)selected {
     super.selected = selected;
     if (selected) {
-        self.itemNameLabel.textColor = RGB(51, 146, 255);
+        self.itemNameLabel.textColor = RGB(255, 84, 85);
     } else {
         self.itemNameLabel.textColor = [UIColor blackColor];
     }

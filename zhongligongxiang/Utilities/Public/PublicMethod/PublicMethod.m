@@ -235,5 +235,34 @@
     [[NSNotificationCenter defaultCenter] removeObserver:observer];
 }
 
+#pragma mark - 根据字符串计算label高度
++ (CGFloat)getHeightLineWithString:(NSString *)string withWidth:(CGFloat)width withFont:(UIFont *)font withLineSpline:(CGFloat)spline withHeadLine:(CGFloat)headLine{
+    
+    if (string.length > 0) {
+       
+        NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc]initWithString:string];
+        
+        NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+        
+        if (headLine > 0) {
+            
+            style.firstLineHeadIndent = headLine;
+        }
+        
+        style.alignment = NSTextAlignmentJustified;//设置两端对齐
+        
+        if ([attributeString.string isMoreThanOneLineWithSize:CGSizeMake(width, MAXFLOAT) font:font lineSpaceing:spline]) {
+            style.lineSpacing = spline;
+            
+        }
+        [attributeString addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, string.length)];
+        
+        [attributeString addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, string.length)];
+        
+        return [attributeString.string boundingRectWithSize:CGSizeMake(width, MAXFLOAT) font:font lineSpacing:spline].height ;
+    }
+    
+    return 0;
+}
 
 @end
